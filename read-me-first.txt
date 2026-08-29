@@ -1,0 +1,172 @@
+THE ANGUL ALMANAC — v9
+Talcher, Angul district, Odisha.
+
+
+═══════════════════════════════════════════════════════════════════════
+IF YOU READ ONLY ONE THING
+
+Two ways to use this. Both work.
+
+  ON YOUR COMPUTER, RIGHT NOW
+  Double-click index.html. That is it. Everything works — no internet
+  needed, nothing to install, nothing to set up. Your data saves itself
+  in that browser.
+
+  ON YOUR PHONE, AS AN APP
+  Put it online once (instructions below, about four minutes), then open
+  the address on your phone and choose "Add to Home Screen". You get a
+  proper app icon. It opens with no signal. It survives being in the yard.
+
+You do not need to understand any of the files. You never need to open
+any of them.
+═══════════════════════════════════════════════════════════════════════
+
+
+WHAT CHANGED IN v9
+
+  ONE CATALOGUE
+  Houseplants, fruit trees, vegetables and seed packets are now in the
+  same list — 225 entries instead of 121. Search finds all of them. You
+  can add ANY of them to the buy list, and press "I own this" on any of
+  them to start tracking it. Before, only houseplants could do that.
+
+  New filters across the top: what kind of thing it is, which zone it
+  belongs in (A to E, or indoors), and a verdict —
+
+      Works here            plant it, it will fruit
+      Works, with a catch    read the note first
+      Ruled out — and why    do not buy it, here is the reason
+
+  The "ruled out" list is deliberate. Apple, litchi, peach, mangosteen,
+  durian and Alphonso mango are all sold in Indian nurseries and none of
+  them will fruit for you. Each entry says exactly why. That list will
+  save you more money than the rest of the app.
+
+  48 FRUIT TREES AND VARIETIES
+  Not just "mango" — Amrapali, Mallika, Dashehari, Kesar, Arka Neelkiran,
+  Banganapalli, each with its own verdict. Same for guava, jamun, sapota,
+  citrus. Every entry tells you how it is propagated (this matters more
+  than anything else: a grafted mango fruits in 3 years, a seedling takes
+  8 and will not taste like the parent), how long to first fruit, and the
+  final bag size.
+
+  FEED — A WHOLE NEW SECTION
+  Everything about fertiliser in one place:
+    · How to read a yellow leaf. The trick is looking at WHICH leaves
+      are affected before you look at the colour. Old leaves and new
+      leaves mean opposite things.
+    · A dose calculator — pick a product and a bag size, it tells you
+      the grams and the litres.
+    · What the numbers on the bag mean (19:19:19 and so on).
+    · Organic inputs and when each one wins.
+    · Why pH decides whether any of it works at all. This matters here
+      because coal ash makes your soil alkaline.
+    · Salt buildup, and how to flush it. Your ledger already shows one
+      plant suffering from this.
+    · A month-by-month feeding year, including the month you feed
+      nothing at all.
+
+  PHONE
+    · Five buttons along the bottom instead of fourteen. Everything else
+      is behind "More".
+    · Text fields no longer make the screen zoom in when you tap them.
+      (This was the most annoying bug on the whole site.)
+    · Wide tables now stack into readable rows instead of running off
+      the side of the screen.
+    · Works with no signal once installed.
+    · A yellow bar appears at the bottom when you are offline.
+
+  FIXES
+    · Watering advice for outdoor plants was wrong. It was reading
+      phrases like "Rarely" and turning them into "every 10 days". Each
+      outdoor plant now carries a real number for each of the four
+      seasons, and shows the written rule when there is no fixed number.
+    · Outdoor plants were being labelled "At the glass" and judged
+      against a model of your indoor room. They are now labelled by
+      their real zone and left out of the room calculations.
+    · Keyboard shortcuts now reach every section.
+    · You can bookmark a specific plant, not just a section.
+
+
+═══════════════════════════════════════════════════════════════════════
+PUTTING IT ON YOUR PHONE — about four minutes
+
+  1. Go to  netlify.com/drop  in a browser.
+  2. Drag this whole folder onto that page. Wait for it to finish.
+     It gives you an address like  something-random.netlify.app
+  3. Click "Site configuration", then "Environment variables",
+     then "Add a variable".
+         Name:   LEDGER_KEY
+         Value:  any password you will remember
+     This is the only lock on your data. Without it, anyone who guesses
+     the address can read and change your ledger.
+  4. Click "Deploys", then "Trigger deploy", then "Deploy site".
+     (The password only takes effect after this step. Do not skip it.)
+  5. Open the address on your phone.
+       iPhone:  Share button, then "Add to Home Screen"
+       Android: three-dot menu, then "Install app"
+  6. In the app, go to Memory, then Sync, type the same password,
+     and press Connect. Do this on every device you use.
+
+  Same password everywhere, or your phone and laptop will not see each
+  other's changes.
+
+
+ALREADY HAVE v8 ONLINE?
+  Drag the folder onto your existing site instead of making a new one.
+  Do not touch the password or the function. Everything you have logged
+  carries over — pots, photos, watering history, buy list.
+
+
+WHERE YOUR DATA LIVES
+  · In whichever browser you used, always.
+  · In your Netlify site, if you connected it.
+  · In Memory → "Bake into this file", which downloads a complete backup
+    copy of the whole app with your data inside it. Keep one somewhere.
+    Do this before any big change.
+
+  Careful: that downloaded copy and the online copy then drift apart. If
+  you later drag the OLD downloaded copy back onto Netlify, it replaces
+  the newer data. When in doubt, deploy the folder, not a backup.
+
+
+THE FILES — what each one is, so nothing looks alarming
+
+  index.html              the entire app. Everything is in this one file.
+  manifest.webmanifest    tells your phone the name and icon to use
+  sw.js                   makes it work with no signal
+  icon-*.png              the app icon
+  netlify.toml            settings for the website host
+  netlify/functions/      the piece that syncs between your devices
+  read-me-first.txt       this file
+  renaming.txt            how to change the app's name
+
+  You never need to edit any of them.
+
+
+KEYBOARD, IF YOU USE A COMPUTER
+  1 to 9       jump between the first nine sections
+  0            the tenth
+  Shift+1..4   the last four
+  /            search the catalogue
+  Ctrl+K       search everything, from anywhere
+  Esc          close whatever is open
+
+
+WHAT TO DO FIRST, THIS WEEK
+
+  Outdoors — this is time-critical. Build and cure the two soil mixes
+  now. The coco peat must be soaked in calcium nitrate first or it will
+  quietly starve your plants of calcium. The mix then needs five to seven
+  days covered in the shade before anything goes into it. Pot up the
+  eight plants in early September. Feed nothing until about 1 October.
+
+  Indoors — buy the rack and the grow light before buying another plant.
+  Half the catalogue cannot survive that room on window light alone.
+
+  And do the crush-and-smell test on the three tall plants. It takes two
+  seconds and it is still marked unresolved.
+
+
+May in that room models to around 50°C against a 45.3°C outdoor average.
+March through June is the hard part, not winter. Plan for shade.

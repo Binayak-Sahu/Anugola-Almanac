@@ -1,0 +1,23 @@
+{
+  "name": "The Angul Almanac",
+  "short_name": "Almanac",
+  "description": "Five zones, a container orchard, an indoor room, a seed programme and a mushroom bench. Talcher, Angul.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#E7EBE4",
+  "theme_color": "#121915",
+  "categories": ["lifestyle", "productivity", "utilities"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Needs water", "url": "./index.html#today" },
+    { "name": "Orchard", "url": "./index.html#orchard" },
+    { "name": "Catalogue", "url": "./index.html#catalogue" },
+    { "name": "Feed", "url": "./index.html#feed" }
+  ]
+}

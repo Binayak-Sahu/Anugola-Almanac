@@ -1,0 +1,27 @@
+CHANGING THE NAME
+=================
+"The Angul Almanac" is applied. To use a different one, open index.html
+in any text editor (Notepad works) and change these four lines. Nothing
+else depends on the name.
+
+  1.  <title>The Angul Almanac — Talcher</title>
+  2.  <h1>The Angul <em>Almanac</em></h1>
+         The <em> wraps the second word; it renders in the accent green.
+         For a one-word name:  <h1>Later<em>ite</em></h1>
+  3.  "name" and "short_name" inside manifest.webmanifest (the phone app name)
+  4.  the <meta name="description"> line, for link previews
+
+THE OTHER OPTIONS
+  Latitude Twenty     20.95°N is the fact the whole site rests on — the
+                      overhead June sun, the zero chill hours, the noon
+                      arc on the Today screen. Never goes out of date.
+  The Dry Gap         March to May is the constraint that decides
+                      everything here. Honest, and a bit severe.
+  Laterite            One word, the soil you are actually gardening in.
+  The Standing Orders Treats it as instructions to yourself.
+  Sun & Slab          A container orchard on concrete in Odisha.
+
+DO NOT CHANGE
+  The storage name "bl_v7" and the store name "balcony-ledger" inside
+  index.html. They are invisible internal labels. Changing either one
+  makes the app forget everything you have logged.
