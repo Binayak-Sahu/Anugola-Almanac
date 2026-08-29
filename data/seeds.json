@@ -1,0 +1,1316 @@
+{
+ "SEEDS2": [
+  {
+   "g": "winterC",
+   "star": 1,
+   "n": "Radish Pusa Chetki",
+   "pk": "250 seeds",
+   "s": "ob",
+   "p": 30,
+   "bag": "12×12 — depth matters more than width",
+   "per": "8–10 roots",
+   "sow": "Direct",
+   "days": "40–45 days",
+   "win": "One-shot. Re-sow every 2 weeks, Oct–Jan",
+   "why": "A genuine IARI variety, heat-tolerant, roots in 40 days. Best-value seed in the whole sheet."
+  },
+  {
+   "g": "winterC",
+   "star": 1,
+   "n": "Lettuce Biscia Salad Bowl Red",
+   "pk": "—",
+   "s": "ob",
+   "p": 39,
+   "bag": "12×12 wide, only 8″ deep",
+   "per": "3–4",
+   "sow": "Direct or transplant",
+   "days": "25–30 days",
+   "win": "Cut-and-come-again, 2–3 months",
+   "why": "Loose-leaf. You harvest leaves for months instead of one head once — which is why it beats iceberg in a pot."
+  },
+  {
+   "g": "winterC",
+   "n": "Lettuce Lollo Rosso",
+   "pk": "300 seeds",
+   "s": "ob",
+   "p": 59,
+   "bag": "12×12",
+   "per": "3–4",
+   "sow": "Direct",
+   "days": "25–30 days",
+   "win": "2–3 months",
+   "why": "Same habit, red frilled, holds up better as the balcony warms."
+  },
+  {
+   "g": "winterC",
+   "n": "Early Coriander",
+   "pk": "1000 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "12×12 wide",
+   "per": "Broadcast",
+   "sow": "Direct",
+   "days": "4–6 weeks",
+   "win": "Re-sow fortnightly",
+   "why": "A thousand seeds means a fresh tray every two weeks all winter."
+  },
+  {
+   "g": "winterC",
+   "n": "Spinach / Palak",
+   "pk": "750 seeds",
+   "s": "ob",
+   "p": 65,
+   "bag": "12×12 wide",
+   "per": "Broadcast",
+   "sow": "Direct",
+   "days": "30–40 days",
+   "win": "5–6 cuts",
+   "why": "The bulk leafy crop for Zone C. Untreated OP version also exists at ₹69."
+  },
+  {
+   "g": "winterC",
+   "n": "Fenugreek / Methi",
+   "pk": "20 g",
+   "s": "ob",
+   "p": 49,
+   "bag": "10×10",
+   "per": "Dense broadcast",
+   "sow": "Direct",
+   "days": "21 days",
+   "win": "2–3 cuts",
+   "why": "Three weeks from seed to harvest. The cheapest greens you can grow."
+  },
+  {
+   "g": "winterC",
+   "n": "Capsicum California Wonder",
+   "pk": "—",
+   "s": "nl",
+   "p": 48,
+   "bag": "14×14",
+   "per": "1",
+   "sow": "Tray → transplant",
+   "days": "75–90 days",
+   "win": "Dec–Mar",
+   "why": "The reliable open-pollinated bell pepper standard. Save your own seed from it."
+  },
+  {
+   "g": "winterC",
+   "n": "Capsicum Orange (OP)",
+   "pk": "30 seeds",
+   "s": "ob",
+   "p": 55,
+   "bag": "14×14",
+   "per": "1",
+   "sow": "Tray → transplant",
+   "days": "80–95 days",
+   "win": "Dec–Mar",
+   "why": "Open-pollinated, so seed-saving works. Half the price of the F1 colour packets."
+  },
+  {
+   "g": "winterC",
+   "n": "Chilli Jwala",
+   "pk": "50 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "14×14",
+   "per": "1",
+   "sow": "Tray → transplant",
+   "days": "90–100 days",
+   "win": "Dec–Apr",
+   "why": "Named, proven Indian variety. High yield in a 14-inch bag."
+  },
+  {
+   "g": "winterC",
+   "star": 1,
+   "n": "Bird's Eye / Kanthari chilli",
+   "pk": "—",
+   "s": "ni",
+   "p": 49,
+   "bag": "12×12; 14×14 better",
+   "per": "1",
+   "sow": "Tray → transplant at 30–35 d",
+   "days": "90–110 days",
+   "win": "Perennial — 3–4 years",
+   "why": "Exactly the local Kanthari the plan called for. Hard cut-back each March and it keeps cropping."
+  },
+  {
+   "g": "winterC",
+   "star": 1,
+   "n": "Seeni Milagai — short bird's eye",
+   "pk": "—",
+   "s": "ni",
+   "p": 49,
+   "bag": "12×12",
+   "per": "1",
+   "sow": "Tray → transplant",
+   "days": "90–110 days",
+   "win": "Perennial",
+   "why": "Short-statured bird's eye. A better pot plant than the tall type."
+  },
+  {
+   "g": "winterC",
+   "n": "Carrot Early Nantes",
+   "pk": "1000 seeds",
+   "s": "ob",
+   "p": 39,
+   "bag": "12×12 deep",
+   "per": "15–20 roots",
+   "sow": "Direct",
+   "days": "70–80 days",
+   "win": "One-shot",
+   "why": "Nantes is the short blunt type — the only carrot shape that works in a 12-inch bag."
+  },
+  {
+   "g": "winterC",
+   "n": "Beetroot, untreated",
+   "pk": "200 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "12×12",
+   "per": "8–10",
+   "sow": "Direct",
+   "days": "60–70 days",
+   "win": "One-shot",
+   "why": "Open-pollinated, so seed-saving works."
+  },
+  {
+   "g": "winterC",
+   "n": "Spring onion, bunching",
+   "pk": "500 seeds",
+   "s": "ob",
+   "p": 89,
+   "bag": "10×10",
+   "per": "Dense",
+   "sow": "Direct",
+   "days": "60 days",
+   "win": "Cut and regrow repeatedly",
+   "why": "Skip bulb onion — five months to a bulb is poor value per litre of pot."
+  },
+  {
+   "g": "summerB",
+   "star": 1,
+   "n": "Red Amaranth — lal bhaji",
+   "pk": "5 g",
+   "s": "ob",
+   "p": 40,
+   "bag": "10×10",
+   "per": "Broadcast 15–20",
+   "sow": "Direct",
+   "days": "25–30 days",
+   "win": "4–6 cuts. Cut 2″ above soil",
+   "why": "Five grams is thousands of seeds. Arka Arunima is not available here; this is the working substitute."
+  },
+  {
+   "g": "summerB",
+   "n": "Chaulai Green — hari bhaji",
+   "pk": "5 g",
+   "s": "ob",
+   "p": 40,
+   "bag": "10×10",
+   "per": "Broadcast",
+   "sow": "Direct",
+   "days": "25–30 days",
+   "win": "4–6 cuts",
+   "why": "Faster regrowth than the red."
+  },
+  {
+   "g": "summerB",
+   "star": 1,
+   "n": "Amaranthus Red / Green",
+   "pk": "—",
+   "s": "ni",
+   "p": 15,
+   "bag": "10×10",
+   "per": "Broadcast",
+   "sow": "Direct",
+   "days": "25–30 days",
+   "win": "4–6 cuts",
+   "why": "The same crop at a third of the price if you do not need the bigger pack."
+  },
+  {
+   "g": "summerB",
+   "star": 1,
+   "n": "Okra Pusa Sawni",
+   "pk": "—",
+   "s": "nl",
+   "p": 48,
+   "bag": "14×14",
+   "per": "1",
+   "sow": "Direct — taproot, hates transplant",
+   "days": "45–50 days",
+   "win": "Pick every 2 days for 60–75 days",
+   "why": "A genuine IARI variety, available without the Delhi trip. See the upgrade note — it is not YVMV-resistant."
+  },
+  {
+   "g": "summerB",
+   "n": "Okra Varsha",
+   "pk": "—",
+   "s": "nl",
+   "p": 48,
+   "bag": "14×14",
+   "per": "1",
+   "sow": "Direct",
+   "days": "45–50 days",
+   "win": "60–75 days",
+   "why": "Monsoon-season type. A useful second string."
+  },
+  {
+   "g": "summerB",
+   "n": "Red Okra — lal bhindi",
+   "pk": "30 seeds",
+   "s": "ob",
+   "p": 99,
+   "bag": "14×14",
+   "per": "1",
+   "sow": "Direct",
+   "days": "50 days",
+   "win": "60 days",
+   "why": "Genuinely different, sells well, identical culture."
+  },
+  {
+   "g": "summerB",
+   "star": 1,
+   "n": "French Beans Bush Type (Dwarf)",
+   "pk": "20 seeds",
+   "s": "ob",
+   "p": 59,
+   "bag": "12×12",
+   "per": "3–4",
+   "sow": "Direct — never transplant",
+   "days": "45–55 days",
+   "win": "3–4 weeks, then pull. Sow Oct and Feb",
+   "why": "The only bean listing that states dwarf habit outright. Everything else is a guess."
+  },
+  {
+   "g": "summerB",
+   "n": "Cowpea / Lobia",
+   "pk": "50 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "12×12",
+   "per": "3–4",
+   "sow": "Direct",
+   "days": "50–60 days",
+   "win": "4–6 weeks",
+   "why": "Habit is not stated — could be bush or pole. Give it a stake and find out."
+  },
+  {
+   "g": "summerB",
+   "star": 1,
+   "n": "Gongura / Roselle",
+   "pk": "—",
+   "s": "ni",
+   "p": 15,
+   "bag": "16×16",
+   "per": "1",
+   "sow": "Direct, June",
+   "days": "Leaves 45–60 d; calyces Nov–Dec",
+   "win": "6–8 month plant",
+   "why": "The only roselle in 8,165 rows, and it costs fifteen rupees."
+  },
+  {
+   "g": "save",
+   "n": "Radish White Long, untreated",
+   "pk": "250 seeds",
+   "s": "ob",
+   "p": 30,
+   "bag": "12×12",
+   "per": "8–10",
+   "sow": "Direct",
+   "days": "45 days",
+   "win": "One-shot",
+   "why": "Open-pollinated and untreated. Save seed and never buy again."
+  },
+  {
+   "g": "save",
+   "n": "Chilli, untreated",
+   "pk": "50 seeds",
+   "s": "ob",
+   "p": 39,
+   "bag": "14×14",
+   "per": "1",
+   "sow": "Tray",
+   "days": "95 days",
+   "win": "Perennial if cut back",
+   "why": "OP. The cheapest entry into the seed-saving line."
+  },
+  {
+   "g": "save",
+   "star": 1,
+   "n": "Cherry Tomato, untreated OP",
+   "pk": "50 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "14×14",
+   "per": "1",
+   "sow": "Tray",
+   "days": "~110 days",
+   "win": "Dec–Mar",
+   "why": "Bag a truss in muslin before it opens and save seed only from that."
+  },
+  {
+   "g": "save",
+   "n": "Tomato, untreated",
+   "pk": "50 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "14×14",
+   "per": "1",
+   "sow": "Tray",
+   "days": "~100 days",
+   "win": "Dec–Mar",
+   "why": "OP salad tomato."
+  },
+  {
+   "g": "save",
+   "n": "Okra, untreated",
+   "pk": "50 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "14×14",
+   "per": "1",
+   "sow": "Direct",
+   "days": "50 days",
+   "win": "60 days",
+   "why": "—"
+  },
+  {
+   "g": "save",
+   "n": "Beetroot, untreated",
+   "pk": "200 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "12×12",
+   "per": "8–10",
+   "sow": "Direct",
+   "days": "65 days",
+   "win": "One-shot",
+   "why": "—"
+  },
+  {
+   "g": "save",
+   "n": "Broccoli, untreated",
+   "pk": "150 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "12×12",
+   "per": "1–2",
+   "sow": "Tray",
+   "days": "80–90 days",
+   "win": "Dec–Feb",
+   "why": "—"
+  },
+  {
+   "g": "save",
+   "n": "Cabbage, untreated",
+   "pk": "200 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "12×12",
+   "per": "1",
+   "sow": "Tray",
+   "days": "80–90 days",
+   "win": "Dec–Feb",
+   "why": "—"
+  },
+  {
+   "g": "save",
+   "n": "Cauliflower, untreated",
+   "pk": "200 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "12×12",
+   "per": "1",
+   "sow": "Tray",
+   "days": "85–95 days",
+   "win": "Dec–Feb",
+   "why": "—"
+  },
+  {
+   "g": "save",
+   "n": "Carrot Orange, untreated",
+   "pk": "1000 seeds",
+   "s": "ob",
+   "p": 59,
+   "bag": "12×12 deep",
+   "per": "15–20",
+   "sow": "Direct",
+   "days": "75 days",
+   "win": "One-shot",
+   "why": "—"
+  },
+  {
+   "g": "save",
+   "n": "Coriander, untreated",
+   "pk": "—",
+   "s": "ob",
+   "p": 69,
+   "bag": "12×12 wide",
+   "per": "Broadcast",
+   "sow": "Direct",
+   "days": "5 weeks",
+   "win": "2 cuts",
+   "why": "—"
+  },
+  {
+   "g": "save",
+   "n": "Spinach, untreated",
+   "pk": "750 seeds",
+   "s": "ob",
+   "p": 69,
+   "bag": "12×12 wide",
+   "per": "Broadcast",
+   "sow": "Direct",
+   "days": "35 days",
+   "win": "5–6 cuts",
+   "why": "All twelve untreated crops together come to ₹610 — a complete self-renewing garden."
+  },
+  {
+   "g": "herb",
+   "n": "Krishna / Shyam Basil",
+   "pk": "200 seeds",
+   "s": "ob",
+   "p": 22,
+   "bag": "8×8",
+   "per": "1–2",
+   "sow": "Tray or direct",
+   "days": "50 days",
+   "win": "Perennial-ish",
+   "why": "Cheapest herb seed in the sheet."
+  },
+  {
+   "g": "herb",
+   "n": "Italian Large Leaf Basil",
+   "pk": "200 seeds",
+   "s": "ob",
+   "p": 59,
+   "bag": "10×10",
+   "per": "1–2",
+   "sow": "Tray",
+   "days": "55 days",
+   "win": "6 months",
+   "why": "Plant one beside each tomato. Real whitefly deterrence, not folklore."
+  },
+  {
+   "g": "herb",
+   "n": "Lemon Basil",
+   "pk": "200 seeds",
+   "s": "ob",
+   "p": 40,
+   "bag": "8×8",
+   "per": "1–2",
+   "sow": "Direct",
+   "days": "50 days",
+   "win": "6 months",
+   "why": "—"
+  },
+  {
+   "g": "herb",
+   "n": "Oregano",
+   "pk": "200 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "8×8",
+   "per": "1",
+   "sow": "Tray, surface-sown",
+   "days": "80 days",
+   "win": "Perennial",
+   "why": "Slow from seed but permanent once it is up."
+  },
+  {
+   "g": "herb",
+   "n": "Thyme",
+   "pk": "—",
+   "s": "ob",
+   "p": 49,
+   "bag": "8×8",
+   "per": "1",
+   "sow": "Tray",
+   "days": "90 days",
+   "win": "Perennial",
+   "why": "Zone C. Hates monsoon wet — keep it under cover July to September."
+  },
+  {
+   "g": "herb",
+   "n": "Parsley",
+   "pk": "750 seeds",
+   "s": "ob",
+   "p": 49,
+   "bag": "10×10",
+   "per": "2–3",
+   "sow": "Direct",
+   "days": "75 days",
+   "win": "6 months",
+   "why": "Germinates in three weeks. Do not give up on it early — most people do."
+  },
+  {
+   "g": "herb",
+   "n": "Chives, medium leaf",
+   "pk": "200 seeds",
+   "s": "ob",
+   "p": 59,
+   "bag": "8×8",
+   "per": "Clump",
+   "sow": "Direct",
+   "days": "80 days",
+   "win": "Perennial",
+   "why": "Zone D. Cut and it regrows indefinitely."
+  },
+  {
+   "g": "herb",
+   "skip": 1,
+   "n": "Mint / Peppermint",
+   "pk": "200 seeds",
+   "s": "ob",
+   "p": 60,
+   "bag": "10×10",
+   "per": "1",
+   "sow": "—",
+   "days": "—",
+   "win": "—",
+   "why": "Buy a cutting instead. Mint roots in water in a week and comes true; seed is slow and variable."
+  },
+  {
+   "g": "herb",
+   "skip": 1,
+   "n": "Rosemary",
+   "pk": "100 seeds",
+   "s": "ob",
+   "p": 165,
+   "bag": "—",
+   "per": "—",
+   "sow": "—",
+   "days": "—",
+   "win": "—",
+   "why": "Skip. Rosemary germinates at 15–30% and takes a year. Buy the plant."
+  },
+  {
+   "g": "micro",
+   "star": 1,
+   "n": "Fenugreek Microgreens",
+   "pk": "50 g",
+   "s": "ob",
+   "p": 39,
+   "bag": "10×10″ tray, 1″ of mix",
+   "per": "Dense broadcast",
+   "sow": "Direct, no cover",
+   "days": "7–10 days",
+   "win": "Single cut · ~5 trays per pack",
+   "why": "Best value per gram in the entire sheet. This is what you grow in May, when nothing outdoors is producing."
+  },
+  {
+   "g": "micro",
+   "n": "Radish Microgreens",
+   "pk": "50 g",
+   "s": "ob",
+   "p": 69,
+   "bag": "Tray",
+   "per": "Dense",
+   "sow": "Direct",
+   "days": "7 days",
+   "win": "Single cut",
+   "why": "Peppery. The fastest of the lot."
+  },
+  {
+   "g": "micro",
+   "n": "Sunflower Microgreens",
+   "pk": "25 g",
+   "s": "ob",
+   "p": 67,
+   "bag": "Tray",
+   "per": "Dense",
+   "sow": "Soak 8 h first",
+   "days": "8–10 days",
+   "win": "Single cut",
+   "why": "Highest biomass by weight of any microgreen here."
+  },
+  {
+   "g": "micro",
+   "n": "Spinach Microgreens",
+   "pk": "25 g",
+   "s": "ob",
+   "p": 49,
+   "bag": "Tray",
+   "per": "Dense",
+   "sow": "Direct",
+   "days": "10 days",
+   "win": "Single cut",
+   "why": "—"
+  },
+  {
+   "g": "micro",
+   "n": "Coriander Microgreens",
+   "pk": "25 g",
+   "s": "ob",
+   "p": 49,
+   "bag": "Tray",
+   "per": "Dense",
+   "sow": "Direct",
+   "days": "12–14 days",
+   "win": "Single cut",
+   "why": "—"
+  },
+  {
+   "g": "micro",
+   "n": "Red Amaranth Microgreens",
+   "pk": "25 g",
+   "s": "ob",
+   "p": 69,
+   "bag": "Tray",
+   "per": "Dense",
+   "sow": "Direct",
+   "days": "10 days",
+   "win": "Single cut",
+   "why": "Best-looking of the lot."
+  },
+  {
+   "g": "micro",
+   "n": "Beetroot Microgreens",
+   "pk": "20 g",
+   "s": "ob",
+   "p": 89,
+   "bag": "Tray",
+   "per": "Dense",
+   "sow": "Soak first",
+   "days": "12 days",
+   "win": "Single cut",
+   "why": "—"
+  },
+  {
+   "g": "service",
+   "star": 1,
+   "n": "Marigold Pusa Navrangi",
+   "pk": "—",
+   "s": "nl",
+   "p": 48,
+   "bag": "8×8, or interplant into a fruiting bag",
+   "per": "1",
+   "sow": "Tray → transplant",
+   "days": "60–75 days to bloom",
+   "win": "2–3 months",
+   "why": "A genuine IARI variety. Root exudates suppress nematodes — plant one in each brinjal and tomato bag. Not decoration."
+  },
+  {
+   "g": "service",
+   "n": "French Marigold Scarlet Red",
+   "pk": "—",
+   "s": "ni",
+   "p": 49,
+   "bag": "8×8",
+   "per": "1",
+   "sow": "Tray",
+   "days": "60 days",
+   "win": "2–3 months",
+   "why": "Tagetes patula has the stronger nematode evidence than the African types. Pair it with the Pusa."
+  },
+  {
+   "g": "fruit",
+   "n": "Cape Gooseberry — Rasbhari",
+   "pk": "—",
+   "s": "nl",
+   "p": 139,
+   "bag": "14×14",
+   "per": "1",
+   "sow": "Tray → transplant",
+   "days": "~120 days",
+   "win": "Dec–Mar",
+   "why": "The only source in the sheet, and it fruits in a single season. Zone C."
+  },
+  {
+   "g": "fruit",
+   "skip": 1,
+   "n": "Strawberry seed",
+   "pk": "—",
+   "s": "ni",
+   "p": 90,
+   "bag": "—",
+   "per": "—",
+   "sow": "—",
+   "days": "—",
+   "win": "—",
+   "why": "Skip. Two years from seed and it does not come true. Buy runners in November."
+  }
+ ],
+ "SEEDGRP": [
+  {
+   "k": "winterC",
+   "lbl": "Zone C · winter"
+  },
+  {
+   "k": "summerB",
+   "lbl": "Zone B · hot season"
+  },
+  {
+   "k": "save",
+   "lbl": "Seed-saving line"
+  },
+  {
+   "k": "herb",
+   "lbl": "Herbs"
+  },
+  {
+   "k": "micro",
+   "lbl": "Microgreens"
+  },
+  {
+   "k": "service",
+   "lbl": "Service plants"
+  },
+  {
+   "k": "fruit",
+   "lbl": "Fruit from seed"
+  }
+ ],
+ "SITELBL": {
+  "ob": "organicbazar",
+  "nl": "nurserylive",
+  "ni": "nativeindian"
+ },
+ "CHERRY": [
+  {
+   "v": "y",
+   "n": "Blue Cherry Tomato (30)",
+   "s": "organicbazar",
+   "p": 99,
+   "d": "Best pick. Anthocyanin skin gives real UV tolerance and a firmer, crack-resistant fruit — which matters more in Talcher than flavour rankings do. Indeterminate."
+  },
+  {
+   "v": "y",
+   "n": "Cherry Tomato Cheramy (30)",
+   "s": "organicbazar",
+   "p": 148,
+   "d": "The only named, traceable variety in the sheet. Cheramy is a genuine commercial Dutch cherry. Best eating here, priciest per seed. Indeterminate, stated."
+  },
+  {
+   "v": "y",
+   "n": "Cherry Tomato Wild Texas",
+   "s": "nurserylive",
+   "p": 96,
+   "d": "S. pimpinellifolium currant type. Nearly unkillable — heat, humidity and virus tolerant. Terrace on a big cage, 8–10 ft, not the balcony."
+  },
+  {
+   "v": "y",
+   "n": "Untreated Cherry Tomato, OP (50)",
+   "s": "organicbazar",
+   "p": 49,
+   "d": "Cheapest, and open-pollinated — save your own seed and never buy again. No variety name attached."
+  },
+  {
+   "v": "m",
+   "n": "Tomato Golden Currant",
+   "s": "nurserylive",
+   "p": 96,
+   "d": "Same wild species as Wild Texas, yellow. Tiny fruit, enormous yield, same toughness and same sprawl."
+  },
+  {
+   "v": "m",
+   "n": "Black Cherry Tomato (30)",
+   "s": "organicbazar",
+   "p": 99,
+   "d": "Superb flavour, cracks badly in humidity. The listing claims 5–7 cm fruit; Black Cherry is about 2.5 cm, so the copy is not reliable."
+  },
+  {
+   "v": "m",
+   "n": "Yellow Grapes Cherry F1 (30)",
+   "s": "organicbazar",
+   "p": 99,
+   "d": "Grape type, sweet, low acid. F1, so no seed saving."
+  },
+  {
+   "v": "m",
+   "n": "Yellow Grapes Tomato",
+   "s": "nativeindian",
+   "p": 49,
+   "d": "The same thing at half the price, 50 seeds, and the listing at least states indeterminate habit and 65–75 days."
+  },
+  {
+   "v": "m",
+   "n": "Cherry Tomato Seeds (50+)",
+   "s": "nativeindian",
+   "p": 49,
+   "d": "Generic and unnamed, but the spec sheet is honest: up to 6 ft, 70–80 days."
+  },
+  {
+   "v": "m",
+   "n": "Tomato Yellow Pear Shaped",
+   "s": "nurserylive",
+   "p": 96,
+   "d": "Prolific, tolerant, mild flavour. A reliable filler rather than a star."
+  },
+  {
+   "v": "m",
+   "n": "Cherry Tomato Honey",
+   "s": "nurserylive",
+   "p": 96,
+   "d": "No spec data at all."
+  },
+  {
+   "v": "m",
+   "n": "Cherry Tomato Yellow (50)",
+   "s": "organicbazar",
+   "p": 59,
+   "d": "Generic."
+  },
+  {
+   "v": "m",
+   "n": "Cherry Tomato (50)",
+   "s": "organicbazar",
+   "p": 65,
+   "d": "Generic."
+  },
+  {
+   "v": "n",
+   "n": "Tomato Cherry Red — Organic",
+   "s": "nurserylive",
+   "p": 119,
+   "d": "Overpriced for an unnamed cherry."
+  },
+  {
+   "v": "n",
+   "n": "Iris Imported Cherry Red / Yellow",
+   "s": "kisanshop",
+   "p": 150,
+   "d": "Commercial packs, no variety name, no specs."
+  },
+  {
+   "v": "n",
+   "n": "Golden Hills Atomic Grape",
+   "s": "kisanshop",
+   "p": 120,
+   "d": "Striking striped fruit, 80-plus day season, splits in rain. Wrong plant for your monsoon."
+  },
+  {
+   "v": "n",
+   "n": "GIY — Cherry Tomato Seeds",
+   "s": "iffcourbangardens",
+   "p": 99,
+   "d": "Kit packaging markup. Poor value per seed."
+  },
+  {
+   "v": "n",
+   "n": "Gourmet Salad / Exotic combos",
+   "s": "iffcourbangardens",
+   "p": 299,
+   "d": "You buy four crops you did not choose in order to get the one you did."
+  }
+ ],
+ "TOMSTEP": [
+  [
+   "Late Sep",
+   "Prep",
+   "Mix and moisten the seed-starting mix. Buy or cut trays."
+  ],
+  [
+   "1–5 Oct",
+   "Sow",
+   "Tray or cups, 0.5 cm deep, 2–3 seeds per cell."
+  ],
+  [
+   "8–14 Oct",
+   "Germination",
+   "5–10 days at 22–28°C. October in Talcher is close to perfect."
+  ],
+  [
+   "12–16 Oct",
+   "Thin",
+   "Snip the weaker seedlings at soil level. Never pull — it tears the keeper's roots."
+  ],
+  [
+   "22–26 Oct",
+   "Harden off",
+   "Seven days: Zone D shade → morning sun → final position."
+  ],
+  [
+   "26 Oct–1 Nov",
+   "Transplant",
+   "At 4–5 true leaves. Strip the lower leaves and bury two-thirds of the stem."
+  ],
+  [
+   "Same day",
+   "Trellis",
+   "Put the stake or cage in now, four inches from the stem. Not later."
+  ],
+  [
+   "~25 Nov",
+   "First flowers",
+   "Hand-flick daily. Switch to 13:0:45 high-K."
+  ],
+  [
+   "Dec–Feb",
+   "Harvest",
+   "Zone C at peak light. This is why you sowed in October."
+  ],
+  [
+   "March",
+   "Pull them",
+   "Before the heat and the whitefly wave. Do not nurse them into April."
+  ]
+ ],
+ "UPG": [
+  {
+   "crop": "Cherry tomato",
+   "now": "Blue Cherry, Cheramy, untreated OP",
+   "lim": "None has tomato leaf curl virus resistance, and ToLCV is what actually ends tomatoes in coastal Odisha.",
+   "rows": [
+    [
+     "Tiny Tim",
+     "dwarf determinate, 10–15″, 50–60 days",
+     "The dwarf you actually wanted. Fruits in an 8-inch pot with no staking.",
+     "Amazon.in (NooElec Seeds India), seedsville.in, organicindiaseeds.com, Meesho · ₹100–250"
+    ],
+    [
+     "Red Robin, Vilma, Minibel, Micro Tom",
+     "dwarf determinate",
+     "Same class, smaller still.",
+     "Etsy India, eBay, occasionally Amazon.in"
+    ],
+    [
+     "Tumbling Tom, Gartenperle",
+     "trailing determinate",
+     "Hangs over the balcony parapet — vertical space you are not using.",
+     "Etsy India, imported hobby sellers"
+    ],
+    [
+     "Tokita Suncherry Extra Sweet F1",
+     "cherry, red, early, 15–18 g",
+     "Japanese high-brix breeding. Disease package covers TMV2, Fusarium race 1, leaf mould and grey leaf spot. The closest thing on the Indian market to Sungold-class eating from a supplier who ships to Odisha.",
+     "Farmers Stop ₹520, Desikheti, farmsbazaar (50-seed pack), BigHaat carries the Tokita brand"
+    ],
+    [
+     "Sakata Sakura F1",
+     "commercial polyhouse cherry",
+     "Trusses of 20-plus fruit, crack-resistant, and it sets fruit under both cool and hot conditions — the heat-set trait is the one Talcher punishes.",
+     "Agriplex India, Farmers Stop, BigHaat"
+    ],
+    [
+     "Sungold F1",
+     "indeterminate, 7 ft",
+     "Best-tasting cherry there is. Build a real trellis or do not bother.",
+     "Import and hobby sellers only"
+    ],
+    [
+     "Chadwick Cherry, Gardener's Delight, Riesentraube, Matt's Wild Cherry",
+     "named OP",
+     "Same free-forever logic as the untreated packet, but you know what you are saving.",
+     "AllThatGrows, Kraft Seeds, Etsy India"
+    ],
+    [
+     "Pusa Cherry Tomato-1, Pusa Golden Cherry Tomato-2",
+     "IARI, indeterminate",
+     "Screened under Indian conditions. Pusa Golden Cherry Tomato-2 is a yellow cherry bred for protected cultivation.",
+     "ZTM-BPD, IARI Pusa, New Delhi — in person"
+    ]
+   ]
+  },
+  {
+   "crop": "Okra",
+   "now": "Pusa Sawni",
+   "lim": "A 1960s release, susceptible to yellow vein mosaic. In coastal Odisha that virus is what ends the crop, so this is the one place where changing variety changes outcomes rather than just yield.",
+   "rows": [
+    [
+     "Arka Anamika",
+     "ICAR-IIHR",
+     "YVMV resistant, two flushes, spineless pods.",
+     "seed.iihr.res.in — the only authorised channel"
+    ],
+    [
+     "Kashi Chaman",
+     "ICAR-IIVR Varanasi",
+     "2019 release, eastern-plains adapted.",
+     "IIVR counter"
+    ],
+    [
+     "Punjab Padmini",
+     "PAU Ludhiana",
+     "YVMV resistant, also tolerant to jassids and bollworm.",
+     "PAU counter"
+    ],
+    [
+     "Radhika F1",
+     "Advanta",
+     "Resistant to YVMV and enation leaf curl. First pick 45–50 days, medium plant with 2–4 branches — suits a 14-inch bag better than a 5-ft single stem. The practical pick.",
+     "BigHaat ₹200–400"
+    ],
+    [
+     "Singham, Shakthi, Sonal, Sarika",
+     "Nunhems (BASF)",
+     "YVMV-resistant commercial standards.",
+     "BigHaat, Agriplex, local dealers"
+    ],
+    [
+     "NS 811, NS 862, NS 7772, NS 7778",
+     "Namdhari",
+     "Same class.",
+     "Namdhari outlets, Agriplex"
+    ],
+    [
+     "Syngenta-152 · Sahibha, Sahan (Rasi)",
+     "—",
+     "Further YVMV-resistant options.",
+     "Dealer network"
+    ]
+   ]
+  },
+  {
+   "crop": "Amaranth",
+   "now": "Unnamed red and green landrace",
+   "lim": "Bolts early in heat and regrowth slows after three cuts. Bolting is the whole game with amaranth in your climate.",
+   "rows": [
+    [
+     "Arka Arunima (red), Arka Suguna (green)",
+     "ICAR-IIHR",
+     "Delayed bolting and faster regrowth — six cuts instead of three.",
+     "seed.iihr.res.in"
+    ],
+    [
+     "Pusa Kirti, Pusa Lal Chaulai, Pusa Kiran",
+     "IARI",
+     "Multi-cut types.",
+     "IARI Pusa"
+    ],
+    [
+     "CO-1, CO-2, CO-3",
+     "TNAU Coimbatore",
+     "Bred for South Indian heat.",
+     "TNAU counter"
+    ],
+    [
+     "Kashi Suhawani",
+     "ICAR-IIVR",
+     "—",
+     "IIVR Varanasi"
+    ]
+   ]
+  },
+  {
+   "crop": "Bush beans",
+   "now": "Unnamed dwarf French bean",
+   "lim": "Habit is stated but the variety is unknown, so yield and pod uniformity are unpredictable.",
+   "rows": [
+    [
+     "Arka Komal, Arka Arjun",
+     "ICAR-IIHR",
+     "Bush habit, high pod set. The original picks.",
+     "seed.iihr.res.in"
+    ],
+    [
+     "Arka Suvidha, Arka Anoop",
+     "ICAR-IIHR",
+     "Rust tolerance.",
+     "seed.iihr.res.in"
+    ],
+    [
+     "Contender, Premier, Selection-9",
+     "OP standards",
+     "Named, reliable, widely sold.",
+     "AllThatGrows, nurserylive, Kraft Seeds"
+    ],
+    [
+     "Provider",
+     "OP",
+     "Germinates in cooler soil — extends the October window.",
+     "Hobby sellers"
+    ]
+   ]
+  },
+  {
+   "crop": "Radish",
+   "now": "Pusa Chetki",
+   "lim": "Genuinely good already — heat-tolerant and 40 days. Hybrids buy uniformity, not flavour, so this is optional.",
+   "rows": [
+    [
+     "French Breakfast, Cherry Belle, Sparkler",
+     "mini types",
+     "The real container upgrade: 25 days instead of 45, and they crop in eight inches of mix.",
+     "AllThatGrows, Ugaoo, Kraft Seeds"
+    ],
+    [
+     "Kashi Hans, Kashi Mooli-40",
+     "ICAR-IIVR",
+     "Tropical-adapted releases.",
+     "IIVR Varanasi"
+    ],
+    [
+     "Advanta Twinkle Star F1, Iris Saki F1",
+     "—",
+     "Show-quality uniform roots.",
+     "BigHaat, kisanshop"
+    ]
+   ]
+  },
+  {
+   "crop": "Lettuce",
+   "now": "Salad Bowl Red, Lollo Rosso",
+   "lim": "Bolts once Zone C warms in late February.",
+   "rows": [
+    [
+     "Jericho, Nevada, Muir",
+     "heat-tolerant",
+     "Stretches the season four to six weeks.",
+     "AllThatGrows, Etsy India, imported hobby sellers"
+    ],
+    [
+     "Salanova / multileaf (Rijk Zwaan)",
+     "—",
+     "A single cut yields a whole bowl of uniform baby leaves.",
+     "Agriplex, specialist importers"
+    ],
+    [
+     "Buttercrunch, Little Gem",
+     "—",
+     "Compact and heat-tolerant for their class.",
+     "Ugaoo, nurserylive, Kraft Seeds"
+    ]
+   ]
+  },
+  {
+   "crop": "Chilli",
+   "now": "Kanthari, Seeni Milagai, Jwala",
+   "lim": "Kanthari is a landrace and nothing improves on it for what it is. The killer here is thrips-transmitted leaf curl, not yield genetics.",
+   "rows": [
+    [
+     "Arka Meghana F1",
+     "ICAR-IIHR",
+     "2–3 kg per pot, high pungency, virus tolerance. Grow it beside the landrace, not instead of it.",
+     "seed.iihr.res.in"
+    ],
+    [
+     "Arka Sweta, Arka Harita",
+     "ICAR-IIHR",
+     "Leaf-curl tolerance.",
+     "seed.iihr.res.in"
+    ],
+    [
+     "Kashi Anmol, Kashi Early",
+     "ICAR-IIVR",
+     "Eastern-adapted.",
+     "IIVR Varanasi"
+    ],
+    [
+     "Sitara, Tejaswini, Indra",
+     "Syngenta",
+     "Commercial standards.",
+     "BigHaat, dealers"
+    ],
+    [
+     "Bhut Jolokia, Naga Morich",
+     "NE India landraces",
+     "Genuine extreme heat.",
+     "AllThatGrows, Assam sellers"
+    ]
+   ]
+  },
+  {
+   "crop": "Marigold",
+   "now": "Pusa Navrangi",
+   "lim": "Fine as a flower. But for nematode suppression specifically, Tagetes patula — the French types — has the stronger evidence than the African ones.",
+   "rows": [
+    [
+     "Bonanza, Durango, Safari series",
+     "Tagetes patula",
+     "The functional upgrade. If the marigold is doing a job rather than looking nice, buy patula.",
+     "Ugaoo, AllThatGrows, BigHaat"
+    ],
+    [
+     "Arka Bangara-2, Arka Agni, Arka Honey",
+     "ICAR-IIHR",
+     "Better flower quality if you ever sell.",
+     "seed.iihr.res.in"
+    ],
+    [
+     "Pusa Bahar, Pusa Arpita",
+     "IARI",
+     "—",
+     "IARI Pusa"
+    ]
+   ]
+  },
+  {
+   "crop": "Roselle and microgreens",
+   "now": "Gongura landrace, fenugreek microgreens",
+   "lim": "Fenugreek microgreens have nothing to upgrade — best value in the category.",
+   "rows": [
+    [
+     "AMV-1 to AMV-5, Arka Anjani",
+     "Andhra mesta varieties",
+     "Named roselle if you ever scale it.",
+     "ANGRAU, state ag universities"
+    ],
+    [
+     "Pea shoots, sunflower, radish",
+     "—",
+     "Add these for biomass and variety.",
+     "Any bulk vendor"
+    ],
+    [
+     "Whole methi, moong, chana, mustard",
+     "kirana shop",
+     "For microgreens you do not need horticultural seed at all. Food-grade whole seed germinates identically at a tenth of packet prices.",
+     "Any grocery"
+    ]
+   ]
+  }
+ ],
+ "SRC2": [
+  {
+   "n": "CHES Aiginia, Khandagiri",
+   "w": "ICAR-IIHR eastern regional station",
+   "d": "Arka Neelachal range, screened under eastern conditions. The closest thing to varieties bred for Angul. Amrapali grafts released around November — leave your name.",
+   "c": "Limited catalogue, seasonal availability."
+  },
+  {
+   "n": "OUAT, Bhubaneswar",
+   "w": "Odisha University of Agriculture and Technology",
+   "d": "Odisha state releases — the most local genetics available to you at all. Also the nearest reliable mushroom spawn after KVK Angul.",
+   "c": "Under-publicised. Visit in person."
+  },
+  {
+   "n": "seed.iihr.res.in",
+   "w": "ICAR-IIHR seed portal",
+   "d": "The whole Arka range in one order. Posts anywhere in India, dispatch 7–10 days after booking.",
+   "c": "The only authorised channel. IIHR has publicly said no e-commerce site is authorised — ignore Arka listings on marketplaces."
+  },
+  {
+   "n": "ICAR-IIVR, Varanasi",
+   "w": "Kashi range",
+   "d": "Eastern-plains adapted, especially okra and chilli.",
+   "c": "Mail order is patchy."
+  },
+  {
+   "n": "organicbazar.net",
+   "w": "hobby, cheapest per packet",
+   "d": "Largest variety range, specs actually filled in, and the twelve-crop untreated open-pollinated line. Your default supplier.",
+   "c": "Mostly unnamed generic varieties."
+  },
+  {
+   "n": "nurserylive.com",
+   "w": "hobby, broadest catalogue",
+   "d": "Tiered Desi ₹48 / hybrid ₹96 / organic ₹119. Some genuine named heirlooms and IARI varieties.",
+   "c": "Lists Okra Arka Anamika at ₹48 — unverifiable, since IIHR sells only through its own channels."
+  },
+  {
+   "n": "nativeindian",
+   "w": "hobby, ₹15–49",
+   "d": "Strong on South Indian traditional types — keerai, kanthari, gongura, lablab. Specs listed, unbeatable value.",
+   "c": "Unbranded landraces. No disease-resistance claims to rely on."
+  },
+  {
+   "n": "BigHaat · Agriplex India · Farmers Stop · Desikheti",
+   "w": "commercial hybrid dealers",
+   "d": "Nunhems, Syngenta, Advanta, Namdhari, Sakata, Tokita, Rijk Zwaan. This is where the real disease packages live.",
+   "c": "Farm-scale packs — 1,000 to 3,500 seeds at ₹400–2,500. Split with someone or accept a five-year supply."
+  },
+  {
+   "n": "Amazon.in · Meesho · Seedsville · organicindiaseeds",
+   "w": "dwarf and heirloom tomatoes",
+   "d": "Where Tiny Tim and the micro-dwarfs actually are.",
+   "c": "Mislabelling is common — one buyer reported \"Tiny Tim\" plants well past 12 inches and still climbing. Trial one before committing a season."
+  },
+  {
+   "n": "Green Splash, Nandankanan Rd",
+   "w": "Bhubaneswar, 99378 39278",
+   "d": "Best grafted fruit stock locally. Everything imported from Kadiyam, which is on your coastal corridor at your latitude.",
+   "c": "Variety labels degrade upstream. Check the union with your own hands."
+  }
+ ]
+}

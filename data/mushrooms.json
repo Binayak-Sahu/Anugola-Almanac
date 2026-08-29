@@ -1,0 +1,808 @@
+{
+ "SHROOMS": [
+  {
+   "k": "grey",
+   "name": "Grey oyster",
+   "latin": "Pleurotus sajor-caju",
+   "odia": "Dhingri chhatu",
+   "tone": "oyster",
+   "verdict": "yes",
+   "diff": 1,
+   "start": true,
+   "ts": [
+    22,
+    30
+   ],
+   "tf": [
+    20,
+    30
+   ],
+   "rh": [
+    80,
+    90
+   ],
+   "sub": "Paddy straw, chopped 3–5 cm. Free around Talcher after harvest.",
+   "casing": "None. Straw, spawn, bag, done.",
+   "rate": "2–5% of wet substrate weight",
+   "first": "22–28 days from spawning",
+   "cycle": "45–60 days, 2–3 flushes",
+   "yield": "600 g – 1 kg fresh per kg of dry straw",
+   "spawnat": "₹40–80 a bottle at KVK Angul or OUAT",
+   "eat": "The everyday one. Meaty, holds up in a besara or a dry fry.",
+   "why": "The most forgiving mushroom there is, and the widest temperature band of the oysters. This is the one to learn on.",
+   "plan": "oyster",
+   "steps": [
+    "Chop straw to 3–5 cm. Soak 8–16 hours in clean water.",
+    "Pasteurise: 80°C for 45–60 minutes, or steam an hour. A drum on a gas ring is enough.",
+    "Drain. Squeeze test — a hard squeeze gives drops, not a stream. That is 65–70%.",
+    "Cool to room temperature. Hot straw kills spawn, and this is the commonest beginner mistake.",
+    "Fill a 12×18\" PP bag in 4–5 layers, spawn around the inner edge of each layer.",
+    "Punch 15–20 pinholes, tie off, write the date on the bag.",
+    "Dark cupboard, 16–20 days. No water, no opening, no peeking past a glance.",
+    "Solid white? Onto a tray on the bottom shelf. Slash the bag in 6–8 places.",
+    "Wet the tiles around it twice daily. Crack a window 20 minutes, twice daily.",
+    "Harvest by twisting off the whole cluster as the cap edge begins to flatten.",
+    "Rest a week, soak the block 20 minutes, drain, repeat for flush two and three."
+   ],
+   "watch": [
+    "Long thin stems and tiny caps means not enough fresh air. Open the window more, not less.",
+    "Green powder is Trichoderma. Bag it, bin it outside, wash your hands. Never cut it out.",
+    "Sour or ammonia smell is bacterial. Discard the bag."
+   ]
+  },
+  {
+   "k": "florida",
+   "name": "White oyster",
+   "latin": "Pleurotus florida",
+   "odia": "Dhingri chhatu",
+   "tone": "oyster",
+   "verdict": "yes",
+   "diff": 1,
+   "ts": [
+    22,
+    28
+   ],
+   "tf": [
+    20,
+    28
+   ],
+   "rh": [
+    85,
+    90
+   ],
+   "sub": "Paddy straw. Same preparation as grey.",
+   "casing": "None.",
+   "rate": "2–5% of wet weight",
+   "first": "21–26 days",
+   "cycle": "45–60 days, 2–3 flushes",
+   "yield": "600–900 g per kg dry straw",
+   "spawnat": "₹40–80 a bottle, same sources as grey",
+   "eat": "Softer and whiter than grey. Better in a light curry than a fry.",
+   "why": "Slightly narrower band than grey and it wants a touch cooler. December and January in your room are its months.",
+   "plan": "oyster",
+   "steps": [
+    "Identical to grey oyster in every step.",
+    "The one difference: it sulks above 30°C, so keep it to the December–February window.",
+    "Give it the bottom shelf, which is the coolest place in the room."
+   ],
+   "watch": [
+    "Fruits later than grey if the room is warm. Patience, not more water."
+   ]
+  },
+  {
+   "k": "pink",
+   "name": "Pink oyster",
+   "latin": "Pleurotus djamor",
+   "odia": "Gulabi chhatu",
+   "tone": "straw",
+   "verdict": "watch",
+   "diff": 1,
+   "ts": [
+    25,
+    32
+   ],
+   "tf": [
+    20,
+    30
+   ],
+   "rh": [
+    80,
+    90
+   ],
+   "sub": "Paddy straw, sawdust, even cardboard. Aggressive on almost anything.",
+   "casing": "None.",
+   "rate": "3–5%",
+   "first": "14–18 days — the fastest of the lot",
+   "cycle": "25–30 days, 2 flushes 7–10 days apart",
+   "yield": "400–700 g per kg dry straw. Short, sharp run.",
+   "spawnat": "Harder to find locally — ask OUAT, or order by post",
+   "eat": "Bacon-ish when fried hard. Loses the pink in the pan. Eat within a day.",
+   "why": "Colonises so fast it beats contaminants, which makes it the one species you can attempt without proper pasteurisation. But read the warning before you put one in a closed room.",
+   "plan": "pink",
+   "steps": [
+    "Soak straw overnight. Hot-water treatment is enough; full pasteurisation optional.",
+    "Spawn heavily — 4–5%. Speed is the whole strategy with this one.",
+    "Bag and hole as for grey oyster.",
+    "Colonises in 10–14 days at your temperatures.",
+    "Slash and fruit. Pins appear within 3–4 days of opening.",
+    "Harvest EARLY, while the caps are still curled under. It goes over in a day."
+   ],
+   "watch": [
+    "<b>Heavy spore load.</b> Pink oyster throws far more spores than grey, and in a closed room with one door that means breathing them. Harvest before the caps flatten, wear a mask when handling, and air the room hard. If anyone in the house is asthmatic, skip this species entirely.",
+    "Goes slimy and sour fast in the fridge. It is a same-day mushroom."
+   ]
+  },
+  {
+   "k": "yellow",
+   "name": "Golden oyster",
+   "latin": "Pleurotus citrinopileatus",
+   "odia": "—",
+   "tone": "straw",
+   "verdict": "watch",
+   "diff": 2,
+   "ts": [
+    24,
+    30
+   ],
+   "tf": [
+    21,
+    29
+   ],
+   "rh": [
+    85,
+    95
+   ],
+   "sub": "Straw or hardwood sawdust. Prefers sawdust.",
+   "casing": "None.",
+   "rate": "3–5%",
+   "first": "18–24 days",
+   "cycle": "35–45 days",
+   "yield": "300–600 g per kg dry substrate. Modest.",
+   "spawnat": "Speciality suppliers, rarely at KVK. Order online.",
+   "eat": "Cashew-like, delicate, and it shrinks to nothing. Grown for looks and novelty.",
+   "why": "Beautiful and it likes your shoulder seasons, but it wants humidity above 90% — which in an enclosed room means a tent, not just a wet floor.",
+   "plan": "oyster",
+   "steps": [
+    "Sawdust substrate gives better results than straw. Supplement with 10% wheat bran.",
+    "Sterilise rather than pasteurise if you use sawdust — a pressure cooker, 90 minutes.",
+    "Colonise 18–24 days in the dark.",
+    "Fruit inside a clear polythene tent to hold 90% humidity. A wet floor alone will not do it.",
+    "Harvest the whole bouquet at once, young."
+   ],
+   "watch": [
+    "Very fragile. Bruises brown if you handle it twice.",
+    "Also a heavy sporer. Same mask advice as pink."
+   ]
+  },
+  {
+   "k": "blue",
+   "name": "Blue / tree oyster",
+   "latin": "Pleurotus ostreatus",
+   "odia": "Dhingri chhatu",
+   "tone": "oyster",
+   "verdict": "watch",
+   "diff": 2,
+   "ts": [
+    20,
+    26
+   ],
+   "tf": [
+    15,
+    24
+   ],
+   "rh": [
+    85,
+    90
+   ],
+   "sub": "Straw or hardwood sawdust.",
+   "casing": "None.",
+   "rate": "2–5%",
+   "first": "25–32 days",
+   "cycle": "60 days",
+   "yield": "700 g – 1 kg per kg dry straw when it gets its temperature",
+   "spawnat": "Commonly sold as plain \"oyster\" — check which species you are buying",
+   "eat": "The best-flavoured oyster. Firm, nutty.",
+   "why": "Wants a genuine cool spell. Your December and January nights reach it; the days do not. A one-bag December gamble, not a staple.",
+   "plan": "oyster",
+   "steps": [
+    "Prepare as for grey oyster.",
+    "Spawn in late November so the run finishes as January arrives.",
+    "Fruit on the floor-level shelf, at night, with the window open. Cold shock triggers pinning.",
+    "If February turns warm early, expect it to abort. That is the risk you accepted."
+   ],
+   "watch": [
+    "Aborted pins that shrivel and yellow mean it got too warm. Nothing to fix mid-run."
+   ]
+  },
+  {
+   "k": "milky",
+   "name": "Milky mushroom",
+   "latin": "Calocybe indica",
+   "odia": "Dudhia chhatu",
+   "tone": "ok",
+   "verdict": "yes",
+   "diff": 2,
+   "ts": [
+    30,
+    35
+   ],
+   "tf": [
+    30,
+    35
+   ],
+   "rh": [
+    80,
+    90
+   ],
+   "sub": "Pasteurised paddy or wheat straw.",
+   "casing": "<b>Required.</b> 2–3 cm of clay-loam or cocopeat + garden soil, pasteurised.",
+   "rate": "4–6%",
+   "first": "35–45 days from spawning",
+   "cycle": "57–60 days, 2 flushes",
+   "yield": "50–100% of dry substrate weight. Heavy, meaty crop.",
+   "spawnat": "OUAT Bhubaneswar carries it. KVK Angul sometimes.",
+   "eat": "Thick, white, scallop-like. Keeps 2–3 days at room temperature — the only one that does.",
+   "why": "India's own hot-weather mushroom, and the answer to the gap when nothing else will fruit. Genuinely suited to your monsoon room.",
+   "plan": "milky",
+   "steps": [
+    "Chop and soak straw overnight. Pasteurise at 80°C for an hour.",
+    "Drain to 65–70% moisture. Cool.",
+    "Fill polythene bags 15×30 cm, spawning in layers at 4–6%.",
+    "Spawn run 20–28 days at 30–35°C. Your July cupboard does this without help.",
+    "When fully white, open the bag and lay a 2–3 cm casing layer on top. This step is not optional — no casing, no mushrooms.",
+    "Casing must be pasteurised: bake it, steam it, or pour boiling water through it.",
+    "Keep the casing damp with a fine spray. Never let it dry, never flood it.",
+    "Pins appear through the casing in 8–12 days. Harvest when the cap opens flat.",
+    "Second flush follows 12–15 days later."
+   ],
+   "watch": [
+    "White powdery patches on the casing are plaster mould, from unpasteurised casing soil. Prevention only — there is no cure mid-crop.",
+    "Below 25°C it stalls; below 15°C the mycelium dies. Do not attempt in winter.",
+    "Needs diffused light to fruit — not darkness, and not your south window either."
+   ]
+  },
+  {
+   "k": "paddy",
+   "name": "Paddy straw mushroom",
+   "latin": "Volvariella volvacea",
+   "odia": "Pala chhatu",
+   "tone": "straw",
+   "verdict": "yes",
+   "diff": 2,
+   "ts": [
+    32,
+    36
+   ],
+   "tf": [
+    30,
+    35
+   ],
+   "rh": [
+    80,
+    90
+   ],
+   "sub": "Whole paddy straw in bundles, not chopped.",
+   "casing": "None.",
+   "rate": "Spawn 10 cm in from the edge of each layer, with a pinch of gram flour",
+   "first": "10–15 days — fastest crop in the book",
+   "cycle": "18–20 days, one main flush",
+   "yield": "10–20% of dry straw weight. Grown for speed and flavour, not volume.",
+   "spawnat": "₹40/kg in Bhubaneswar. Locally the best-known mushroom in Odisha.",
+   "eat": "The one you already know. Best fresh, same day. Never refrigerate below 15°C — it blackens.",
+   "why": "The traditional Odisha monsoon crop, and you already have the straw bundle in the corner. July and August do the humidity for free.",
+   "plan": "paddy",
+   "steps": [
+    "Bundles of 1.5–2 kg, roughly a forearm long. Soak 12–18 hours.",
+    "Drain on a slope an hour or two.",
+    "Bed on a raised platform or crate — never straight on your tiles.",
+    "Stack 4 layers, each turned 90° to the one below.",
+    "Spawn 10 cm in from each layer's edge, with a pinch of red or black gram flour.",
+    "Cover loosely with clear polythene to hold heat and moisture.",
+    "Lift the cover daily for air. Do not soak the bed.",
+    "Pinheads by day 8–10. Harvest at button stage while still a firm ball."
+   ],
+   "watch": [
+    "<b>Safety, and this one matters.</b> A young paddy-straw button looks very like a young deadly Amanita. Only ever eat what you grew yourself, from bought spawn, in your own bed. Never eat a wild lookalike, and never let anyone else identify it for you.",
+    "Once the veil tears the quality collapses. Harvest early or not at all.",
+    "That bundle in your corner: get it off the floor and keep it dry until you use it. Damp straw on tiles grows the wrong things."
+   ]
+  },
+  {
+   "k": "woodear",
+   "name": "Wood ear",
+   "latin": "Auricularia polytricha",
+   "odia": "Kana chhatu",
+   "tone": "",
+   "verdict": "watch",
+   "diff": 2,
+   "ts": [
+    25,
+    30
+   ],
+   "tf": [
+    20,
+    30
+   ],
+   "rh": [
+    85,
+    95
+   ],
+   "sub": "Hardwood sawdust bags, or sal/mango logs.",
+   "casing": "None.",
+   "rate": "3–5%",
+   "first": "30–45 days",
+   "cycle": "3–4 months, repeat flushes",
+   "yield": "Low fresh weight, but it dries to a fifth and keeps for a year.",
+   "spawnat": "Uncommon in Odisha. Try DMR Solan by post.",
+   "eat": "No flavour of its own, all texture. Dries and rehydrates perfectly.",
+   "why": "Tolerates your heat and humidity better than any oyster, and dried wood ear stores indefinitely — which suits a room you cannot cool.",
+   "plan": "oyster",
+   "steps": [
+    "Sawdust plus 20% bran, sterilised 90 minutes in a pressure cooker.",
+    "Colonise 30–40 days. Slower than oyster — do not panic at week three.",
+    "Slash and fruit at 85%+ humidity. Tent it.",
+    "Harvest when the ear is fully expanded and rubbery, before it goes translucent.",
+    "Sun-dry on a mesh tray. Your March sun does this in a day."
+   ],
+   "watch": [
+    "Slow enough that contamination has time to find it. Cleanliness matters more here than with oyster."
+   ]
+  },
+  {
+   "k": "reishi",
+   "name": "Reishi",
+   "latin": "Ganoderma lucidum",
+   "odia": "—",
+   "tone": "",
+   "verdict": "watch",
+   "diff": 3,
+   "ts": [
+    25,
+    32
+   ],
+   "tf": [
+    25,
+    32
+   ],
+   "rh": [
+    85,
+    95
+   ],
+   "sub": "Hardwood sawdust with bran, sterilised.",
+   "casing": "None.",
+   "rate": "3–5%",
+   "first": "60–90 days",
+   "cycle": "4 months",
+   "yield": "One or two conks per bag. Not food by weight.",
+   "spawnat": "Speciality only. DMR Solan, or online culture suppliers.",
+   "eat": "Not eaten — too woody. Sliced and simmered as a bitter tea.",
+   "why": "Takes more heat than any food species here, so it holds the monsoon and the shoulder months when the oysters are marginal. Not the peak of summer though — nothing survives a 50°C May.",
+   "plan": "reishi",
+   "steps": [
+    "Sterilised hardwood sawdust, 20% bran. Pressure cook 2 hours.",
+    "Colonise 30–45 days at 28–30°C — July and August do this unaided.",
+    "Open the bag partially. It fruits toward light and air — antler form in low air, conk form in higher.",
+    "Very slow. Expect 6–10 weeks of visible growth.",
+    "Harvest when the white growing edge finally turns red-brown.",
+    "Slice thin while fresh, then dry. It becomes rock hard."
+   ],
+   "watch": [
+    "Throws a fine rust-red spore dust over everything nearby in the final weeks. Not something to fruit next to your plants or your bed.",
+    "The longest commitment on this list. Do not make it your first bag."
+   ]
+  },
+  {
+   "k": "button",
+   "name": "Button mushroom",
+   "latin": "Agaricus bisporus",
+   "odia": "Chhatu",
+   "tone": "",
+   "verdict": "no",
+   "diff": 3,
+   "ts": [
+    22,
+    25
+   ],
+   "tf": [
+    15,
+    18
+   ],
+   "rh": [
+    80,
+    90
+   ],
+   "sub": "Composted wheat straw with manure — a three-week fermentation before you even start.",
+   "casing": "Required.",
+   "rate": "—",
+   "first": "—",
+   "cycle": "—",
+   "yield": "—",
+   "spawnat": "—",
+   "eat": "The supermarket one.",
+   "why": "Fruits at 15–18°C. Your room touches that for a few January nights and never for a whole crop. It also needs composted manure, which you cannot make in an enclosed utility room without the smell taking over the flat. This is a cooled-shed crop, not a home one.",
+   "plan": "",
+   "steps": [],
+   "watch": []
+  },
+  {
+   "k": "shiitake",
+   "name": "Shiitake",
+   "latin": "Lentinula edodes",
+   "odia": "—",
+   "tone": "",
+   "verdict": "no",
+   "diff": 3,
+   "ts": [
+    22,
+    26
+   ],
+   "tf": [
+    12,
+    20
+   ],
+   "rh": [
+    80,
+    90
+   ],
+   "sub": "Hardwood sawdust blocks or logs.",
+   "casing": "None.",
+   "rate": "—",
+   "first": "—",
+   "cycle": "—",
+   "yield": "—",
+   "spawnat": "—",
+   "eat": "Deep, savoury, the best of the cultivated mushrooms.",
+   "why": "Needs 12–20°C to fruit and a 60–90 day colonisation before that. Grown commercially in Himachal and the north-east, not the Odisha plains. Without a cooled room it will colonise and then simply never pin.",
+   "plan": "",
+   "steps": [],
+   "watch": []
+  },
+  {
+   "k": "king",
+   "name": "King oyster",
+   "latin": "Pleurotus eryngii",
+   "odia": "—",
+   "tone": "",
+   "verdict": "no",
+   "diff": 3,
+   "ts": [
+    22,
+    25
+   ],
+   "tf": [
+    15,
+    18
+   ],
+   "rh": [
+    85,
+    90
+   ],
+   "sub": "Supplemented sawdust, sterilised.",
+   "casing": "None.",
+   "rate": "—",
+   "first": "—",
+   "cycle": "—",
+   "yield": "—",
+   "spawnat": "—",
+   "eat": "Thick stem, scallop texture. The one worth wanting.",
+   "why": "Despite the name it is nothing like the other oysters. It fruits at 15–18°C and aborts above 20. Not possible here without refrigeration.",
+   "plan": "",
+   "steps": [],
+   "watch": []
+  },
+  {
+   "k": "lionsmane",
+   "name": "Lion's mane",
+   "latin": "Hericium erinaceus",
+   "odia": "—",
+   "tone": "",
+   "verdict": "no",
+   "diff": 3,
+   "ts": [
+    21,
+    24
+   ],
+   "tf": [
+    18,
+    24
+   ],
+   "rh": [
+    85,
+    95
+   ],
+   "sub": "Sterilised hardwood sawdust with bran.",
+   "casing": "None.",
+   "rate": "—",
+   "first": "—",
+   "cycle": "—",
+   "yield": "—",
+   "spawnat": "—",
+   "eat": "Crab-like. Currently fashionable.",
+   "why": "The closest of the \"no\" list to possible — a cold January might just hold 18–22°C at night. But it needs that steadily for three weeks, and your daytime highs break it. Attempt only if you ever get a cooled cupboard.",
+   "plan": "",
+   "steps": [],
+   "watch": []
+  },
+  {
+   "k": "enoki",
+   "name": "Enoki",
+   "latin": "Flammulina velutipes",
+   "odia": "—",
+   "tone": "",
+   "verdict": "no",
+   "diff": 3,
+   "ts": [
+    18,
+    22
+   ],
+   "tf": [
+    8,
+    15
+   ],
+   "rh": [
+    85,
+    90
+   ],
+   "sub": "Sterilised sawdust in bottles.",
+   "casing": "None.",
+   "rate": "—",
+   "first": "—",
+   "cycle": "—",
+   "yield": "—",
+   "spawnat": "—",
+   "eat": "Thin white bundles, mild, for soups.",
+   "why": "Fruits at 8–15°C in bottles with a collar to force the long stems. Angul's record low is 4.5°C and its January average low is 8.4 — outdoors, for a few hours, once a year. There is no version of this that works in your room.",
+   "plan": "",
+   "steps": [],
+   "watch": []
+  }
+ ],
+ "RUNPLAN": {
+  "oyster": [
+   [
+    0,
+    "Spawn run",
+    "Dark cupboard, no water, no opening. It should go solid white.",
+    ""
+   ],
+   [
+    16,
+    "Ready to open",
+    "Fully white? Onto a tray on the bottom shelf, slash the bag, wet the floor daily.",
+    "Slash the bag and move it to the shelf"
+   ],
+   [
+    22,
+    "Pinning",
+    "Pinheads forming. Wet the tiles twice a day, crack a window twice a day.",
+    "Wet the floor and air the room"
+   ],
+   [
+    28,
+    "Harvest",
+    "Twist off the whole cluster as the cap edge starts to flatten.",
+    "Harvest the first flush"
+   ],
+   [
+    40,
+    "Second flush",
+    "Rest a week, soak the block briefly, repeat.",
+    "Soak the block for flush two"
+   ],
+   [
+    60,
+    "Spent",
+    "Two or three flushes is the run. Compost it.",
+    "Retire the block"
+   ]
+  ],
+  "pink": [
+   [
+    0,
+    "Spawn run",
+    "Fast. It should be visibly running within four days.",
+    ""
+   ],
+   [
+    11,
+    "Ready to open",
+    "Slash it. Pins follow within three or four days.",
+    "Slash the bag"
+   ],
+   [
+    15,
+    "Pinning",
+    "Wet the floor twice daily. Mask on when you handle it.",
+    "Wet the floor"
+   ],
+   [
+    19,
+    "Harvest early",
+    "While the caps are still curled under. It goes over in a day.",
+    "Harvest before it flattens"
+   ],
+   [
+    28,
+    "Second flush",
+    "7–10 days after the first. Then it is done.",
+    "Check for flush two"
+   ],
+   [
+    36,
+    "Spent",
+    "Short run by design. Compost it.",
+    "Retire the block"
+   ]
+  ],
+  "milky": [
+   [
+    0,
+    "Spawn run",
+    "20–28 days at 30–35°C. Dark, closed, untouched.",
+    ""
+   ],
+   [
+    24,
+    "Case it",
+    "Fully white? Lay 2–3 cm of pasteurised casing on top. No casing, no mushrooms.",
+    "Lay the casing layer"
+   ],
+   [
+    30,
+    "Keep the casing damp",
+    "Fine spray only. Never dry, never flooded. Diffused light now.",
+    "Spray the casing"
+   ],
+   [
+    36,
+    "Pinning",
+    "Pins push through the casing. Do not spray directly onto them.",
+    "Watch for pins"
+   ],
+   [
+    44,
+    "Harvest",
+    "Cap opened flat. Twist and lift, then patch the casing hole.",
+    "Harvest the first flush"
+   ],
+   [
+    58,
+    "Second flush",
+    "12–15 days after the first.",
+    "Check for flush two"
+   ],
+   [
+    75,
+    "Spent",
+    "Two flushes is the crop. Clear it.",
+    "Retire the bed"
+   ]
+  ],
+  "paddy": [
+   [
+    0,
+    "Spawn run",
+    "Cover loosely with polythene. Lift the cover daily for air.",
+    ""
+   ],
+   [
+    8,
+    "Pinheads",
+    "Day 8–10. Do not soak the bed.",
+    "Check for pinheads"
+   ],
+   [
+    11,
+    "Harvest",
+    "Button stage, still a firm ball. Once the veil tears, quality collapses.",
+    "Harvest at button stage"
+   ],
+   [
+    18,
+    "Spent",
+    "Fast and short. Clear the bed.",
+    "Clear the bed"
+   ]
+  ],
+  "reishi": [
+   [
+    0,
+    "Spawn run",
+    "30–45 days at 28–30°C. Slow and undramatic.",
+    ""
+   ],
+   [
+    40,
+    "Open to the light",
+    "Partially open the bag. It fruits toward light and air.",
+    "Open the bag"
+   ],
+   [
+    55,
+    "Antlers",
+    "White fingers forming. Weeks of this. Do not intervene.",
+    "Leave it alone"
+   ],
+   [
+    90,
+    "Conks reddening",
+    "The white growing edge turns red-brown. Nearly there.",
+    "Watch the edge"
+   ],
+   [
+    110,
+    "Harvest",
+    "Slice thin while fresh, then dry. It goes rock hard.",
+    "Harvest and slice"
+   ],
+   [
+    125,
+    "Spent",
+    "One crop per block. Compost it.",
+    "Retire the block"
+   ]
+  ]
+ },
+ "OYEAR": [
+  [
+   "Jan",
+   "Root-prune woody pots",
+   ""
+  ],
+  [
+   "Feb",
+   "Sow okra · mango bloom, watch mildew",
+   ""
+  ],
+  [
+   "Mar",
+   "Shade net UP · cut chillies back · pull tomatoes",
+   "hot"
+  ],
+  [
+   "Apr",
+   "Foggers on · do not order plants",
+   "hot"
+  ],
+  [
+   "May",
+   "Survival month · mulch deep · microgreens indoors",
+   "hot"
+  ],
+  [
+   "Jun",
+   "Plant out · sow roselle, cowpea",
+   "wet"
+  ],
+  [
+   "Jul",
+   "Best planting window · re-pot",
+   "wet"
+  ],
+  [
+   "Aug",
+   "Buy grafted now · prune mango · plant papaya",
+   "go"
+  ],
+  [
+   "Sep",
+   "Sow brinjal, chilli · order rare stock",
+   "go"
+  ],
+  [
+   "Oct",
+   "Zone C fills up · feed mango P&K · sow tomato",
+   "go"
+  ],
+  [
+   "Nov",
+   "Amrapali release at CHES · strawberry runners",
+   ""
+  ],
+  [
+   "Dec",
+   "Easiest month · Zone C at peak light",
+   ""
+  ]
+ ]
+}

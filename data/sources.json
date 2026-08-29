@@ -1,0 +1,436 @@
+{
+ "SRC": {
+  "OB": [
+   "OrganicBazar",
+   "Cheapest seed per packet, untreated OP line",
+   "All-India",
+   "Mostly unnamed generic varieties"
+  ],
+  "NI": [
+   "NativeIndian",
+   "₹15–49. South Indian traditional types",
+   "All-India",
+   "Unbranded landraces, no resistance claims"
+  ],
+  "IH": [
+   "ICAR-IIHR seed portal",
+   "The whole Arka range",
+   "Posts anywhere, 7–10 days",
+   "The ONLY authorised channel — ignore Arka on marketplaces"
+  ],
+  "CH": [
+   "CHES Aiginia, Khandagiri",
+   "Arka Neelachal range, eastern-screened",
+   "Collect in person",
+   "Limited catalogue, seasonal. Amrapali grafts ~November"
+  ],
+  "NS": [
+   "Nainital Succulents",
+   "Cheap singles and 4-plant combos",
+   "Free above ₹249 · code NEW05",
+   "Stock sells out fast"
+  ],
+  "BN": [
+   "Bhimtal Nursery",
+   "Cheapest per plant, from ₹39",
+   "Free shipping",
+   "Some reports of tired plants — film the unboxing"
+  ],
+  "SP": [
+   "Succulent Plant, Lucknow",
+   "Best packing reputation",
+   "₹100 per 1–7, ₹200 for 8–14",
+   "Order in blocks of 7 or waste the tier"
+  ],
+  "PO": [
+   "Plant Orbit",
+   "Combo packs ₹299–399",
+   "Varies",
+   "Few independent reviews — keep a first order small"
+  ],
+  "UP": [
+   "Upjau",
+   "Adenium, 80+ varieties from ₹179",
+   "Varies",
+   "Compare against Harvyora"
+  ],
+  "HV": [
+   "Harvyora",
+   "Grafted adenium, named flower forms",
+   "COD available",
+   "Check caudex size in photos"
+  ],
+  "NL": [
+   "NurseryLive",
+   "Exotics, carnivores, bonsai, tools",
+   "All-India",
+   "Potted and pricier, unmatched range"
+  ],
+  "UG": [
+   "Ugaoo",
+   "Premium aroids and rare foliage",
+   "All-India",
+   "Priciest, best quality control"
+  ],
+  "KD": [
+   "Kadiyam / Santhi Online",
+   "Grafted dwarf fruit trees",
+   "Short transit to Odisha",
+   "Ask for grafted, not seedling"
+  ],
+  "LO": [
+   "Bhubaneswar nursery run",
+   "Big leafy plants, herbs, orchids, palms",
+   "150 km — you carry them",
+   "One trip in October is worth it"
+  ]
+ },
+ "GEAR": [
+  [
+   "40–60W full-spectrum LED grow bar",
+   "Your primary light source, not a supplement. There's a socket on that wall.",
+   1500,
+   1
+  ],
+  [
+   "Mechanical plug timer",
+   "10–12 hours a day, set once, forget it.",
+   250,
+   1
+  ],
+  [
+   "Small fan",
+   "Cross-ventilation. A sealed glazed room in May is your biggest risk.",
+   900,
+   1
+  ],
+  [
+   "4-tier powder-coated metal rack",
+   "Avoid wood and MDF — one monsoon and they warp.",
+   2000,
+   1
+  ],
+  [
+   "Neem oil (cold-pressed)",
+   "Mealybugs arrive with almost every online order. Spray outside the room.",
+   200,
+   1
+  ],
+  [
+   "Perlite, 1–2 litres",
+   "Cuts Magic Soil so the jade and future succulents don't sit wet.",
+   150,
+   1
+  ],
+  [
+   "Coarse river sand or grit",
+   "Often free from a building site.",
+   100,
+   1
+  ],
+  [
+   "Microfibre cloths",
+   "Weekly leaf-wiping. Highest value per rupee where you live.",
+   100,
+   1
+  ],
+  [
+   "Secateurs",
+   "Falcon is the reliable budget brand.",
+   300,
+   1
+  ],
+  [
+   "Watering can, narrow spout",
+   "Your spray bottle can't water a pot properly.",
+   250,
+   1
+  ],
+  [
+   "Hand trowel + fork set",
+   "For potting, done outside the room.",
+   200,
+   1
+  ],
+  [
+   "Solid tray for the shelf above mushrooms",
+   "Stops plant drips landing on your bags.",
+   150,
+   1
+  ],
+  [
+   "50% green shade net, 2×3 m",
+   "Fixed OUTSIDE the window opening, before April.",
+   350,
+   2
+  ],
+  [
+   "Pebble trays",
+   "Humidity for ferns and fittonia in your dry March–May.",
+   250,
+   2
+  ],
+  [
+   "Vermicompost, 1 kg",
+   "Magic Soil feeds about a month. This is the top-up.",
+   100,
+   2
+  ],
+  [
+   "Liquid seaweed or NPK 19:19:19",
+   "Monthly, diluted, only while growing.",
+   150,
+   2
+  ],
+  [
+   "Extra saucers",
+   "Keeps drips off your tiles.",
+   150,
+   2
+  ],
+  [
+   "Gardening gloves",
+   "For the opuntia and coral euphorbia especially.",
+   100,
+   2
+  ],
+  [
+   "Yellow sticky traps",
+   "Fungus gnat control, safe around mushrooms.",
+   120,
+   2
+  ],
+  [
+   "Rubbing alcohol + cotton buds",
+   "Spot treatment for mealybugs.",
+   80,
+   2
+  ],
+  [
+   "Room thermometer",
+   "Find out what this room really hits at 3pm in April.",
+   250,
+   2
+  ],
+  [
+   "Digital hygrometer",
+   "Is the mushroom corner actually at 85%?",
+   400,
+   3
+  ],
+  [
+   "PP bags, 12×18 inch",
+   "For oyster substrate.",
+   200,
+   3
+  ],
+  [
+   "Large drum for pasteurising",
+   "A 20 L steel bucket over a gas ring does it.",
+   500,
+   3
+  ],
+  [
+   "Kitchen thermometer",
+   "So 80°C pasteurisation is actually 80°C.",
+   250,
+   3
+  ],
+  [
+   "Bonsai starter kit",
+   "Only once you've bought a bonsai subject.",
+   1200,
+   3
+  ],
+  [
+   "Bark / sphagnum orchid mix",
+   "Orchids die in potting soil.",
+   300,
+   3
+  ]
+ ],
+ "BUNDLES": [
+  [
+   "The first order",
+   "Six things that survive your room as it is today, before the grow light arrives. All safe to ship in monsoon.",
+   [
+    "Money Plant",
+    "Snake Plant",
+    "Heartleaf Philodendron",
+    "Syngonium",
+    "Zebra Haworthia",
+    "Mint / Podina"
+   ]
+  ],
+  [
+   "The dark corner",
+   "For the back of the room where light barely reaches. Nothing here needs sun.",
+   [
+    "ZZ Plant",
+    "Cast Iron Plant",
+    "Aglaonema",
+    "Peace Lily",
+    "Silver Satin Pothos",
+    "Moth Orchid"
+   ]
+  ],
+  [
+   "October succulent haul",
+   "Wait for this one. Dry transit, returning light, front row ready with a gritty mix.",
+   [
+    "Laxmi Kamal",
+    "Echeveria",
+    "Jelly Bean Sedum",
+    "Graptoveria",
+    "Cooper's Haworthia",
+    "Desert Rose (seedling)"
+   ]
+  ],
+  [
+   "The edible corner",
+   "Cheap, useful, and most of it tolerates your light. Chilli and tulsi want the window.",
+   [
+    "Bird's Eye Chilli",
+    "Poi Saga",
+    "Ajwain Patta",
+    "Lemongrass",
+    "Curry Leaf",
+    "Tulasi"
+   ]
+  ],
+  [
+   "Once the light is in",
+   "The payoff for buying the grow bar. None of these work without it.",
+   [
+    "Desert Rose (grafted)",
+    "Ficus Ginseng bonsai",
+    "Dwarf Guava L-49",
+    "Dwarf Pomegranate",
+    "Golden Barrel Cactus",
+    "String of Pearls"
+   ]
+  ],
+  [
+   "The collector's shelf",
+   "Money is not the constraint — light and patience are. Buy these last.",
+   [
+    "Raven ZZ",
+    "Alocasia 'Frydek'",
+    "Whale Fin Sansevieria",
+    "Elephant's Foot",
+    "Coral Cactus",
+    "Pitcher Plant"
+   ]
+  ]
+ ],
+ "CAL": [
+  [
+   "Jan",
+   "Peak light, cold nights",
+   "peak",
+   "Sun low in the south, shining straight in through the glass. Best light of the year.",
+   "Succulents, echeveria, adenium, cactus.",
+   "Oyster at its best. Wet the floor daily; the air is dry now.",
+   "Nights average 8–9°C. Move tropicals away from the glass at night. Water very little."
+  ],
+  [
+   "Feb",
+   "Peak light",
+   "peak",
+   "Still excellent, days warming.",
+   "Last good window for succulents and adenium.",
+   "Oyster still strong. Last spawning of the season.",
+   "Start feeding as growth restarts. Watch for spider mites."
+  ],
+  [
+   "Mar",
+   "Fading, driest month",
+   "good",
+   "Sun climbing, the direct beam retreating.",
+   "Hardy foliage only. Transit heat is a real risk after mid-month.",
+   "Finish the last oyster flushes and clear the corner.",
+   "Humidity near 50%. Pebble trays out, mist the back-of-room plants."
+  ],
+  [
+   "Apr",
+   "Hot",
+   "hold",
+   "Sun nearly overhead. Almost nothing comes in directly.",
+   "Don't ship live plants. They cook in transit.",
+   "Too hot for oyster, too early for paddy straw.",
+   "Shade net up outside. Check the room at 3pm — over 40°C means windows stay open."
+  ],
+  [
+   "May",
+   "Hottest month",
+   "hold",
+   "Longest sunshine of the year, but harsh glare rather than usable light.",
+   "Nothing. Spend the month on gear.",
+   "Nothing. 45°C outside means more inside.",
+   "The dangerous month. Windows open, fan running, water at dawn."
+  ],
+  [
+   "Jun",
+   "Monsoon arriving",
+   "hold",
+   "Overcast. Sun passes overhead and slightly north — your worst month.",
+   "Nothing. Rot risk climbing.",
+   "Start paddy straw once it settles into the low thirties.",
+   "Cut watering hard. Watch for soft stems at soil level."
+  ],
+  [
+   "Jul",
+   "Monsoon",
+   "hold",
+   "Grey and wet throughout.",
+   "Wait. Nothing shipped survives this well.",
+   "Paddy straw running. Keep beds raised off the tiles.",
+   "Open windows for airflow — a closed humid room rots things fast."
+  ],
+  [
+   "Aug",
+   "Wettest month, ~340 mm",
+   "hold",
+   "Still humid, still dim.",
+   "Only hardy foliage, only in small test orders.",
+   "Paddy straw thriving. Book oyster spawn for October.",
+   "Neem fortnightly, outside the room. Rinse dust off leaves after dry spells."
+  ],
+  [
+   "Sep",
+   "Turning",
+   "good",
+   "Rain easing, air drying.",
+   "Careful foliage orders resume. Prepare pots and mix.",
+   "Last paddy straw beds. Clean the corner for oyster.",
+   "Repot anything root-bound before growth season."
+  ],
+  [
+   "Oct",
+   "The window opens",
+   "peak",
+   "Sun swinging south, direct light returning.",
+   "The big buy. Plus the Bhubaneswar nursery run.",
+   "Start oyster. One bag first.",
+   "Feed everything. This is the growth season."
+  ],
+  [
+   "Nov",
+   "Best month of the year",
+   "peak",
+   "Excellent light, comfortable temperatures.",
+   "Everything on your list. Plant strawberries.",
+   "Oyster in full production.",
+   "The easiest month here to keep plants alive."
+  ],
+  [
+   "Dec",
+   "Peak light, cold starting",
+   "peak",
+   "Sun lowest and furthest south. Maximum penetration.",
+   "Cactus and lithops safest now, in dry transit.",
+   "Oyster flushing; wet the floor twice daily.",
+   "Cut watering by two-thirds. Stop fertilising. Watch for sub-10°C nights."
+  ]
+ ]
+}

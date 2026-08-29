@@ -1,0 +1,409 @@
+{
+ "ORCHARD": [
+  {
+   "id": "papaya",
+   "wd": [
+    null,
+    1,
+    2,
+    1
+   ],
+   "g": "palm",
+   "name": "Red Lady 786 papaya",
+   "lat": "Carica papaya",
+   "zone": "A",
+   "hgt": "~1 ft",
+   "stock": "Seedling",
+   "first": "8–10 months → around June 2027",
+   "bags": [
+    {
+     "s": "18×18",
+     "l": "75 L",
+     "w": "now",
+     "note": "final"
+    }
+   ],
+   "finalBag": "18×18 · 75 L, whole block replaced every 3 years",
+   "direct": true,
+   "water": [
+    "Often none — check drainage instead",
+    "Daily, light",
+    "Alternate days",
+    "Daily; twice daily in May"
+   ],
+   "feed": "19:19:19 at 3–4 g/L fortnightly while growing. Switch to 13:0:45 high-K the moment the first flowers set.",
+   "killer": "Collar and foot rot (Phytophthora) through the monsoon",
+   "prevent": "Plant on a raised mound inside the bag. Never wet the stem base. Copper oxychloride 3 g/L as a collar drench, monthly Jul–Sep.",
+   "watch": "Papaya ring spot virus — aphid-borne, no cure, remove the plant. Red mite in May.",
+   "special": "Gynodioecious, so a single plant fruits alone — you do not need a second. Single stem, never prune. Taproot: it establishes badly after any disturbance, so it gets one move and no more. Once it is carrying fruit the bag goes top-heavy — anchor it. Productive life is three years; replace rather than nurse."
+  },
+  {
+   "id": "mango",
+   "wd": [
+    5,
+    4,
+    7,
+    4
+   ],
+   "g": "tree",
+   "name": "Amrapali mango",
+   "lat": "Mangifera indica",
+   "zone": "A",
+   "hgt": "2 ft",
+   "stock": "Grafted",
+   "first": "2–3 years",
+   "bags": [
+    {
+     "s": "15×15",
+     "l": "43 L",
+     "w": "now"
+    },
+    {
+     "s": "20×20",
+     "l": "100 L",
+     "w": "month 12–15, ~4 ft"
+    },
+    {
+     "s": "24×24",
+     "l": "178 L",
+     "w": "year 3 — final"
+    }
+   ],
+   "finalBag": "24×24 · 178 L. Depth matters; never a shallow wide bag.",
+   "water": [
+    "Only if five dry days pass",
+    "Every 3–4 days, deep",
+    "Weekly, deep — stop six weeks pre-flower",
+    "Deep twice weekly"
+   ],
+   "feed": "Nitrogen-led while juvenile. From year 3, two sprays of 0:52:34 at 5 g/L in October for flower initiation.",
+   "killer": "Powdery mildew at the February bloom",
+   "prevent": "Wettable sulphur 2 g/L at panicle emergence, repeated after 12 days. Copper for anthracnose through the monsoon.",
+   "watch": "Hoppers, stem borer — plug the holes. Rootstock suckers below the union.",
+   "special": "The true dwarf, bred for high-density planting — that is exactly why it is here. Prune only in August–September; cut after October and you remove next season's flowering wood. Remove the first flowering in years one and two: a two-foot plant carrying fruit stalls for a year. Stake it. Strip rootstock shoots on sight. The heading cut at 2.5–3 ft waits until August 2027."
+  },
+  {
+   "id": "guava",
+   "wd": [
+    3,
+    2,
+    3,
+    2
+   ],
+   "g": "round",
+   "name": "Red Diamond guava",
+   "lat": "Psidium guajava",
+   "zone": "A",
+   "hgt": "3 ft",
+   "stock": "Air-layered",
+   "first": "1–2 years",
+   "bags": [
+    {
+     "s": "15×15",
+     "l": "43 L",
+     "w": "now"
+    },
+    {
+     "s": "20×20",
+     "l": "100 L",
+     "w": "month 10"
+    },
+    {
+     "s": "24×24",
+     "l": "178 L",
+     "w": "final"
+    }
+   ],
+   "finalBag": "24×24 · 178 L",
+   "water": [
+    "Every 3 days if no rain",
+    "Alternate days",
+    "Every 3 days",
+    "Alternate days, deep"
+   ],
+   "feed": "FYM plus NPK quarterly. It fruits on new wood, so feed hard right after each cut-back.",
+   "killer": "Fusarium wilt — waterlogging is what triggers it",
+   "prevent": "Drainage above everything else. Monthly Trichoderma drench. Never let the bag stand wet.",
+   "watch": "Fruit fly — bag every fruit at marble size. Mealybug, anthracnose.",
+   "special": "Your fastest payoff — flowers may appear within months. Remove them for the first twelve months, then let it crop. Cutting shoots back to 4–6 buds after each harvest is not tidying, it is what creates the next crop. Most wilt-prone of the eight, so drainage discipline is the whole game. The variety label is a claim you cannot verify for two years."
+  },
+  {
+   "id": "jamun-w",
+   "wd": [
+    10,
+    2,
+    3,
+    1
+   ],
+   "g": "berry",
+   "name": "White jamun",
+   "lat": "Syzygium cumini",
+   "zone": "A",
+   "hgt": "3 ft",
+   "stock": "Grafted",
+   "first": "~3 years",
+   "bags": [
+    {
+     "s": "18×18",
+     "l": "75 L",
+     "w": "now"
+    },
+    {
+     "s": "24×24",
+     "l": "178 L",
+     "w": "year 2 — final"
+    }
+   ],
+   "finalBag": "24×24 · 178 L. Prioritise height over width — strong taproot.",
+   "water": [
+    "Rarely",
+    "Alternate days",
+    "Every 3 days",
+    "Daily"
+   ],
+   "feed": "FYM annually plus the standard fortnightly 19:19:19 through the flush.",
+   "killer": "Nothing acute — it is a genuinely tough tree",
+   "prevent": "Routine neem fortnightly is enough.",
+   "watch": "Leaf spot in monsoon. Mealybug.",
+   "special": "Uncommon and worth having. Fruit drop is almost always a watering-consistency problem, not a nutrient one — jamun punishes swings harder than it punishes neglect. Minimal pruning, keep an open centre."
+  },
+  {
+   "id": "jamun-k",
+   "wd": [
+    10,
+    2,
+    3,
+    1
+   ],
+   "g": "berry",
+   "name": "KG-10 jamun",
+   "lat": "Syzygium cumini",
+   "zone": "A",
+   "hgt": "3 ft",
+   "stock": "Grafted",
+   "first": "~3 years",
+   "bags": [
+    {
+     "s": "18×18",
+     "l": "75 L",
+     "w": "now"
+    },
+    {
+     "s": "24×24",
+     "l": "178 L",
+     "w": "year 2 — final"
+    }
+   ],
+   "finalBag": "24×24 · 178 L",
+   "water": [
+    "Rarely",
+    "Alternate days",
+    "Every 3 days",
+    "Daily"
+   ],
+   "feed": "Identical to the white jamun.",
+   "killer": "Nothing acute",
+   "prevent": "Routine neem.",
+   "watch": "Leaf spot, mealybug.",
+   "special": "Treat it identically to the white one. One honest caution: KG-10 is not a recognised ICAR release, so the label is a claim you cannot verify for about three years. Nobody is necessarily lying — variety tags degrade upstream at Kadiyam. Confirm it has a real graft union and let the two jamuns settle the argument between themselves."
+  },
+  {
+   "id": "sapota",
+   "wd": [
+    10,
+    3,
+    7,
+    3
+   ],
+   "g": "tree",
+   "name": "Grafted sapota",
+   "lat": "Manilkara zapota",
+   "zone": "A",
+   "hgt": "3 ft",
+   "stock": "Grafted",
+   "first": "3–4 years",
+   "bags": [
+    {
+     "s": "18×18",
+     "l": "75 L",
+     "w": "now"
+    },
+    {
+     "s": "24×24",
+     "l": "178 L",
+     "w": "year 2–3 — final"
+    }
+   ],
+   "finalBag": "24×24 · 178 L. Fewest moves of anything here.",
+   "water": [
+    "Rarely",
+    "Every 3 days",
+    "Weekly",
+    "Deep twice weekly, evenly moist"
+   ],
+   "feed": "FYM twice a year. Light hand — this is the one plant on the list you can kill by feeding.",
+   "killer": "Nothing acute. Impatience is the real risk.",
+   "prevent": "Routine neem.",
+   "watch": "Bud borer, seed borer, scale, mealybug, leaf spot.",
+   "special": "It will look like it is doing nothing for two to three years. That is normal and it is not a deficiency. The commonest way a container sapota dies is an owner who reads slow growth as hunger and fertilises harder. Minimum root disturbance, even moisture, patience."
+  },
+  {
+   "id": "brinjal",
+   "wd": [
+    2,
+    1,
+    2,
+    1
+   ],
+   "g": "bush",
+   "name": "Grafted brinjal",
+   "lat": "Solanum melongena",
+   "zone": "A",
+   "hgt": "0.5 ft",
+   "stock": "Grafted on torvum",
+   "first": "~90 days",
+   "bags": [
+    {
+     "s": "10×10",
+     "l": "12 L",
+     "w": "now"
+    },
+    {
+     "s": "14×14",
+     "l": "35 L",
+     "w": "at ~1.5 ft"
+    },
+    {
+     "s": "16×16",
+     "l": "55 L",
+     "w": "final"
+    }
+   ],
+   "finalBag": "16×16 · 55 L — it is a three-year plant, not an annual",
+   "water": [
+    "Alternate days",
+    "Daily",
+    "Alternate days",
+    "Daily and steady — swings drop flowers"
+   ],
+   "feed": "Heavy feeder. Fortnightly 19:19:19, and feed hard immediately after every ratoon cut.",
+   "killer": "Shoot and fruit borer",
+   "prevent": "Clip and burn wilted shoot tips weekly. Pheromone trap. Neem fortnightly.",
+   "watch": "Bacterial wilt — the graft is your protection. Little leaf, spread by leafhopper.",
+   "special": "The union must sit two to three inches above the soil line, permanently. Bury it and you have thrown away the wilt resistance you paid for. Remove rootstock suckers weekly. After each flush, ratoon: cut back to one foot and feed heavily — that gives you three years or more from one plant."
+  },
+  {
+   "id": "chilli",
+   "wd": [
+    3,
+    2,
+    3,
+    1
+   ],
+   "g": "chilli",
+   "name": "Grafted chilli",
+   "lat": "Capsicum annuum",
+   "zone": "D → C",
+   "hgt": "0.5 ft",
+   "stock": "Grafted",
+   "first": "90–110 days",
+   "bags": [
+    {
+     "s": "8×8",
+     "l": "6 L",
+     "w": "now"
+    },
+    {
+     "s": "12×12",
+     "l": "22 L",
+     "w": "at ~1 ft"
+    },
+    {
+     "s": "14×14",
+     "l": "35 L",
+     "w": "final"
+    }
+   ],
+   "finalBag": "14×14 · 35 L",
+   "water": [
+    "Every 2–3 days",
+    "Alternate days",
+    "Every 3 days",
+    "Daily; let the surface dry between"
+   ],
+   "feed": "Low nitrogen, steady potassium. Too much N gives you a magnificent bush and no chillies.",
+   "killer": "Thrips and mites → \"murda\" leaf curl",
+   "prevent": "Blue sticky trap from day one. Alternate neem and wettable sulphur. 30% shade in May.",
+   "watch": "Anthracnose on the fruit. Damping off at seedling stage.",
+   "special": "Same union rule as the brinjal — two to three inches clear of the soil, forever. At half a foot this is a fresh graft: keep it in shade with high humidity for another ten to fourteen days and no afternoon sun at all. Hard cut-back every March."
+  }
+ ],
+ "POTPLAN": [
+  {
+   "w": "Day 0–7",
+   "t": "Acclimation ward",
+   "d": "All eight into Zone E, the closed parking. No repot, no feed, no fertiliser. Water lightly.",
+   "why": "Transport shock and transplant shock in the same week means losing both battles."
+  },
+  {
+   "w": "Day 1",
+   "t": "Inspect everything",
+   "d": "Check the graft union on all six grafted plants. Tip each bag sideways and look for spiralling roots. Check leaf undersides for mealybug. Strip any shoot below the union.",
+   "why": "A rootstock shoot outcompetes the scion within a season."
+  },
+  {
+   "w": "Day 2",
+   "t": "One neem spray",
+   "d": "Neem oil 5 ml/L plus 1 ml soap, in the evening.",
+   "why": "Kills whatever came home from the nursery bench before it spreads to the rest."
+  },
+  {
+   "w": "Day 2–3",
+   "t": "Build and cure the mix",
+   "d": "Mix both recipes. Keep moist, covered with a sack, in shade for five to seven days.",
+   "why": "Coco needs charging, neem cake needs to mellow or it burns roots, and Trichoderma needs a week to colonise."
+  },
+  {
+   "w": "Day 8",
+   "t": "Move to Zone D",
+   "d": "First-floor shade. Bright, indirect. Watch for midday wilting.",
+   "why": "Step two of the acclimation ladder."
+  },
+  {
+   "w": "Day 10–14",
+   "t": "Pot up",
+   "d": "In this order: chilli, brinjal, papaya, guava, jamun ×2, sapota, mango. After 4 pm or on an overcast day.",
+   "why": "Chilli and brinjal are cheap — make your mistakes there first. Papaya is the most transplant-sensitive, so do it while your hand is in."
+  },
+  {
+   "w": "Same day",
+   "t": "Drench, do not feed",
+   "d": "Trichoderma viride plus Pseudomonas fluorescens, 5 g/L, one litre per bag. Water in fully.",
+   "why": "Feeding a freshly cut root system burns it."
+  },
+  {
+   "w": "Day 14–21",
+   "t": "Recovery week",
+   "d": "Hold everything in Zone D shade. Water, nothing else.",
+   "why": "Roots must own the bag before anything else happens."
+  },
+  {
+   "w": "Day 21–35",
+   "t": "Ladder into the sun",
+   "d": "Zone A under the 50% net → morning sun → full sun. The chilli stays in D, then C from October.",
+   "why": "A shade-held plant put into 40°C sun scalds in two to four hours and the bleached patches never recover."
+  },
+  {
+   "w": "~1 Oct",
+   "t": "First feed",
+   "d": "Start the fertiliser schedule. Nothing before this.",
+   "why": "Three to four weeks after potting is the earliest a cut root system can use fertiliser rather than be burned by it."
+  }
+ ],
+ "WSEASON": [
+  "Monsoon · Jul–Sep",
+  "Post-monsoon · Oct–Nov",
+  "Winter · Dec–Feb",
+  "Dry gap · Mar–Jun"
+ ]
+}

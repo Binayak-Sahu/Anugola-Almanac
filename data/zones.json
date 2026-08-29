@@ -1,0 +1,101 @@
+{
+ "ZONES": [
+  {
+   "k": "A",
+   "c": "--glass",
+   "name": "Open parking",
+   "sub": "Ground level · full sun · the real orchard",
+   "d": "Better than the terrace for anything heavy. Ground runs several degrees cooler at night than a concrete roof, there is less wind shear, water is at hand, and you never carry a 24-inch bag up four flights.",
+   "has": [
+    "Mango Amrapali · jamun ×2 · sapota",
+    "Guava Red Diamond",
+    "Papaya — snaps in terrace wind",
+    "Grafted brinjal",
+    "Jackfruit, tamarind, custard apple later"
+   ],
+   "foot": "Build the 50% shade frame with foggers here. This is where the money goes."
+  },
+  {
+   "k": "B",
+   "c": "--hot",
+   "name": "Terrace",
+   "sub": "4th floor · maximum light · hot and windy",
+   "d": "Most light on the site and the harshest conditions. Reserve it for plants that want heat and tolerate wind, and solve the root-zone problem before anything goes up.",
+   "has": [
+    "Dragon fruit on poles",
+    "Pineapple · Thai apple ber",
+    "Summer greens — amaranth, okra, cowpea",
+    "Roselle"
+   ],
+   "foot": "Raise everything on pallets, double-pot, mulch two inches, pale bags only. Run a tap up here — in May a watering job that needs carrying does not get done."
+  },
+  {
+   "k": "C",
+   "c": "--bright",
+   "name": "South balcony, closed",
+   "sub": "Winter sun trap · summer shade house",
+   "d": "The best growing space you have, for a reason worth understanding: at this latitude the June sun passes almost overhead, so an overhang shades a south balcony all summer. In December the sun sits low in the south and floods it.",
+   "has": [
+    "The whole winter vegetable programme",
+    "Cherry tomato, capsicum, chilli",
+    "Palak, radish, coriander, lettuce",
+    "Strawberry · fig, once you have one"
+   ],
+   "foot": "Two fixes. Closed means still air — run a fan or open it daily or spider mites arrive within a month. And no wind means no pollination: flick every open flower each morning."
+  },
+  {
+   "k": "D",
+   "c": "--low",
+   "name": "First-floor shade",
+   "sub": "40–50% shade year-round · nursery",
+   "d": "Permanent home for everything that genuinely prefers shade, plus the seedling bench. Your grafted chilli lives here until October.",
+   "has": [
+    "Barbados cherry · miracle fruit · coffee",
+    "Finger lime · kaffir lime · curry leaf",
+    "Young jaboticaba and abiu",
+    "Seedling nursery — every tray starts here"
+   ],
+   "foot": "Anything bought for shade stays in shade. Moving it out is how you lose it."
+  },
+  {
+   "k": "E",
+   "c": "--desk",
+   "name": "Closed parking",
+   "sub": "Acclimation · hospital · propagation",
+   "d": "The piece that was missing. Too dark to grow anything long-term, perfect for everything else.",
+   "has": [
+    "Acclimation ward — every new arrival, 7–10 days",
+    "Hospital — scorched or freshly repotted plants",
+    "Propagation bench — mulberry and fig cuttings",
+    "Heatwave refuge, a few days only"
+   ],
+   "foot": "This is why the eight plants are alive. Never skip it, however healthy the stock looks."
+  }
+ ],
+ "ACCLIM": [
+  {
+   "n": "Step 1 · Zone E",
+   "t": "Closed parking",
+   "d": "Deep shade, no direct sun. Water lightly. Do not repot.",
+   "c": "--desk"
+  },
+  {
+   "n": "Step 2 · Zone D",
+   "t": "First-floor shade",
+   "d": "Bright, indirect. Watch for wilting at midday.",
+   "c": "--low"
+  },
+  {
+   "n": "Step 3 · Zone A",
+   "t": "Under the 50% net",
+   "d": "First real sun, filtered. Roughly a week.",
+   "c": "--bright"
+  },
+  {
+   "n": "Step 4",
+   "t": "Final position",
+   "d": "Morning sun first, afternoon sun last.",
+   "c": "--glass"
+  }
+ ]
+}

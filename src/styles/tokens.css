@@ -1,0 +1,408 @@
+/* ============================================================================
+   THE ANGUL ALMANAC — DESIGN TOKENS
+   ----------------------------------------------------------------------------
+   Two skins x two modes = four themes, from one set of names.
+
+       <html data-skin="jungle"    data-mode="light">
+       <html data-skin="jungle"    data-mode="dark">
+       <html data-skin="precision" data-mode="light">
+       <html data-skin="precision" data-mode="dark">
+
+   THREE TIERS. Respect them and the system stays cheap to change.
+
+     1. PRIMITIVE   --j-green-500, --p-slate-900.  Raw ramps. A component may
+                    NEVER reference these. They exist only to be assigned to
+                    semantic tokens below.
+     2. SEMANTIC    --bg, --ink, --accent, --danger. Role names. This is the
+                    only tier component CSS is allowed to touch.
+     3. DOMAIN      --zone-a, --verdict-yes, --stress-4. Horticultural meaning.
+                    Also fair game for components, also skin-adaptive.
+
+   A skin owns more than colour. It owns radius, shadow depth, spacing density,
+   the display typeface and the background treatment — which is what makes
+   "Jungle" and "Precision" read as different instruments rather than the same
+   layout in two palettes.
+   ========================================================================== */
+
+/* ==========================================================================
+   TIER 1 — PRIMITIVES
+   Ramps are defined once, globally. They do not change between modes; only
+   which rung a semantic token points at changes.
+   ========================================================================== */
+:root {
+  /* -- Jungle: warm, chlorophyll-led, a little earth in every step -------- */
+  --j-canopy-50:  #F2F6EF;
+  --j-canopy-100: #E7EBE4;
+  --j-canopy-200: #D3DECC;
+  --j-canopy-300: #A9C7A2;
+  --j-canopy-400: #6FA377;
+  --j-canopy-500: #2F8A6A;
+  --j-canopy-600: #276E56;
+  --j-canopy-700: #1E5342;
+  --j-canopy-800: #163A30;
+  --j-canopy-900: #0E1411;
+
+  --j-bark-100: #E8DFD2;
+  --j-bark-300: #C3A783;
+  --j-bark-500: #8A6C48;
+  --j-bark-700: #6E5537;
+
+  --j-sun-300: #F0C97D;
+  --j-sun-500: #C77B21;
+  --j-sun-600: #A96313;
+
+  /* -- Precision: neutral graphite, one cold accent, nothing decorative --- */
+  --p-slate-0:   #FFFFFF;
+  --p-slate-50:  #F6F7F8;
+  --p-slate-100: #ECEEF0;
+  --p-slate-200: #DDE1E4;
+  --p-slate-300: #C2C8CD;
+  --p-slate-400: #8B959D;
+  --p-slate-500: #5E686F;
+  --p-slate-600: #414A51;
+  --p-slate-700: #272E33;
+  --p-slate-800: #16191C;
+  --p-slate-900: #0A0B0C;
+
+  --p-teal-300: #5EEAD4;
+  --p-teal-500: #0F766E;
+  --p-teal-600: #115E59;
+  --p-teal-700: #0B4A45;
+
+  /* -- Signal ramp: shared by both skins, meaning is identical ------------ */
+  --sig-hot-l:   #B23A2B;   --sig-hot-d:   #E4695A;
+  --sig-cold-l:  #3F5AA6;   --sig-cold-d:  #7C9BDA;
+  --sig-ok-l:    #2C8560;   --sig-ok-d:    #48B189;
+  --sig-warn-l:  #B27C10;   --sig-warn-d:  #E0B152;
+  --sig-info-l:  #4E6FA8;   --sig-info-d:  #7C9BDA;
+  --sig-vio-l:   #7C6BA8;   --sig-vio-d:   #A796D8;
+
+  /* -- Motion & easing: skin-independent --------------------------------- */
+  --ease:      cubic-bezier(.2, .7, .25, 1);
+  --ease-out:  cubic-bezier(.16, 1, .3, 1);
+  --ease-snap: cubic-bezier(.34, 1.56, .64, 1);
+  --t-fast: 120ms;
+  --t-base: 200ms;
+  --t-slow: 380ms;
+
+  /* -- Layout constants: skin-independent -------------------------------- */
+  --rail-w: 244px;
+  --max-w: 1280px;
+  --gutter: clamp(14px, 3.2vw, 32px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+}
+
+/* ==========================================================================
+   TIER 2 — SEMANTIC, BY SKIN x MODE
+   Four blocks. Every block assigns the SAME set of names. If you add a name
+   to one, add it to all four or you have shipped a hole.
+   ========================================================================== */
+
+/* -------------------------------------------------- JUNGLE / LIGHT ------- */
+[data-skin="jungle"][data-mode="light"] {
+  color-scheme: light;
+
+  --bg:         var(--j-canopy-100);
+  --bg-sunk:    #DDE3DA;
+  --surface:    #FBFCF9;
+  --surface-2:  #F1F4EE;
+  --surface-3:  #E4E9E0;
+  --surface-inv: var(--j-canopy-900);
+
+  --ink:     #141E19;
+  --ink-2:   #3A4941;
+  --muted:   #6C7D73;
+  --faint:   #93A198;
+  --ink-inv: #F2F6EF;
+
+  --line:    rgba(20, 30, 25, .14);
+  --line-2:  rgba(20, 30, 25, .07);
+  --line-hi: rgba(20, 30, 25, .28);
+
+  --accent:      var(--j-canopy-500);
+  --accent-ink:  #FFFFFF;
+  --accent-soft: rgba(47, 138, 106, .12);
+  --accent-2:    var(--j-sun-500);
+
+  --danger: var(--sig-hot-l);
+  --warn:   var(--sig-warn-l);
+  --ok:     var(--sig-ok-l);
+  --info:   var(--sig-info-l);
+
+  --ring: rgba(47, 138, 106, .34);
+
+  --sh-1: 0 1px 2px rgba(20, 30, 25, .05), 0 2px 8px rgba(20, 30, 25, .04);
+  --sh-2: 0 2px 6px rgba(20, 30, 25, .07), 0 12px 30px rgba(20, 30, 25, .09);
+  --sh-3: 0 18px 60px rgba(20, 30, 25, .22);
+}
+
+/* -------------------------------------------------- JUNGLE / DARK -------- */
+[data-skin="jungle"][data-mode="dark"] {
+  color-scheme: dark;
+
+  --bg:         var(--j-canopy-900);
+  --bg-sunk:    #0A0F0D;
+  --surface:    #17201B;
+  --surface-2:  #1D2721;
+  --surface-3:  #24302A;
+  --surface-inv: #E7EBE4;
+
+  --ink:     #E6EFE7;
+  --ink-2:   #BECBC1;
+  --muted:   #8A9B90;
+  --faint:   #66766C;
+  --ink-inv: #0E1411;
+
+  --line:    rgba(200, 225, 208, .13);
+  --line-2:  rgba(200, 225, 208, .06);
+  --line-hi: rgba(200, 225, 208, .26);
+
+  --accent:      #48B189;
+  --accent-ink:  #06120D;
+  --accent-soft: rgba(72, 177, 137, .16);
+  --accent-2:    #E29A3C;
+
+  --danger: var(--sig-hot-d);
+  --warn:   var(--sig-warn-d);
+  --ok:     var(--sig-ok-d);
+  --info:   var(--sig-info-d);
+
+  --ring: rgba(72, 177, 137, .32);
+
+  --sh-1: 0 1px 2px rgba(0, 0, 0, .4);
+  --sh-2: 0 2px 8px rgba(0, 0, 0, .4), 0 16px 36px rgba(0, 0, 0, .34);
+  --sh-3: 0 24px 70px rgba(0, 0, 0, .6);
+}
+
+/* ----------------------------------------------- PRECISION / LIGHT ------- */
+[data-skin="precision"][data-mode="light"] {
+  color-scheme: light;
+
+  --bg:         var(--p-slate-50);
+  --bg-sunk:    var(--p-slate-100);
+  --surface:    var(--p-slate-0);
+  --surface-2:  var(--p-slate-50);
+  --surface-3:  var(--p-slate-100);
+  --surface-inv: var(--p-slate-900);
+
+  --ink:     var(--p-slate-900);
+  --ink-2:   var(--p-slate-700);
+  --muted:   var(--p-slate-500);
+  --faint:   var(--p-slate-400);
+  --ink-inv: var(--p-slate-0);
+
+  --line:    var(--p-slate-200);
+  --line-2:  var(--p-slate-100);
+  --line-hi: var(--p-slate-300);
+
+  --accent:      var(--p-teal-500);
+  --accent-ink:  #FFFFFF;
+  --accent-soft: rgba(15, 118, 110, .10);
+  --accent-2:    var(--p-slate-900);
+
+  --danger: #C0392B;
+  --warn:   #A16207;
+  --ok:     #157F5F;
+  --info:   #1D4ED8;
+
+  --ring: rgba(15, 118, 110, .38);
+
+  /* Precision does not use drop shadows for elevation. It uses rules. */
+  --sh-1: none;
+  --sh-2: 0 0 0 1px var(--line);
+  --sh-3: 0 24px 48px rgba(10, 11, 12, .18);
+}
+
+/* ------------------------------------------------ PRECISION / DARK ------- */
+[data-skin="precision"][data-mode="dark"] {
+  color-scheme: dark;
+
+  --bg:         var(--p-slate-900);
+  --bg-sunk:    #060708;
+  --surface:    #121417;
+  --surface-2:  #171A1D;
+  --surface-3:  #1E2226;
+  --surface-inv: var(--p-slate-50);
+
+  --ink:     #F2F4F5;
+  --ink-2:   #C8CED3;
+  --muted:   #8B959D;
+  --faint:   #626C74;
+  --ink-inv: var(--p-slate-900);
+
+  --line:    #262B30;
+  --line-2:  #1B1F23;
+  --line-hi: #3A4249;
+
+  --accent:      var(--p-teal-300);
+  --accent-ink:  #04211E;
+  --accent-soft: rgba(94, 234, 212, .12);
+  --accent-2:    #F2F4F5;
+
+  --danger: #F0705F;
+  --warn:   #E3B341;
+  --ok:     #46C79A;
+  --info:   #7AA2F7;
+
+  --ring: rgba(94, 234, 212, .34);
+
+  --sh-1: none;
+  --sh-2: 0 0 0 1px var(--line);
+  --sh-3: 0 24px 48px rgba(0, 0, 0, .7);
+}
+
+/* ==========================================================================
+   TIER 2b — SKIN PERSONALITY
+   Shape, depth, density and type. This is the half of the design that colour
+   alone cannot carry.
+   ========================================================================== */
+
+[data-skin="jungle"] {
+  --r-xs: 6px;  --r-s: 10px;  --r: 14px;  --r-l: 20px;  --r-xl: 28px;  --r-pill: 999px;
+
+  --f-display: "Bodoni Moda", Georgia, "Times New Roman", serif;
+  --f-body: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --display-weight: 600;
+  --display-tracking: -.015em;
+  --display-case: none;
+  --heading-style: normal;
+
+  --step--1: 12.5px;
+  --step-0: 15px;
+  --step-1: clamp(17px, 1.6vw, 19px);
+  --step-2: clamp(21px, 2.4vw, 26px);
+  --step-3: clamp(27px, 3.6vw, 38px);
+  --step-4: clamp(34px, 5vw, 54px);
+
+  --body-leading: 1.58;
+  --density: 1;
+  --card-pad: 18px;
+  --border-w: 1px;
+
+  /* Canopy light: two soft radial washes, fixed to the viewport. */
+  --page-wash:
+    radial-gradient(1100px 520px at 82% -8%, color-mix(in oklab, var(--accent-2) 11%, transparent), transparent 62%),
+    radial-gradient(900px 500px at -10% 4%, color-mix(in oklab, var(--accent) 9%, transparent), transparent 60%);
+  --page-grid: none;
+  --chrome-blur: blur(18px) saturate(1.3);
+}
+
+[data-skin="precision"] {
+  --r-xs: 2px;  --r-s: 3px;  --r: 4px;  --r-l: 6px;  --r-xl: 8px;  --r-pill: 3px;
+
+  --f-display: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-body: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --display-weight: 700;
+  --display-tracking: -.025em;
+  --display-case: none;
+  --heading-style: normal;
+
+  --step--1: 11.5px;
+  --step-0: 14px;
+  --step-1: clamp(15px, 1.4vw, 16.5px);
+  --step-2: clamp(18px, 2vw, 21px);
+  --step-3: clamp(22px, 2.8vw, 29px);
+  --step-4: clamp(27px, 3.6vw, 38px);
+
+  --body-leading: 1.5;
+  --density: .84;          /* everything spaced by var(--density) tightens */
+  --card-pad: 14px;
+  --border-w: 1px;
+
+  /* Blueprint grid instead of a wash. Reads as graph paper, not foliage. */
+  --page-wash: none;
+  --page-grid:
+    linear-gradient(to right, var(--line-2) 1px, transparent 1px) 0 0 / 32px 32px,
+    linear-gradient(to bottom, var(--line-2) 1px, transparent 1px) 0 0 / 32px 32px;
+  --chrome-blur: blur(10px);
+}
+
+/* ==========================================================================
+   TIER 3 — DOMAIN TOKENS
+   The horticultural vocabulary. Defined per mode so a zone stays identifiably
+   "zone C" whether you are in a sun-trap at noon or checking the app in bed.
+   ========================================================================== */
+
+[data-mode="light"] {
+  --zone-a: #C77B21;  /* open parking — full sun    */
+  --zone-b: #B23A2B;  /* terrace — hot and windy    */
+  --zone-c: #2F8A6A;  /* south balcony — the prize  */
+  --zone-d: #4E6FA8;  /* first-floor shade          */
+  --zone-e: #7C6BA8;  /* closed parking — hospital  */
+  --zone-indoor: #6C7D73;
+
+  --verdict-yes:   var(--sig-ok-l);
+  --verdict-watch: var(--sig-warn-l);
+  --verdict-no:    var(--sig-hot-l);
+
+  /* Heat/stress ramp, 0 = comfortable, 4 = lethal. Used by charts and chips. */
+  --stress-0: #2C8560;
+  --stress-1: #86A93C;
+  --stress-2: #C8952A;
+  --stress-3: #D2691E;
+  --stress-4: #B23A2B;
+
+  --season-monsoon: #3E7CA8;
+  --season-post:    #2C8560;
+  --season-winter:  #4E6FA8;
+  --season-dry:     #C0562B;
+
+  --leaf: #A9C7A2;  --leaf-dk: #3E5C48;
+  --pot:  #C3A783;  --pot-dk:  #6E5537;
+}
+
+[data-mode="dark"] {
+  --zone-a: #E29A3C;
+  --zone-b: #E4695A;
+  --zone-c: #48B189;
+  --zone-d: #7C9BDA;
+  --zone-e: #A796D8;
+  --zone-indoor: #8A9B90;
+
+  --verdict-yes:   var(--sig-ok-d);
+  --verdict-watch: var(--sig-warn-d);
+  --verdict-no:    var(--sig-hot-d);
+
+  --stress-0: #48B189;
+  --stress-1: #A3C558;
+  --stress-2: #E0B152;
+  --stress-3: #E8894A;
+  --stress-4: #E4695A;
+
+  --season-monsoon: #6FA8D6;
+  --season-post:    #48B189;
+  --season-winter:  #7C9BDA;
+  --season-dry:     #E07A4E;
+
+  --leaf: #7FA97A;  --leaf-dk: #9EC49A;
+  --pot:  #B0956F;  --pot-dk:  #8A6C48;
+}
+
+/* Zone lookup, so markup can say data-zone="C" and stop thinking about it. */
+[data-zone="A"] { --zone: var(--zone-a); }
+[data-zone="B"] { --zone: var(--zone-b); }
+[data-zone="C"] { --zone: var(--zone-c); }
+[data-zone="D"] { --zone: var(--zone-d); }
+[data-zone="E"] { --zone: var(--zone-e); }
+[data-zone="indoor"] { --zone: var(--zone-indoor); }
+
+/* ==========================================================================
+   ACCESSIBILITY OVERRIDES
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  :root { --t-fast: 0ms; --t-base: 0ms; --t-slow: 0ms; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root { --line: var(--line-hi); --muted: var(--ink-2); --faint: var(--muted); }
+}
