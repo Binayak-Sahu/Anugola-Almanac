@@ -1,0 +1,368 @@
+{
+ "FEEDS": [
+  [
+   "Foliage &amp; aroids",
+   "19:19:19 at half strength, ~1 g/L",
+   "Fortnightly, Feb&ndash;Oct",
+   "Alternate with seaweed. Nothing Nov&ndash;Jan."
+  ],
+  [
+   "Succulents &amp; jade",
+   "Quarter strength, ~0.5 g/L",
+   "Monthly, Mar&ndash;Oct",
+   "Weak and rare. Overfed succulents stretch, go soft, then rot."
+  ],
+  [
+   "Cactus &amp; adenium",
+   "Low-nitrogen, quarter strength",
+   "Monthly, Mar&ndash;Sep",
+   "Stop the moment nights drop under 15&deg;C."
+  ],
+  [
+   "Gingers &amp; turmeric",
+   "Full strength, ~2 g/L, plus vermicompost",
+   "Fortnightly, Mar&ndash;Oct",
+   "The hungriest thing you will own. Top-dress 1 cm vermicompost monthly."
+  ],
+  [
+   "Herbs &amp; edibles",
+   "Half strength, or seaweed on its own",
+   "Every 10 days while you are picking",
+   "Harvesting is what drives regrowth. Feed after each cut."
+  ],
+  [
+   "Orchids",
+   "Quarter strength &mdash; weakly, weekly",
+   "Weekly Mar&ndash;Oct, plain-water flush monthly",
+   "Bark holds no nutrients, so little and often beats a big dose."
+  ],
+  [
+   "Fruit trees",
+   "19:19:19, then high-potassium at bud",
+   "Fortnightly, Mar&ndash;Oct",
+   "Switch to a bloom feed the moment buds appear."
+  ],
+  [
+   "Carnivorous",
+   "Nothing. Ever.",
+   "&mdash;",
+   "No fertiliser and no tap water. Rain or RO only, or they die."
+  ]
+ ],
+ "DEFIC": [
+  {
+   "n": "Nitrogen (N)",
+   "mob": "mobile",
+   "where": "Oldest leaves first",
+   "sym": "Whole leaf pales to uniform yellow-green, starting at the bottom of the plant and moving up. Growth slows, stems thin.",
+   "fix": "Any balanced feed, or 19:19:19 at 3 g/L. Fastest organic route is fermented mustard-cake liquid.",
+   "here": "Common in coco-heavy mixes, which hold almost no nitrogen of their own."
+  },
+  {
+   "n": "Phosphorus (P)",
+   "mob": "mobile",
+   "where": "Oldest leaves first",
+   "sym": "Dull dark green going purple or bronze, especially on leaf undersides and stems. Few flowers, poor root growth.",
+   "fix": "Bone meal or SSP worked into the top two inches, or 0:52:34 at 5 g/L as a spray.",
+   "here": "Often a pH problem rather than a shortage — above 7.5 phosphorus locks into insoluble calcium compounds."
+  },
+  {
+   "n": "Potassium (K)",
+   "mob": "mobile",
+   "where": "Oldest leaves first",
+   "sym": "Leaf edges scorch brown and curl while the centre stays green. Weak stems, fruit that will not sweeten.",
+   "fix": "13:0:45 at 4 g/L, or wood ash worked in. Every fruiting plant needs more K than it is usually given.",
+   "here": "The classic mistake is feeding nitrogen through the fruiting phase — you get a magnificent plant and no crop."
+  },
+  {
+   "n": "Magnesium (Mg)",
+   "mob": "mobile",
+   "where": "Oldest leaves first",
+   "sym": "Yellow between the veins while the veins themselves stay sharply green. Starts low on the plant.",
+   "fix": "Epsom salt at 5 g/L, as a drench or a foliar spray. Visible improvement in about ten days.",
+   "here": "Very common in high-potassium feeding regimes — K and Mg compete for uptake."
+  },
+  {
+   "n": "Iron (Fe)",
+   "mob": "immobile",
+   "where": "NEWEST leaves first",
+   "sym": "Yellow between the veins with a fine green vein network, on the youngest growth. Severe cases go near-white.",
+   "fix": "Chelated iron (EDDHA form above pH 7) at 2 g/L. Correct the pH as well or it returns.",
+   "here": "The signature coal-belt deficiency. Fly-ash deposition pushes soil alkaline and iron stops being available. Citrus and jaboticaba show it first."
+  },
+  {
+   "n": "Calcium (Ca)",
+   "mob": "immobile",
+   "where": "NEWEST growth and fruit",
+   "sym": "Growing tips die back. In fruit, a sunken black patch at the blossom end of tomato, chilli and capsicum.",
+   "fix": "Gypsum or crushed eggshell in the mix. Calcium nitrate at 2 g/L for a fast correction.",
+   "here": "Blossom end rot is almost never a calcium shortage — it is a watering shortage. Calcium travels in the transpiration stream, so a pot that swings wet-dry cannot deliver it however much you add."
+  },
+  {
+   "n": "Zinc (Zn)",
+   "mob": "immobile",
+   "where": "New leaves",
+   "sym": "Small, narrow, bunched leaves with shortened internodes — a rosette at the shoot tip.",
+   "fix": "Zinc sulphate at 2 g/L foliar, or any chelated micronutrient mix.",
+   "here": "Frequent in mango and citrus on alkaline soil. Worth including in the monthly micronutrient spray rather than waiting for symptoms."
+  },
+  {
+   "n": "Boron (B)",
+   "mob": "immobile",
+   "where": "Growing points and fruit",
+   "sym": "Brittle, distorted new leaves, hollow or corky fruit, poor fruit set despite heavy flowering.",
+   "fix": "Borax at 0.5 g/L, no more. Boron is the easiest nutrient to overdose into toxicity.",
+   "here": "Shows up as flower drop on chilli and brinjal that gets misread as a pollination failure."
+  },
+  {
+   "n": "Sulphur (S)",
+   "mob": "immobile",
+   "where": "New leaves",
+   "sym": "Uniform pale yellow on the youngest leaves — looks like nitrogen shortage but at the wrong end of the plant.",
+   "fix": "Any sulphate-form fertiliser, or elemental sulphur, which also corrects pH.",
+   "here": "Rare, but the confusion with nitrogen is common. Check which leaves are affected before treating."
+  }
+ ],
+ "NPKS": [
+  {
+   "n": "19:19:19",
+   "use": "General growth",
+   "when": "Vegetative flush — Sep–Nov, Feb–Apr",
+   "rate": "3–4 g/L",
+   "why": "Balanced and fully water-soluble. The default feed for anything that is growing but not yet fruiting."
+  },
+  {
+   "n": "13:0:45",
+   "use": "Fruiting and sweetening",
+   "when": "From first flower onward",
+   "rate": "4 g/L",
+   "why": "High potassium, no phosphorus. Switch to it the day flowers open on tomato, chilli, papaya or guava."
+  },
+  {
+   "n": "0:52:34",
+   "use": "Flower initiation",
+   "when": "October, mango from year 3",
+   "rate": "5 g/L, two sprays two weeks apart",
+   "why": "Mono-potassium phosphate. Pushes a mature mango from vegetative growth into flowering."
+  },
+  {
+   "n": "12:61:00",
+   "use": "Root and early growth",
+   "when": "Two to three weeks after transplant",
+   "rate": "3 g/L",
+   "why": "High phosphorus. Use once at establishment, not repeatedly — phosphorus accumulates and locks out zinc and iron."
+  },
+  {
+   "n": "Calcium nitrate",
+   "use": "Calcium plus quick N",
+   "when": "Fruit set on tomato and capsicum",
+   "rate": "2 g/L",
+   "why": "Also what you charge coco peat with. Never mix it in the same can as a phosphate or sulphate feed — it precipitates."
+  },
+  {
+   "n": "Epsom (MgSO₄)",
+   "use": "Magnesium and sulphur",
+   "when": "Monthly through the growing season",
+   "rate": "5 g/L",
+   "why": "Cheap, safe, and fixes the commonest interveinal yellowing on old leaves."
+  }
+ ],
+ "ORGIN": [
+  {
+   "n": "Vermicompost",
+   "npk": "~1.5 : 1 : 1.5",
+   "rate": "1–2 kg per bag every 60 days",
+   "d": "Slow, safe, and it carries the microbial life that makes the rest work. The base of every mix here."
+  },
+  {
+   "n": "Neem cake",
+   "npk": "~5 : 1 : 1.5",
+   "rate": "200 g per bag quarterly",
+   "d": "Nitrogen plus genuine nematode and grub suppression. Must be composted or well mixed — fresh cake burns roots."
+  },
+  {
+   "n": "Mustard / groundnut cake liquid",
+   "npk": "~4 : 1 : 1",
+   "rate": "500 ml per bag fortnightly",
+   "d": "Cake 1:10 in water, fermented ten days, then diluted 1:10 again. It will smell. The fastest organic nitrogen available."
+  },
+  {
+   "n": "Bone meal",
+   "npk": "~3 : 20 : 0",
+   "rate": "200 g per 100 L at mixing",
+   "d": "Slow-release phosphorus and calcium. Works only in acid to neutral mix — above pH 7.5 it does almost nothing."
+  },
+  {
+   "n": "Wood ash",
+   "npk": "0 : 1 : 5",
+   "rate": "100 g per 100 L",
+   "d": "Free potash. But it is strongly alkaline — skip it entirely if your mix already tests above 7.5."
+  },
+  {
+   "n": "Seaweed extract",
+   "npk": "trace",
+   "rate": "2 ml/L monthly",
+   "d": "Not a fertiliser. Growth hormones and micronutrients that improve heat and transplant tolerance — worth it for May."
+  },
+  {
+   "n": "Cow dung, well rotted",
+   "npk": "~0.5 : 0.2 : 0.5",
+   "rate": "Top-dress annually",
+   "d": "Bulk and structure more than nutrition. Fresh dung burns and carries weed seed — it must be at least six months old."
+  }
+ ],
+ "PHBANDS": [
+  {
+   "r": "Below 5.5",
+   "t": "Too acid",
+   "d": "Phosphorus, calcium and magnesium become unavailable. Aluminium turns toxic.",
+   "v": "n"
+  },
+  {
+   "r": "5.5 – 6.5",
+   "t": "Ideal for most",
+   "d": "Everything available. Target this for tomato, chilli, citrus, guava, jaboticaba.",
+   "v": "y"
+  },
+  {
+   "r": "6.5 – 7.2",
+   "t": "Fine",
+   "d": "Slight iron and manganese reduction. Acceptable for mango, jamun, sapota.",
+   "v": "y"
+  },
+  {
+   "r": "7.2 – 7.8",
+   "t": "Iron starts locking",
+   "d": "Interveinal yellowing on new growth. Adding more iron sulphate will not fix it — use EDDHA chelate.",
+   "v": "m"
+  },
+  {
+   "r": "Above 7.8",
+   "t": "Lockout",
+   "d": "Iron, manganese, zinc, boron and phosphorus all unavailable. Feeding harder does literally nothing.",
+   "v": "n"
+  }
+ ],
+ "FEEDCAL": [
+  {
+   "m": "Jan",
+   "w": "Winter",
+   "hp": "Hold",
+   "d": "Minimal feeding. Root-prune woody pots. Zone C crops still cropping — keep the high-K going there only."
+  },
+  {
+   "m": "Feb",
+   "w": "Restart",
+   "hp": "Light",
+   "d": "Growth restarts. Resume 19:19:19 fortnightly. Mango at bloom: no nitrogen, sulphur spray for mildew."
+  },
+  {
+   "m": "Mar",
+   "w": "Build",
+   "hp": "Full",
+   "d": "Full feeding on everything outdoors. Last month before heat. Micronutrient spray."
+  },
+  {
+   "m": "Apr",
+   "w": "Taper",
+   "hp": "Half",
+   "d": "Halve rates. Salts concentrate fast in bags that are drying twice a day."
+  },
+  {
+   "m": "May",
+   "w": "STOP",
+   "hp": "None",
+   "d": "Feed nothing. A plant at 45°C is not growing, and unused salts burn roots. Flush every bag once with plain water."
+  },
+  {
+   "m": "Jun",
+   "w": "Resume",
+   "hp": "Light",
+   "d": "First rain, first flush. Restart at half rate, build over three weeks."
+  },
+  {
+   "m": "Jul",
+   "w": "Full",
+   "hp": "Full",
+   "d": "Best growing month. Full rates, plus FYM top-dress. Nitrogen-led for juvenile trees."
+  },
+  {
+   "m": "Aug",
+   "w": "Full",
+   "hp": "Full",
+   "d": "Continue. Nothing newly potted gets fed for 3–4 weeks after the move."
+  },
+  {
+   "m": "Sep",
+   "w": "Full",
+   "hp": "Full",
+   "d": "Second flush. Micronutrients. Start the seedling programme on quarter-strength only."
+  },
+  {
+   "m": "Oct",
+   "w": "Switch",
+   "hp": "Full",
+   "d": "Mango year 3+: two sprays of 0:52:34 for flower initiation. Zone C transplants get their first feed."
+  },
+  {
+   "m": "Nov",
+   "w": "Fruiting",
+   "hp": "K",
+   "d": "Switch every flowering plant to 13:0:45. Stop nitrogen on anything setting fruit."
+  },
+  {
+   "m": "Dec",
+   "w": "Hold",
+   "hp": "K",
+   "d": "High-K only, on croppers. Mango: withhold water and feed to set up the February bloom."
+  }
+ ],
+ "FEEDDONT": [
+  [
+   "Never feed a dry bag",
+   "Water first, feed thirty minutes later. Fertiliser on dry roots burns them — this is the commonest way people kill a plant while trying to help it."
+  ],
+  [
+   "Never feed a stressed plant",
+   "Wilting, scorched, or repotted within four weeks. A cut root system cannot use fertiliser; it can only be damaged by it."
+  ],
+  [
+   "Never feed through May",
+   "Salts concentrate in a fast-drying fabric bag. Flush instead."
+  ],
+  [
+   "Never mix calcium with phosphate or sulphate",
+   "In the same watering can they precipitate into a useless white sludge. Separate applications, days apart."
+  ],
+  [
+   "More is not faster",
+   "Doubling the dose does not double growth. It raises salt concentration until the roots lose water to the soil instead of gaining it — the leaf symptoms look exactly like drought."
+  ],
+  [
+   "Fix pH before adding anything",
+   "Above 7.8 most micronutrients are chemically unavailable regardless of how much you apply."
+  ]
+ ],
+ "SALT": {
+  "sym": [
+   "White or tan crust on the mix surface or the bag rim",
+   "Leaf tips and margins browning on many plants at once",
+   "Growth stalls while the plant looks otherwise healthy",
+   "Water runs through faster than it used to"
+  ],
+  "fix": [
+   "Take the bag somewhere it can drain freely",
+   "Pour slow, plain water equal to twice the bag volume through it — 150 L through a 75 L bag",
+   "Let it drain fully, then leave it a week before feeding again",
+   "Repeat every 4–6 months on any bag that has been fed all season"
+  ]
+ },
+ "OG": {
+  "tree": "<svg viewBox=\"0 0 64 64\"><path d=\"M24 48h16l-2 10H26z\" fill=\"#C3A783\" stroke=\"#6E5537\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M32 48V26\" stroke=\"#3E5C48\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><circle cx=\"32\" cy=\"20\" r=\"12\" fill=\"#A9C7A2\" stroke=\"#3E5C48\" stroke-width=\"2.2\"/></svg>",
+  "palm": "<svg viewBox=\"0 0 64 64\"><path d=\"M25 50h14l-2 8H27z\" fill=\"#C3A783\" stroke=\"#6E5537\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M32 50V22\" stroke=\"#3E5C48\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M32 22C22 22 15 26 12 32c8-1 14 0 20 4M32 22c10 0 17 4 20 10-8-1-14 0-20 4M32 22c-3-8-1-14 0-16 1 2 3 8 0 16\" fill=\"#A9C7A2\" stroke=\"#3E5C48\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>",
+  "berry": "<svg viewBox=\"0 0 64 64\"><path d=\"M24 48h16l-2 10H26z\" fill=\"#C3A783\" stroke=\"#6E5537\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M32 48V30\" stroke=\"#3E5C48\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><ellipse cx=\"32\" cy=\"20\" rx=\"13\" ry=\"11\" fill=\"#A9C7A2\" stroke=\"#3E5C48\" stroke-width=\"2.2\"/><circle cx=\"26\" cy=\"20\" r=\"3.6\" fill=\"#7C6BA8\"/><circle cx=\"37\" cy=\"17\" r=\"3.2\" fill=\"#7C6BA8\"/><circle cx=\"34\" cy=\"25\" r=\"2.8\" fill=\"#7C6BA8\"/></svg>",
+  "round": "<svg viewBox=\"0 0 64 64\"><path d=\"M24 48h16l-2 10H26z\" fill=\"#C3A783\" stroke=\"#6E5537\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M32 48V30\" stroke=\"#3E5C48\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><ellipse cx=\"32\" cy=\"21\" rx=\"13\" ry=\"11\" fill=\"#A9C7A2\" stroke=\"#3E5C48\" stroke-width=\"2.2\"/><circle cx=\"29\" cy=\"21\" r=\"5\" fill=\"#C77B21\" opacity=\".75\"/></svg>",
+  "bush": "<svg viewBox=\"0 0 64 64\"><path d=\"M24 48h16l-2 10H26z\" fill=\"#C3A783\" stroke=\"#6E5537\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M32 48V34\" stroke=\"#3E5C48\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M20 34c0-8 5-13 12-13s12 5 12 13z\" fill=\"#A9C7A2\" stroke=\"#3E5C48\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M28 40c-3 0-5-2-5-5M36 42c3 0 5-2 5-5\" stroke=\"#3E5C48\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>",
+  "chilli": "<svg viewBox=\"0 0 64 64\"><path d=\"M24 48h16l-2 10H26z\" fill=\"#C3A783\" stroke=\"#6E5537\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M32 48V32\" stroke=\"#3E5C48\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M21 30c0-7 5-11 11-11s11 4 11 11z\" fill=\"#A9C7A2\" stroke=\"#3E5C48\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M34 32c4 2 6 6 4 10-3 5-8 3-9-1\" fill=\"#B23A2B\" stroke=\"#8A2B20\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/></svg>"
+ }
+}

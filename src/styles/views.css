@@ -1,0 +1,52 @@
+/* ============================================================================
+   VIEWS — the small amount of per-screen styling that does not generalise.
+   Anything reused twice belongs in components.css instead.
+   ========================================================================== */
+
+/* --------------------------------------------------------------- today --- */
+.zonecard {
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+.zonecard:hover { border-color: var(--zone); transform: translateY(-1px); }
+[data-skin="precision"] .zonecard:hover { transform: none; }
+
+/* ------------------------------------------------------------- orchard --- */
+.treecard .ladder { margin-top: 10px; }
+.treecard .rung + .rung { padding-left: 8px; }
+
+/* ---------------------------------------------------------- knowledge ---- */
+.kcard { transition: border-color var(--t-fast) var(--ease); }
+.kcard:hover { border-color: var(--line-hi); }
+.kcard h3 { font-size: var(--step-1); }
+
+/* --------------------------------------------------------------- theme --- */
+.themeprev { text-align: left; cursor: pointer; }
+.themeprev[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 3px var(--ring); }
+
+/* ------------------------------------------------------------- strips ---- */
+.yearstrip { display: block; }
+
+/* -------------------------------------------------------------- search --- */
+mark {
+  background: color-mix(in oklab, var(--accent) 26%, transparent);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+/* --------------------------------------------------------------- table --- */
+table.data tr.on td { background: var(--accent-soft); }
+
+/* Long prose inside a card should not run past 70 characters. */
+.card p { max-width: 74ch; }
+
+/* ---------------------------------------------------------------- print -- */
+@media print {
+  .rail, .tabbar, .moresheet, .toasts, .offbar, .pal, .skip { display: none !important; }
+  .shell { grid-template-columns: 1fr; }
+  .view { display: block !important; }
+  body { background: #fff; color: #000; }
+  .card { break-inside: avoid; border: 1px solid #ccc; box-shadow: none; }
+}

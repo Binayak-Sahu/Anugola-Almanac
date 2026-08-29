@@ -1,15 +1,25 @@
 CHANGING THE NAME
 =================
-"The Angul Almanac" is applied. To use a different one, open index.html
-in any text editor (Notepad works) and change these four lines. Nothing
-else depends on the name.
+"The Angul Almanac" is applied. To use a different one, change these
+four places. Nothing else depends on the name.
 
-  1.  <title>The Angul Almanac — Talcher</title>
-  2.  <h1>The Angul <em>Almanac</em></h1>
-         The <em> wraps the second word; it renders in the accent green.
-         For a one-word name:  <h1>Later<em>ite</em></h1>
-  3.  "name" and "short_name" inside manifest.webmanifest (the phone app name)
-  4.  the <meta name="description"> line, for link previews
+  1.  index.html — the <title> line
+        <title>The Angul Almanac — Talcher</title>
+
+  2.  index.html — the heading inside the rail
+        <h1>The Angul <em>Almanac</em></h1>
+      The <em> wraps the second word; it renders in the accent colour.
+      For a one-word name:  <h1>Later<em>ite</em></h1>
+
+  3.  manifest.webmanifest — "name" and "short_name"
+      (this is what appears under the icon on your phone)
+
+  4.  index.html — the <meta name="description"> line, for link previews
+
+  Optionally: src/main.js sets the browser tab title per screen as
+  `${v.label} — The Angul Almanac`. Change that string too if you want
+  it to match.
+
 
 THE OTHER OPTIONS
   Latitude Twenty     20.95°N is the fact the whole site rests on — the
@@ -21,7 +31,19 @@ THE OTHER OPTIONS
   The Standing Orders Treats it as instructions to yourself.
   Sun & Slab          A container orchard on concrete in Odisha.
 
+
 DO NOT CHANGE
-  The storage name "bl_v7" and the store name "balcony-ledger" inside
-  index.html. They are invisible internal labels. Changing either one
-  makes the app forget everything you have logged.
+  · The storage key "almanac_v10" in src/core/schema.js.
+    Changing it makes the app forget everything you have logged.
+
+  · The legacy keys "bl_v7" and "bl_v6" in the same file. They are how
+    data from the older versions is found and carried across.
+
+  · The IndexedDB name "balcony-ledger" in src/core/persist.js.
+    It is a leftover name from the very first version and it looks
+    wrong, but every photo you have ever saved is filed under it.
+    Renaming it orphans all of them.
+
+  · The cache name prefix "almanac-" in sw.js. Bumping the VERSION
+    string there is correct and expected on every deploy; changing the
+    prefix means old caches are never cleaned up.

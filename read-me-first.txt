@@ -1,91 +1,104 @@
-THE ANGUL ALMANAC — v9
+THE ANGUL ALMANAC — v10
 Talcher, Angul district, Odisha.
 
 
 ═══════════════════════════════════════════════════════════════════════
 IF YOU READ ONLY ONE THING
 
-Two ways to use this. Both work.
+  ON YOUR PHONE, AS AN APP  (about four minutes, and the best way)
+  Put it online once — instructions below — then open the address on
+  your phone and choose "Add to Home Screen". You get a proper app
+  icon. It opens with no signal. It survives being in the yard.
 
   ON YOUR COMPUTER, RIGHT NOW
-  Double-click index.html. That is it. Everything works — no internet
-  needed, nothing to install, nothing to set up. Your data saves itself
-  in that browser.
+  Open a terminal in this folder and type:  npm start
+  Then go to http://localhost:5173
 
-  ON YOUR PHONE, AS AN APP
-  Put it online once (instructions below, about four minutes), then open
-  the address on your phone and choose "Add to Home Screen". You get a
-  proper app icon. It opens with no signal. It survives being in the yard.
+  WHAT CHANGED, AND WHY YOU CANNOT JUST DOUBLE-CLICK index.html ANY MORE
+  v10 is built from many small files instead of one enormous one, which
+  is what makes it possible to keep adding to. Browsers refuse to load
+  files that way when you open them off the disk directly — a security
+  rule, not a bug, and there is no way round it.
 
-You do not need to understand any of the files. You never need to open
-any of them.
+  You have not lost anything. Type:  npm run bake
+  That produces  dist/almanac.html  — ONE file, everything inside it,
+  which you can double-click, email to yourself, or carry on a USB
+  stick. It works with no internet and no server, exactly like v9 did.
+  Add  -- --with-state backup.json  to bake your logged data in too.
 ═══════════════════════════════════════════════════════════════════════
 
 
-WHAT CHANGED IN v9
+WHAT CHANGED IN v10
 
-  ONE CATALOGUE
-  Houseplants, fruit trees, vegetables and seed packets are now in the
-  same list — 225 entries instead of 121. Search finds all of them. You
-  can add ANY of them to the buy list, and press "I own this" on any of
-  them to start tracking it. Before, only houseplants could do that.
+  A DAILY ACTION DESK
+  One screen that answers "what do I do in the next hour", ordered by
+  what actually breaks if you skip it, with the reason attached to every
+  line. Everything else in the app is reference material for this page.
 
-  New filters across the top: what kind of thing it is, which zone it
-  belongs in (A to E, or indoors), and a verdict —
+  THE ORCHARD IS NOW ON A CLOCK
+  Each of the eight trees carries its whole schedule: which bag it is
+  standing in, when it outgrows it, when the root-prune falls due once
+  it stops climbing, and how far through the wait for first fruit it is.
+  Miss a step-up and the roots circle and girdle the trunk. Miss a
+  root-prune in the final bag and it strangles itself over three years.
+  Neither failure shows above ground — which is the whole reason this
+  screen exists.
 
-      Works here            plant it, it will fruit
-      Works, with a catch    read the note first
-      Ruled out — and why    do not buy it, here is the reason
+  SEEDS ARE TRACKED PROPERLY
+  One record per SOWING, not per variety, so re-sowing radish every
+  fortnight from October is tracked instead of overwritten. Germination
+  is worked out as a temperature budget rather than a number of days: a
+  chilli seed needs the same accumulated warmth whether it gets it in
+  six days at 30 °C or eighteen at 18 °C. Below its base temperature the
+  app tells you plainly that nothing will happen and that the seed is
+  fine — which is what actually went wrong with a January sowing.
+  The hardening-off ladder is written for a 45 °C site: morning sun
+  only, never afternoon.
 
-  The "ruled out" list is deliberate. Apple, litchi, peach, mangosteen,
-  durian and Alphonso mango are all sold in Indian nurseries and none of
-  them will fruit for you. Each entry says exactly why. That list will
-  save you more money than the rest of the app.
+  FOUR THEMES INSTEAD OF TWO
+  Two looks, each with light and dark:
+    Jungle     — lush and editorial. Serif headings, soft shadows,
+                 canopy light. What v9 looked like, done properly.
+    Precision  — an instrument panel. Sharp corners, hairline rules,
+                 a faint blueprint grid, denser data.
+  Press  y  to swap look,  t  to cycle light / dark / follow-the-phone.
 
-  48 FRUIT TREES AND VARIETIES
-  Not just "mango" — Amrapali, Mallika, Dashehari, Kesar, Arka Neelkiran,
-  Banganapalli, each with its own verdict. Same for guava, jamun, sapota,
-  citrus. Every entry tells you how it is propagated (this matters more
-  than anything else: a grafted mango fruits in 3 years, a seedling takes
-  8 and will not taste like the parent), how long to first fruit, and the
-  final bag size.
+  THE APP NOW SHOWS ITS WORKING
+  Every temperature is labelled MODELLED or MEASURED. Log eight
+  afternoon readings in a zone and that zone stops being a guess and
+  starts using your numbers. There is a progress bar for it.
 
-  FEED — A WHOLE NEW SECTION
-  Everything about fertiliser in one place:
-    · How to read a yellow leaf. The trick is looking at WHICH leaves
-      are affected before you look at the colour. Old leaves and new
-      leaves mean opposite things.
-    · A dose calculator — pick a product and a bag size, it tells you
-      the grams and the litres.
-    · What the numbers on the bag mean (19:19:19 and so on).
-    · Organic inputs and when each one wins.
-    · Why pH decides whether any of it works at all. This matters here
-      because coal ash makes your soil alkaline.
-    · Salt buildup, and how to flush it. Your ledger already shows one
-      plant suffering from this.
-    · A month-by-month feeding year, including the month you feed
-      nothing at all.
+  THINGS IT CAN NOW WORK OUT RATHER THAN ASSERT
+    · The June sun here reaches 87.5° — within two and a half degrees
+      of straight overhead. That one fact is why an overhang shades the
+      south balcony all summer and floods it in December, and the app
+      now calculates the whole year of it from your overhang depth.
+    · Chill hours: zero. That is why apple, litchi and peach are out.
+    · Root-zone temperature. A black plastic pot in Zone A in May
+      reaches 54 °C. A pale fabric bag under 50% net with two inches of
+      mulch reaches 44.5 °C. Feeder roots die from about 40 °C, and the
+      leaves look perfectly fine while it happens.
 
-  PHONE
-    · Five buttons along the bottom instead of fourteen. Everything else
-      is behind "More".
-    · Text fields no longer make the screen zoom in when you tap them.
-      (This was the most annoying bug on the whole site.)
-    · Wide tables now stack into readable rows instead of running off
-      the side of the screen.
-    · Works with no signal once installed.
-    · A yellow bar appears at the bottom when you are offline.
+  TWO REAL ERRORS FIXED
+    · Heat index was badly overstated, because a monthly AVERAGE
+      humidity was being paired with the day's HIGH temperature. Air
+      holds about twice as much water at 40 °C as at 30 °C, so the
+      afternoon figure is much lower. The balcony was reading 60 °C in
+      August. It now reads 49 °C — still serious, no longer crying wolf.
+    · The fertiliser calculator was prescribing a salt dose. Labels say
+      "2–3 grams per litre", which is a strength, not an amount. Taken
+      literally across a proper soak of a 43-litre bag that is 32 grams
+      of 19:19:19 in one go. Fertiliser is now measured per ten litres
+      of soil, which is how it is actually done.
 
-  FIXES
-    · Watering advice for outdoor plants was wrong. It was reading
-      phrases like "Rarely" and turning them into "every 10 days". Each
-      outdoor plant now carries a real number for each of the four
-      seasons, and shows the written rule when there is no fixed number.
-    · Outdoor plants were being labelled "At the glass" and judged
-      against a model of your indoor room. They are now labelled by
-      their real zone and left out of the room calculations.
-    · Keyboard shortcuts now reach every section.
-    · You can bookmark a specific plant, not just a section.
+  ALSO
+    · Ctrl+K searches everything from anywhere.
+    · Deep links: you can send someone #orchard/mango.
+    · Tighter security headers — the old build had to allow inline
+      scripts, this one does not.
+    · Five plants appeared twice in the catalogue with the same internal
+      name. Harmless before, not harmless now that the app refers to
+      plants by name. Fixed and labelled.
 
 
 ═══════════════════════════════════════════════════════════════════════
@@ -105,51 +118,66 @@ PUTTING IT ON YOUR PHONE — about four minutes
   5. Open the address on your phone.
        iPhone:  Share button, then "Add to Home Screen"
        Android: three-dot menu, then "Install app"
-  6. In the app, go to Memory, then Sync, type the same password,
-     and press Connect. Do this on every device you use.
+  6. In the app, go to Settings, type the same password, press Connect.
+     Do this on every device you use.
 
   Same password everywhere, or your phone and laptop will not see each
   other's changes.
 
 
-ALREADY HAVE v8 ONLINE?
-  Drag the folder onto your existing site instead of making a new one.
-  Do not touch the password or the function. Everything you have logged
-  carries over — pots, photos, watering history, buy list.
+COMING FROM v8 OR v9?
+  Nothing to do. Open v10 once and your pots, watering history, buy
+  list and notes are carried across automatically the first time it
+  loads. The old data is left where it was as a backup and is never
+  written to again.
+
+  One thing worth knowing: v9 referred to plants by their POSITION in
+  the catalogue. v10 refers to them by name. The changeover happens
+  once, on that first load, while the old ordering still applies —
+  so open v10 before making any further edits in an old copy.
 
 
 WHERE YOUR DATA LIVES
   · In whichever browser you used, always.
   · In your Netlify site, if you connected it.
-  · In Memory → "Bake into this file", which downloads a complete backup
-    copy of the whole app with your data inside it. Keep one somewhere.
-    Do this before any big change.
-
-  Careful: that downloaded copy and the online copy then drift apart. If
-  you later drag the OLD downloaded copy back onto Netlify, it replaces
-  the newer data. When in doubt, deploy the folder, not a backup.
+  · In Settings → "Download backup", which saves everything including
+    photos as one file. Keep one somewhere. Do this before any big
+    change.
 
 
 THE FILES — what each one is, so nothing looks alarming
 
-  index.html              the entire app. Everything is in this one file.
-  manifest.webmanifest    tells your phone the name and icon to use
-  sw.js                   makes it work with no signal
-  icon-*.png              the app icon
-  netlify.toml            settings for the website host
-  netlify/functions/      the piece that syncs between your devices
-  read-me-first.txt       this file
-  renaming.txt            how to change the app's name
+  index.html            the page itself. Small now — it is only a frame.
+  src/                  the app, in small files.
+     core/              storage, syncing, routing — the plumbing
+     engine/            the gardening knowledge, as arithmetic
+     ui/                themes, search, shared pieces
+     views/             one file per screen
+     styles/            colours, type and layout
+  data/                 the catalogue and all the reference tables
+  tools/                helper scripts (see below)
+  legacy/index-v9.html  the previous version, kept whole
+  sw.js                 makes it work with no signal
+  netlify/functions/    the piece that syncs between your devices
+  docs/BLUEPRINT.md     why it is built this way. Worth reading once.
 
   You never need to edit any of them.
 
 
+THE FOUR COMMANDS
+
+  npm start        run it on this computer
+  npm run bake     make the one-file version you can double-click
+  npm run check    check nothing is broken (438 tests, one second)
+  npm run extract  re-read the data out of the old v9 file
+
+
 KEYBOARD, IF YOU USE A COMPUTER
-  1 to 9       jump between the first nine sections
-  0            the tenth
-  Shift+1..4   the last four
-  /            search the catalogue
+  1 to 9, 0    jump between sections
   Ctrl+K       search everything, from anywhere
+  /            the same
+  t            light / dark / follow the phone
+  y            swap between the Jungle and Precision looks
   Esc          close whatever is open
 
 
@@ -157,16 +185,26 @@ WHAT TO DO FIRST, THIS WEEK
 
   Outdoors — this is time-critical. Build and cure the two soil mixes
   now. The coco peat must be soaked in calcium nitrate first or it will
-  quietly starve your plants of calcium. The mix then needs five to seven
-  days covered in the shade before anything goes into it. Pot up the
-  eight plants in early September. Feed nothing until about 1 October.
+  quietly starve your plants of calcium. The mix then needs five to
+  seven days covered in the shade before anything goes into it. Pot up
+  the eight plants in early September. Feed nothing until about 1
+  October.
 
-  Indoors — buy the rack and the grow light before buying another plant.
-  Half the catalogue cannot survive that room on window light alone.
+  Indoors — buy the rack and the grow light before buying another
+  plant. Half the catalogue cannot survive that room on window light
+  alone.
 
-  And do the crush-and-smell test on the three tall plants. It takes two
-  seconds and it is still marked unresolved.
+  And do the crush-and-smell test on the three tall plants. It takes
+  two seconds and it is still marked unresolved. If they are ginger
+  they want double the water and much more light, and they die back
+  completely around December — do not throw the pots out.
+
+  Then buy two cheap hygrometers, one for Zone C and one for Zone A,
+  and log an afternoon reading whenever you walk past. Eight of them
+  and the app stops guessing about that zone. It is the cheapest
+  upgrade available to you.
 
 
-May in that room models to around 50°C against a 45.3°C outdoor average.
-March through June is the hard part, not winter. Plan for shade.
+May in that room models to around 50°C against a 45.3°C outdoor
+average. March through June is the hard part, not winter. Plan for
+shade.

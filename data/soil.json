@@ -1,0 +1,376 @@
+{
+ "MIXES": [
+  {
+   "k": "neat",
+   "n": "Neat Magic Soil",
+   "parts": {
+    "magic": 1
+   },
+   "who": "Pothos, peperomia, spider plant, syngonium, aglaonema, ZZ, ferns",
+   "nt": "What the bag was made for. Add nothing."
+  },
+  {
+   "k": "open",
+   "n": "Everyday foliage",
+   "parts": {
+    "magic": 4,
+    "perlite": 1
+   },
+   "who": "Any of the above in a plastic pot, or anything potted during monsoon",
+   "nt": "A little perlite is cheap insurance against a pot that never dries."
+  },
+  {
+   "k": "gritty",
+   "n": "Gritty 1:1:1",
+   "parts": {
+    "magic": 1,
+    "sand": 1,
+    "perlite": 1
+   },
+   "who": "Jade, echeveria, haworthia, sedum, graptoveria — most succulents",
+   "nt": "Your jade needs this. Neat Magic Soil will rot it within a season."
+  },
+  {
+   "k": "xgritty",
+   "n": "Extra gritty",
+   "parts": {
+    "magic": 1,
+    "sand": 2,
+    "perlite": 1
+   },
+   "who": "Cactus, adenium, lithops, euphorbia, caudex plants",
+   "nt": "Mostly mineral. Finished mix should pour through your fingers, not clump."
+  },
+  {
+   "k": "heavy",
+   "n": "Heavy feeder",
+   "parts": {
+    "magic": 3,
+    "vermi": 1,
+    "sand": 1
+   },
+   "who": "Turmeric and gingers, chilli, curry leaf, lemongrass, dwarf fruit trees",
+   "nt": "If the tall ones smell of ginger when crushed, they belong in this."
+  },
+  {
+   "k": "seed",
+   "n": "Seedlings & cuttings",
+   "parts": {
+    "magic": 2,
+    "perlite": 1
+   },
+   "who": "Rooting cuttings, seed trays, tiny plugs",
+   "nt": "No vermicompost — fresh roots burn on it."
+  },
+  {
+   "k": "orchid",
+   "n": "Orchid bark",
+   "parts": {
+    "bark": 4,
+    "perlite": 1
+   },
+   "who": "Moth orchid, dendrobium, anything epiphytic",
+   "nt": "No Magic Soil at all. Orchid roots need air and will drown in it."
+  }
+ ],
+ "COMP": {
+  "magic": [
+   "Magic Soil",
+   0.33
+  ],
+  "sand": [
+   "Coarse sand or grit",
+   1.5
+  ],
+  "perlite": [
+   "Perlite",
+   0.1
+  ],
+  "vermi": [
+   "Vermicompost",
+   0.6
+  ],
+  "bark": [
+   "Orchid bark",
+   0.35
+  ]
+ },
+ "POTTYPES": [
+  [
+   "nursery",
+   "Plastic nursery pot",
+   1,
+   "Cheap, light, holds water longest",
+   "The default, and the safest choice while your light is poor. Can cook roots in a sunny window."
+  ],
+  [
+   "terra",
+   "Terracotta / clay",
+   0.95,
+   "Breathes, dries fast",
+   "Best pot there is for jade and succulents. In May it can dry a small pot in a day — watch it."
+  ],
+  [
+   "glazed",
+   "Glazed ceramic",
+   0.95,
+   "Holds water like plastic",
+   "Heavy and handsome. Check it has a real drainage hole before you buy."
+  ],
+  [
+   "deep",
+   "Deep or tall pot",
+   1.35,
+   "Long root run",
+   "For gingers, turmeric, chilli and anything that sends roots straight down."
+  ],
+  [
+   "squat",
+   "Squat bowl / bonsai tray",
+   0.55,
+   "Wide and shallow",
+   "Dries evenly, no soggy bottom. Succulent arrangements, bonsai, lithops."
+  ],
+  [
+   "bag",
+   "Fabric grow bag",
+   1.1,
+   "Air-prunes roots, drains hard",
+   "Excellent roots, cheap, folds away. Drips everywhere — stand it in a solid tray on your tiles."
+  ],
+  [
+   "self",
+   "Self-watering pot",
+   0.75,
+   "Reservoir eats volume",
+   "Useful if you travel. Never for succulents, and risky until you can read a plant well."
+  ],
+  [
+   "basket",
+   "Orchid basket",
+   0.85,
+   "Open sided",
+   "Bark only. Water by dunking, not pouring."
+  ]
+ ],
+ "POTSIZES": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  10,
+  12,
+  14
+ ],
+ "BAGTYPES": [
+  {
+   "n": "Non-woven geotextile",
+   "sub": "\"fabric grow bag\", 300–500 GSM",
+   "life": "3–5 yr in sun if UV-stabilised",
+   "root": "Air-prunes — roots stop at the wall and branch. No circling.",
+   "v": "y",
+   "verdict": "Use this. 400 GSM, beige or grey or white only."
+  },
+  {
+   "n": "HDPE woven laminated",
+   "sub": "rice-sack material, green or white",
+   "life": "2–4 yr",
+   "root": "Roots circle and girdle. Mandatory root-prune every two years.",
+   "v": "m",
+   "verdict": "Fine for the temporary intermediate size, or until the drip line runs — it holds water longer."
+  },
+  {
+   "n": "Black plastic pot or poly bag",
+   "sub": "rigid or thin film",
+   "life": "—",
+   "root": "Root zone crosses 50°C in May.",
+   "v": "n",
+   "verdict": "Never. Cooks the fine feeder roots while the leaves still look perfectly fine."
+  },
+  {
+   "n": "Terracotta or cement",
+   "sub": "—",
+   "life": "Indefinite",
+   "root": "Fine. Evaporative cooling through the wall.",
+   "v": "y",
+   "verdict": "Good final home for mango and sapota if you can accept the weight."
+  }
+ ],
+ "BAGSIZES": [
+  {
+   "s": "8×8",
+   "l": 6
+  },
+  {
+   "s": "10×10",
+   "l": 12
+  },
+  {
+   "s": "12×12",
+   "l": 22
+  },
+  {
+   "s": "14×14",
+   "l": 35
+  },
+  {
+   "s": "15×15",
+   "l": 43
+  },
+  {
+   "s": "16×16",
+   "l": 55
+  },
+  {
+   "s": "18×18",
+   "l": 75
+  },
+  {
+   "s": "20×20",
+   "l": 100
+  },
+  {
+   "s": "24×24",
+   "l": 178
+  }
+ ],
+ "OMIX": {
+  "woody": {
+   "name": "Woody mix",
+   "for": "Mango, jamun ×2, guava, sapota, papaya",
+   "parts": [
+    [
+     "Garden soil / laterite topsoil, sieved",
+     40,
+     "--pot-dk"
+    ],
+    [
+     "Coco peat, charged, or leaf mould",
+     25,
+     "--clay"
+    ],
+    [
+     "Coarse river sand or 4–6 mm grit",
+     25,
+     "--faint"
+    ],
+    [
+     "Vermicompost",
+     10,
+     "--leaf-dk"
+    ]
+   ],
+   "am": [
+    [
+     "Neem cake, powdered",
+     "500 g",
+     "nematodes, grubs, slow N"
+    ],
+    [
+     "Bone meal or SSP",
+     "200 g",
+     "root establishment"
+    ],
+    [
+     "Trichoderma viride",
+     "50 g",
+     "blocks Fusarium and collar rot"
+    ],
+    [
+     "Mycorrhiza (VAM)",
+     "100 g",
+     "phosphorus uptake"
+    ],
+    [
+     "Wood ash or dolomite",
+     "100 g",
+     "potash and calcium — skip if pH is already above 7.5"
+    ]
+   ]
+  },
+  "soft": {
+   "name": "Soft mix",
+   "for": "Brinjal, chilli, and every vegetable bag",
+   "parts": [
+    [
+     "Garden soil, sieved",
+     25,
+     "--pot-dk"
+    ],
+    [
+     "Coco peat, charged",
+     40,
+     "--clay"
+    ],
+    [
+     "Coarse river sand",
+     20,
+     "--faint"
+    ],
+    [
+     "Vermicompost",
+     15,
+     "--leaf-dk"
+    ]
+   ],
+   "am": [
+    [
+     "Neem cake",
+     "375 g",
+     "nematodes"
+    ],
+    [
+     "Bone meal or SSP",
+     "150 g",
+     "flower set"
+    ],
+    [
+     "Gypsum or crushed eggshell",
+     "250 g",
+     "calcium — this is what prevents blossom end rot"
+    ],
+    [
+     "Trichoderma viride",
+     "40 g",
+     "wilt"
+    ],
+    [
+     "Mycorrhiza (VAM)",
+     "75 g",
+     "—"
+    ]
+   ]
+  },
+  "seed": {
+   "name": "Seed-starting mix",
+   "for": "Every tray. Deliberately poor.",
+   "parts": [
+    [
+     "Coco peat, charged and sieved fine",
+     60,
+     "--clay"
+    ],
+    [
+     "Fine vermicompost, sieved",
+     20,
+     "--leaf-dk"
+    ],
+    [
+     "River sand or perlite",
+     20,
+     "--faint"
+    ]
+   ],
+   "am": [
+    [
+     "Trichoderma viride",
+     "5 g per 5 L",
+     "damping-off insurance"
+    ]
+   ]
+  }
+ }
+}

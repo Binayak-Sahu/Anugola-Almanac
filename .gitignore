@@ -1,0 +1,7 @@
+# Build output of `npm run bake`. Regenerable, and 520 KB of noise in diffs.
+dist/
+
+node_modules/
+.netlify/
+.DS_Store
+*.log
