@@ -29,6 +29,9 @@ import { renderZones, wireZones } from './views/zones.js';
 import { renderFeed, wireFeed } from './views/feed.js';
 import { renderBags, wireBags } from './views/bags.js';
 import { renderShrooms, wireShrooms } from './views/shrooms.js';
+import { renderClimate, wireClimate } from './views/climate.js';
+import { renderBuy, wireBuy } from './views/buy.js';
+import { renderCare, wireCare } from './views/care.js';
 import { renderSettings, wireSettings } from './views/settings.js';
 import { startSync } from './core/sync.js';
 import { SCHEMA_VERSION } from './core/schema.js';
@@ -46,6 +49,9 @@ const VIEWS = [
   { k: 'zones', label: 'Zones', group: 'Reference', icon: 'grid', render: renderZones, wire: wireZones },
   { k: 'feed', label: 'Feed', group: 'Reference', icon: 'flask', render: renderFeed, wire: wireFeed },
   { k: 'bags', label: 'Bags & mix', group: 'Reference', icon: 'bag', render: renderBags, wire: wireBags },
+  { k: 'climate', label: 'Climate', group: 'Reference', icon: 'chart', render: renderClimate, wire: wireClimate },
+  { k: 'care', label: 'Care', group: 'Reference', icon: 'heart', render: renderCare, wire: wireCare },
+  { k: 'buy', label: 'Buying', group: 'Reference', icon: 'cart', render: renderBuy, wire: wireBuy },
   { k: 'settings', label: 'Settings', group: 'Data', icon: 'chip', render: renderSettings, wire: wireSettings }
 ];
 
@@ -64,7 +70,8 @@ function renderNav() {
     orchard: Object.keys(state.orchard).length || null,
     seeds: state.sowings.filter((s) => !['planted', 'failed'].includes(s.status)).length || null,
     pots: state.specimens.length || null,
-    catalogue: catalogue(state).length
+    catalogue: catalogue(state).length,
+    buy: state.picks.length || null
   };
 
   let lastGroup = '';

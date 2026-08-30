@@ -19,11 +19,12 @@
 
 import { esc, mount, on } from '../core/dom.js';
 import { round } from '../core/util.js';
-import { DB } from '../core/data.js';
+import { DB, proseHtml, prose } from '../core/data.js';
 import { section, chip, facts, empty, stepper } from '../ui/components.js';
 
 let OUT = { recipe: 'woody', bag: '18×18' };
 let IN = { mix: 'open', rows: [{ d: 6, n: 3 }] };
+const VIEW = 'bags';
 
 /** Volume of a round pot, litres, from diameter in inches. */
 const potVolume = (d) => 0.00759 * d * d * d;
@@ -40,11 +41,18 @@ export function renderBags() {
       </p>
     </div>
 
+    ${proseSection('which-bag', { bagtypes: bagTypes() })}
     ${section('Outdoor mix calculator', outdoorCalc(), { eyebrow: 'By volume, scaled to the bag' })}
     ${section('Indoor mix calculator', indoorCalc(), { eyebrow: 'By parts, scaled to the pots' })}
     ${section('Curing', curing(), { eyebrow: 'Five to seven days. Not optional.' })}
-    ${section('Bag types', bagTypes(), { eyebrow: 'What to buy and what to refuse' })}
     ${section('Bag sizes', sizeTable(), { eyebrow: 'Diameter × height, in litres' })}
+
+    ${proseSection('pot-types', { typetable: potTypes() }, 'soil')}
+    ${proseSection('pot-sizes', { sizetable: potSizes() }, 'soil')}
+    ${proseSection('feeding', { feedtable: '' }, 'soil')}
+
+    ${proseSection('three-things-people-skip')}
+    ${proseSection('feeding-the-juvenile-phase')}
   `);
 }
 
@@ -235,5 +243,56 @@ export function wireBags() {
   on('irow', (el, e, ds) => {
     IN.rows[Number(ds.i)][ds.k] = Math.max(1, Number(el.value) || 1);
     renderBags();
+  });
+}
+
+/* ==========================================================================
+   INDOOR POTS
+   ==========================================================================
+   v9 kept these on a separate "Soil & feed" screen. They belong here: it is
+   the same question as the grow bags — what the container is made of decides
+   how fast it dries and how hot the root zone gets — only asked about a
+   six-inch pot on a windowsill instead of a 24-inch bag in the sun.
+
+   POTTYPES rows are [key, name, dryingMultiplier, summary, verdict].
+   ========================================================================== */
+
+function potTypes() {
+  return `<div class="scrollx"><table class="data stack">
+    <thead><tr><th>Pot</th><th>Dries</th><th>Character</th><th>Verdict</th></tr></thead>
+    <tbody>${DB.soil.POTTYPES.map(([key, name, mult, summary, verdict]) => `<tr>
+      <td data-l="Pot"><b>${esc(name)}</b></td>
+      <td data-l="Dries" class="num">${mult === 1 ? 'baseline' : (mult < 1 ? '×' + mult + ' faster' : '×' + mult)}</td>
+      <td data-l="Character">${esc(summary)}</td>
+      <td data-l="Verdict">${esc(verdict)}</td>
+    </tr>`).join('')}</tbody>
+  </table></div>`;
+}
+
+function potSizes() {
+  return `<div class="scrollx"><table class="data stack">
+    <thead><tr><th>Diameter</th><th>Volume</th><th>Mix needed</th><th>Water per soak</th></tr></thead>
+    <tbody>${DB.soil.POTSIZES.map((d) => {
+      const litres = potVolume(d);
+      return `<tr>
+        <td data-l="Diameter"><b class="num">${d}″</b></td>
+        <td data-l="Volume" class="num">${round(litres, 2)} L</td>
+        <td data-l="Mix needed" class="num">${round(litres * 1.15, 2)} L</td>
+        <td data-l="Water per soak" class="num">${round(litres * 0.25, 2)} L</td>
+      </tr>`;
+    }).join('')}</tbody>
+  </table></div>
+  <p class="subtle" style="margin-top:10px">
+    Volume is 0.00759 × d³ litres for a standard tapered pot — the same formula the indoor
+    mix calculator above uses, so the two always agree.
+  </p>`;
+}
+
+/** Wrap a lifted v9 block in v10's own section furniture. */
+function proseSection(slug, mounts = {}, view = VIEW) {
+  const block = prose(view, slug);
+  if (!block) return '';
+  return section(block.heading, proseHtml(view, slug, mounts), {
+    eyebrow: block.sub || block.eyebrow || ''
   });
 }

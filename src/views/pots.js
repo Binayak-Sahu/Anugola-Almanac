@@ -12,11 +12,13 @@
 import { esc, mount, on } from '../core/dom.js';
 import { iso, relDays, daysSince } from '../core/util.js';
 import * as store from '../core/store.js';
-import { catalogue, PLACE_LBL, SITE_LBL, DB } from '../core/data.js';
+import { catalogue, PLACE_LBL, SITE_LBL, DB, proseHtml, prose } from '../core/data.js';
 import { schedule, seasonOf } from '../engine/water.js';
 import { zoneMonth } from '../engine/heat.js';
 import { section, chip, meter, facts, empty } from '../ui/components.js';
 import { toast, toastUndo } from '../ui/toast.js';
+
+const VIEW = 'pots';
 
 export function renderPots(target = '') {
   const state = store.get();
@@ -66,6 +68,9 @@ export function renderPots(target = '') {
       : empty('No pots tracked. Press "I own this" on anything in the catalogue.'))}
 
     ${section('Add a pot', addForm())}
+
+    ${proseSection('the-tall-ones-almost-certainly-ginger-family')}
+    ${proseSection('photographing-for-identification')}
   `);
 
   if (target) document.getElementById(`pot-${target}`)?.scrollIntoView({ block: 'center', behavior: 'smooth' });
@@ -175,5 +180,14 @@ export function wirePots() {
     });
     e.target.reset();
     toast(`${name} added`);
+  });
+}
+
+/** Wrap a lifted v9 block in v10's own section furniture. */
+function proseSection(slug, mounts = {}, view = VIEW) {
+  const block = prose(view, slug);
+  if (!block) return '';
+  return section(block.heading, proseHtml(view, slug, mounts), {
+    eyebrow: block.sub || block.eyebrow || ''
   });
 }

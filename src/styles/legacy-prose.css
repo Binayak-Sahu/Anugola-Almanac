@@ -1,0 +1,171 @@
+/* ============================================================================
+   LEGACY PROSE
+   ----------------------------------------------------------------------------
+   Styling for the blocks lifted verbatim out of v9's markup into
+   data/prose.json. That markup carries v9's class names and six of v9's CSS
+   variable names, and rewriting 23 KB of hand-authored prose to v10's classes
+   would mean editing every sentence — which is exactly how wording gets lost.
+
+   So the classes are mapped instead. Everything here is scoped under `.prose`
+   so none of it can leak into v10's own markup, and every rule resolves to a
+   v10 semantic or domain token — there is no new visual language in this file,
+   only a translation layer.
+
+   The surface is small and was measured, not guessed: six variables and about
+   twenty classes across 67 blocks.
+   ========================================================================== */
+
+.prose {
+  /* --------------------------------------------------------------------
+     v9's light-band and signal variables, aliased onto v10's domain tokens.
+     v9 named them after the indoor light ladder (at the glass / half a metre
+     back / a metre back / desk); v10 names them after the five outdoor zones.
+     They are the same four colours doing the same job.
+     -------------------------------------------------------------------- */
+  --glass:  var(--zone-a);
+  --bright: var(--zone-c);
+  --low:    var(--zone-d);
+  --desk:   var(--zone-e);
+  --hot:    var(--danger);
+  --cold:   var(--info);
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(14px * var(--density));
+}
+
+.prose > * + * { margin-top: 0; }
+
+/* ---------------------------------------------------------------- text --- */
+.prose p {
+  margin: 0 0 10px;
+  font-size: 13.5px;
+  line-height: 1.62;
+  color: var(--ink-2);
+  max-width: 72ch;
+}
+.prose p:last-child { margin-bottom: 0; }
+.prose b, .prose strong { color: var(--ink); font-weight: 600; }
+.prose h3, .prose h4 {
+  font-family: var(--f-body);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -.005em;
+  margin: 0 0 8px;
+}
+.prose .sub, .prose .sub2 { color: var(--muted); font-size: 13px; }
+.prose .asof, .prose .hint, .prose .tmi { color: var(--faint); font-size: 12.5px; }
+
+/* --------------------------------------------------------------- cards --- */
+/* v10's own .card rule already applies; these are the v9 modifiers. */
+.prose .card.stack { display: flex; flex-direction: column; gap: 12px; }
+.prose .card.flush { padding: 0; overflow: hidden; }
+.prose .card.flush > table { margin: 0; }
+
+/* ------------------------------------------------------------- callouts --- */
+/* Three severities in v9. They map onto the surfaces v10 already has. */
+.prose .tip,
+.prose .note,
+.prose .warnband {
+  padding: 12px 14px;
+  border-radius: var(--r-s);
+  border: var(--border-w) solid var(--line-2);
+  background: var(--surface-2);
+  font-size: 13.5px;
+  line-height: 1.58;
+  color: var(--ink-2);
+}
+.prose .tip {
+  border-left: 3px solid var(--accent);
+  background: color-mix(in oklab, var(--accent) 7%, var(--surface));
+}
+.prose .warnband {
+  border-left: 3px solid var(--danger);
+  background: color-mix(in oklab, var(--danger) 8%, var(--surface));
+}
+.prose .note { border-left: 3px solid var(--line-hi); }
+
+/* ---------------------------------------------------------------- lists --- */
+.prose ul, .prose ol { margin: 0; padding-left: 20px; font-size: 13.5px; color: var(--ink-2); }
+.prose li { margin-bottom: 7px; line-height: 1.58; }
+.prose li:last-child { margin-bottom: 0; }
+
+/* v9's ticked list: a checkmark instead of a bullet. */
+.prose ul.tick { list-style: none; padding-left: 0; }
+.prose ul.tick > li {
+  position: relative;
+  padding-left: 24px;
+}
+.prose ul.tick > li::before {
+  content: '';
+  position: absolute;
+  left: 4px; top: 7px;
+  width: 9px; height: 5px;
+  border-left: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(-45deg);
+}
+
+/* --------------------------------------------------------------- tables --- */
+.prose .scroll { overflow-x: auto; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; }
+.prose table { border-collapse: collapse; width: 100%; font-size: 13px; }
+.prose thead th {
+  text-align: left;
+  padding: 9px 12px;
+  border-bottom: var(--border-w) solid var(--line);
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--faint);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.prose td {
+  padding: 10px 12px;
+  border-bottom: var(--border-w) solid var(--line-2);
+  vertical-align: top;
+  color: var(--ink-2);
+}
+.prose tr:last-child td { border-bottom: 0; }
+.prose .mono, .prose td.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.prose .total { font-weight: 700; color: var(--ink); }
+
+/* ----------------------------------------------------------------- tags --- */
+/* v9's .tag is v10's .chip, plus the four light-band colour modifiers. */
+.prose .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: var(--r-pill);
+  border: var(--border-w) solid var(--line);
+  background: var(--surface-2);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+.prose .tag.sun    { color: var(--glass);  border-color: color-mix(in oklab, var(--glass) 40%, var(--line));  background: color-mix(in oklab, var(--glass) 10%, var(--surface)); }
+.prose .tag.bright { color: var(--bright); border-color: color-mix(in oklab, var(--bright) 40%, var(--line)); background: color-mix(in oklab, var(--bright) 10%, var(--surface)); }
+.prose .tag.low    { color: var(--low);    border-color: color-mix(in oklab, var(--low) 40%, var(--line));    background: color-mix(in oklab, var(--low) 10%, var(--surface)); }
+.prose .tag.desk   { color: var(--desk);   border-color: color-mix(in oklab, var(--desk) 40%, var(--line));   background: color-mix(in oklab, var(--desk) 10%, var(--surface)); }
+.prose .tag.hot    { color: var(--hot);    border-color: color-mix(in oklab, var(--hot) 40%, var(--line));    background: color-mix(in oklab, var(--hot) 10%, var(--surface)); }
+
+/* ---------------------------------------------------------------- grids --- */
+.prose .grid2, .prose .grid3 { display: grid; gap: calc(14px * var(--density)); }
+@media (min-width: 640px) {
+  .prose .grid2 { grid-template-columns: 1fr 1fr; }
+  .prose .grid3 { grid-template-columns: repeat(3, 1fr); }
+}
+.prose .legend { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 12px; color: var(--muted); }
+.prose .spacer { height: 4px; }
+.prose .mini { font-size: 12px; color: var(--muted); }
+
+/* --------------------------------------------------------------- phone ---- */
+@media (max-width: 860px) {
+  /* v9's prose tables are narrow enough to scroll rather than stack, and the
+     lifted markup has no data-l attributes to stack against. */
+  .prose table { min-width: 480px; }
+  .prose .card.flush { overflow-x: auto; }
+}

@@ -10,7 +10,7 @@
 import { esc, mount, on } from '../core/dom.js';
 import { iso, slugOf, relDays, daysBetween, pct } from '../core/util.js';
 import * as store from '../core/store.js';
-import { DB, SOW_STATUS_LBL } from '../core/data.js';
+import { DB, SOW_STATUS_LBL, proseHtml, prose } from '../core/data.js';
 import { seedProgramme, sowingStatus, thermalFor, expectedDays, HARDENING_LADDER } from '../engine/germination.js';
 import { zoneMonth } from '../engine/heat.js';
 import { section, chip, meter, facts, empty, stepper } from '../ui/components.js';
@@ -57,6 +57,12 @@ export function renderSeeds() {
     })}
 
     ${section('Seed catalogue', seedTable(), { eyebrow: `${DB.seeds.SEEDS2.length} varieties audited` })}
+
+    ${proseSection('the-order-worth-placing')}
+    ${proseSection('cherry-tomatoes', { cherrylist: cherryList() })}
+    ${proseSection('sowing-tomatoes', { tomsteps: tomatoSteps() })}
+    ${proseSection('where-to-upgrade-next', { upgrades: upgradePaths() })}
+    ${proseSection('where-to-buy', { srclist: supplierList() })}
   `);
 }
 
@@ -204,6 +210,10 @@ function seedTable() {
           const t = thermalFor(s.n);
           return `<tr>
             <td data-l="Variety"><b>${esc(s.n)}</b>${s.star ? ' ★' : ''}
+              <div class="row" style="margin-top:4px">
+                ${chip(DB.seeds.SITELBL[s.s] || s.s, { mono: true, title: 'Supplier' })}
+                ${s.skip ? chip('Skip it', { tone: 'no' }) : ''}
+              </div>
               <div class="subtle">germ. base ${t.base} °C · ${t.opt[0]}–${t.opt[1]} °C ideal</div></td>
             <td data-l="Pack">${esc(s.pk || '—')}<div class="subtle">₹${s.p}</div></td>
             <td data-l="Bag">${esc(s.bag || '—')}</td>
@@ -284,4 +294,103 @@ export function wireSeeds() {
       ? `≈ ${est.days} days to emergence at ${soil} °C. ${est.warning}`
       : (est.warning || 'No thermal profile — it will still be tracked.');
   });
+}
+
+/* ==========================================================================
+   THE BLOCKS RESTORED FROM v9
+   ==========================================================================
+   These four data sets and their surrounding prose were extracted into
+   data/seeds.json and data/prose.json by the v10 rebuild and then never
+   rendered — the cherry-tomato audit especially, which is the most useful
+   thing on this screen. It is the reason the sheet was audited at all: 1,997
+   seed listings and not one dwarf or determinate cherry among them.
+
+   Wording comes from data/prose.json, lifted verbatim. Only the tables are
+   re-rendered, into v10 components.
+   ========================================================================== */
+
+/** Wrap a lifted v9 block in v10's own section furniture. */
+const VIEW = 'seeds';
+
+function proseSection(slug, mounts = {}, view = VIEW) {
+  const block = prose(view, slug);
+  if (!block) return '';
+  return section(block.heading, proseHtml(view, slug, mounts), {
+    eyebrow: block.sub || block.eyebrow || ''
+  });
+}
+
+/* ------------------------------------------------------- cherry tomatoes -- */
+
+const CHERRY_MARK = {
+  y: { tone: 'ok', label: 'Worth it' },
+  m: { tone: 'watch', label: 'With a catch' },
+  n: { tone: 'no', label: 'Skip' }
+};
+
+function cherryList() {
+  return `<div class="scrollx"><table class="data stack">
+    <thead><tr><th>Verdict</th><th>Listing</th><th>Why</th><th>Price</th></tr></thead>
+    <tbody>${DB.seeds.CHERRY.map((c) => {
+      const m = CHERRY_MARK[c.v] || CHERRY_MARK.m;
+      return `<tr>
+        <td data-l="Verdict">${chip(m.label, { tone: m.tone, dot: true })}</td>
+        <td data-l="Listing"><b>${esc(c.n)}</b><div class="subtle">${esc(c.s)}</div></td>
+        <td data-l="Why">${esc(c.d)}</td>
+        <td data-l="Price" class="num">₹${c.p}</td>
+      </tr>`;
+    }).join('')}</tbody>
+  </table></div>`;
+}
+
+/* -------------------------------------------------------- sowing tomatoes -- */
+
+function tomatoSteps() {
+  return `<div class="scrollx"><table class="data stack">
+    <thead><tr><th>When</th><th>Stage</th><th>What you do</th></tr></thead>
+    <tbody>${DB.seeds.TOMSTEP.map(([when, stage, what]) => `<tr>
+      <td data-l="When" class="num">${esc(when)}</td>
+      <td data-l="Stage"><b>${esc(stage)}</b></td>
+      <td data-l="What you do">${esc(what)}</td>
+    </tr>`).join('')}</tbody>
+  </table></div>`;
+}
+
+/* ---------------------------------------------------------- upgrade paths -- */
+
+function upgradePaths() {
+  return DB.seeds.UPG.map((u) => `
+    <article class="card" style="margin-bottom:14px">
+      <div class="eyebrow">Upgrade path</div>
+      <h3 style="margin-top:4px">${esc(u.crop)}</h3>
+      <p class="subtle" style="margin-top:4px">You have: ${esc(u.now)}</p>
+      <div class="card flat hot" style="margin:12px 0">
+        <p style="font-size:13.5px">${esc(u.lim)}</p>
+      </div>
+      <div class="scrollx"><table class="data stack">
+        <thead><tr><th>Variety</th><th>Breeder</th><th>What you gain</th><th>Where in India</th></tr></thead>
+        <tbody>${u.rows.map(([variety, breeder, gain, where]) => `<tr>
+          <td data-l="Variety"><b>${esc(variety)}</b></td>
+          <td data-l="Breeder" style="color:var(--muted)">${esc(breeder)}</td>
+          <td data-l="What you gain">${esc(gain)}</td>
+          <td data-l="Where" style="color:var(--muted)">${esc(where)}</td>
+        </tr>`).join('')}</tbody>
+      </table></div>
+    </article>`).join('');
+}
+
+/* --------------------------------------------------------------- sellers -- */
+
+function supplierList() {
+  return DB.seeds.SRC2.map((s, i) => `
+    <article class="card" style="margin-bottom:10px">
+      <div class="spread" style="align-items:flex-start">
+        <div style="min-width:0">
+          <h3>${i + 1}. ${esc(s.n)}</h3>
+          <div class="subtle">${esc(s.w)}</div>
+        </div>
+      </div>
+      <p style="font-size:13.5px;margin-top:8px">${esc(s.d)}</p>
+      ${s.c ? `<p class="subtle" style="margin-top:6px"><b>The catch:</b> ${esc(s.c)}</p>` : ''}
+    </article>`).join('');
 }

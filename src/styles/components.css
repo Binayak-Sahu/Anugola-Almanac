@@ -274,3 +274,22 @@ table.data tr:last-child td { border-bottom: 0; }
 
 .swatchset { display: flex; gap: 6px; }
 .swatch { width: 22px; height: 22px; border-radius: var(--r-xs); border: var(--border-w) solid var(--line); }
+
+/* ==========================================================================
+   HABIT ILLUSTRATIONS
+   ==========================================================================
+   The little drawn plant on each catalogue card, keyed by growth habit. The
+   shapes come from data/catalogue.json (ART), which is why the fills are set
+   here rather than inline — one rule themes all fifteen of them, in all four
+   theme combinations, off the domain tokens.
+   ========================================================================== */
+.habit { width: 100%; height: auto; max-width: 132px; }
+.habit .lf  { fill: var(--leaf); stroke: var(--leaf-dk); stroke-width: 2.2; }
+.habit .lf2 { fill: color-mix(in oklab, var(--leaf) 72%, var(--surface)); stroke: var(--leaf-dk); stroke-width: 2.2; }
+.habit .pt  { fill: var(--pot); stroke: var(--pot-dk); stroke-width: 2.2; stroke-linejoin: round; }
+
+.kcard { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 14px; align-items: start; }
+.kcard.nohabit { display: block; }
+@media (max-width: 520px) {
+  .kcard { grid-template-columns: 56px minmax(0, 1fr); gap: 10px; }
+}

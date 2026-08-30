@@ -154,7 +154,8 @@ THE FILES — what each one is, so nothing looks alarming
      ui/                themes, search, shared pieces
      views/             one file per screen
      styles/            colours, type and layout
-  data/                 the catalogue and all the reference tables
+  data/                 the catalogue and all the reference tables,
+                        including prose.json — every paragraph from v9
   tools/                helper scripts (see below)
   legacy/index-v9.html  the previous version, kept whole
   sw.js                 makes it work with no signal
@@ -164,11 +165,12 @@ THE FILES — what each one is, so nothing looks alarming
   You never need to edit any of them.
 
 
-THE FOUR COMMANDS
+THE COMMANDS
 
   npm start        run it on this computer
   npm run bake     make the one-file version you can double-click
-  npm run check    check nothing is broken (438 tests, one second)
+  npm run check    check nothing is broken (526 tests, one second)
+  npm run smoke    open every screen in a real browser and check it
   npm run extract  re-read the data out of the old v9 file
 
 

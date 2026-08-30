@@ -8,7 +8,7 @@
 
 import { esc, icon } from '../core/dom.js';
 import { humanSpan, relDays, MON, clamp } from '../core/util.js';
-import { VERDICT_LBL, SITE_LBL, DIFF_LBL, TOX_LBL } from '../core/data.js';
+import { VERDICT_LBL, SITE_LBL, DIFF_LBL, TOX_LBL, DB } from '../core/data.js';
 
 /* ------------------------------------------------------------------ chips - */
 
@@ -122,6 +122,23 @@ export const stressColors = (levels) =>
      Verdict      works / works with a catch / ruled out and why.
    ========================================================================== */
 
+/**
+ * The drawn plant on a catalogue card, chosen by growth habit.
+ *
+ * v9 had these and the first v10 pass dropped them — ART and HABIT_LBL were
+ * extracted into the wrong bundle and then referenced by nothing, so 225 cards
+ * went out as text only. They are worth having: on a list this long the shape
+ * is what you actually navigate by.
+ */
+export function habitArt(habit) {
+  const art = DB.catalogue?.ART;
+  if (!art) return '';
+  const shape = art[habit] || art.clump;
+  if (!shape) return '';
+  const label = DB.catalogue?.HABIT_LBL?.[habit] || habit || 'plant';
+  return `<svg class="habit" viewBox="-6 -6 132 108" role="img" aria-label="${esc(label)}">${shape}</svg>`;
+}
+
 export function knowledgeCard(plant, { compact = false, chillSite = 0, actions = '' } = {}) {
   const tags = [
     plant.prop && chip(plant.prop, { tone: /graft|layer/i.test(plant.prop) ? 'ok' : 'watch', title: 'How it is propagated' }),
@@ -132,15 +149,22 @@ export function knowledgeCard(plant, { compact = false, chillSite = 0, actions =
     plant.verdict && verdictChip(plant.verdict)
   ].filter(Boolean).join('');
 
+  const art = habitArt(plant.habit);
+
   if (compact) {
-    return `<article class="card kcard" data-zone="${esc(plant.site || 'indoor')}">
-      <h3>${esc(plant.name)}</h3>
-      ${plant.lat ? `<div class="subtle" style="font-style:italic">${esc(plant.lat)}</div>` : ''}
-      <div class="row" style="margin-top:8px">${tags}</div>
+    return `<article class="card kcard ${art ? '' : 'nohabit'}" data-zone="${esc(plant.site || 'indoor')}">
+      ${art ? `<div>${art}</div>` : ''}
+      <div style="min-width:0">
+        <h3>${esc(plant.name)}</h3>
+        ${plant.lat ? `<div class="subtle" style="font-style:italic">${esc(plant.lat)}</div>` : ''}
+        <div class="row" style="margin-top:8px">${tags}</div>
+      </div>
     </article>`;
   }
 
-  return `<article class="card kcard" data-zone="${esc(plant.site || 'indoor')}">
+  return `<article class="card kcard ${art ? '' : 'nohabit'}" data-zone="${esc(plant.site || 'indoor')}">
+    ${art ? `<div>${art}</div>` : ''}
+    <div style="min-width:0">
     <div class="spread" style="align-items:flex-start">
       <div style="min-width:0">
         <h3>${esc(plant.name)}</h3>
@@ -161,6 +185,7 @@ export function knowledgeCard(plant, { compact = false, chillSite = 0, actions =
       ['Price', plant.price ? '₹' + plant.price : '']
     ])}
     ${plant.note ? `<p class="lede" style="margin-top:12px;font-size:13.5px">${esc(plant.note)}</p>` : ''}
+    </div>
   </article>`;
 }
 

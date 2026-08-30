@@ -10,14 +10,15 @@
 import { esc, mount, on } from '../core/dom.js';
 import { MON, MONFULL, round } from '../core/util.js';
 import * as store from '../core/store.js';
-import { DB } from '../core/data.js';
+import { DB, proseHtml, prose } from '../core/data.js';
 import { zoneMonth, zoneMonthCalibrated, calibrate, heatIndexC, heatBand, vpd, vpdBand,
   rootZoneTemp, rootZoneVerdict, ZONE_MODEL, BAG_FACTOR } from '../engine/heat.js';
 import { overhangYear, BALCONY_DEFAULT } from '../engine/solar.js';
-import { section, chip, meter, yearStrip, stressColors, facts, empty } from '../ui/components.js';
+import { section, chip, meter, yearStrip, stressColors, facts, stepper, empty } from '../ui/components.js';
 import { toast, toastUndo } from '../ui/toast.js';
 
 const ZONE_KEYS = ['A', 'B', 'C', 'D', 'E'];
+const VIEW = 'zones';
 
 export function renderZones(target = '') {
   const state = store.get();
@@ -41,6 +42,13 @@ export function renderZones(target = '') {
     ${section('Zone C: why the calendar is inverted', balconyPanel(), { eyebrow: 'Overhang geometry' })}
 
     ${section('Root zone', rootZonePanel(), { eyebrow: 'The number nobody measures' })}
+
+    ${section('The acclimation ladder', acclimationLadder(), {
+      eyebrow: 'Roughly a week at each step. This is why the eight are alive.' })}
+
+    ${proseSection('shade-requirement-by-plant')}
+    ${proseSection('why-not-air-conditioning')}
+    ${proseSection('the-coal-belt-problem')}
 
     ${section('Readings', readingsPanel(state), { eyebrow: `${state.readings.length} logged` })}
   `);
@@ -267,5 +275,27 @@ export function wireZones() {
       sillHeight: Number(f.get('sillHeight')) || 0.9
     });
     toast('Geometry saved. Every sun figure in the app now uses your measurements.');
+  });
+}
+
+/* ------------------------------------------------------ acclimation ------- */
+/* Four steps, roughly a week each. A shade-held plant moved straight into
+   45 °C sun scalds in two to four hours and the bleached patches never
+   recover — which is why nothing here is ever shuttled between zones. */
+
+function acclimationLadder() {
+  return stepper(DB.zones.ACCLIM.map((a) => ({
+    title: `${a.n} · ${a.t}`,
+    body: a.d,
+    why: ''
+  })));
+}
+
+/** Wrap a lifted v9 block in v10's own section furniture. */
+function proseSection(slug, mounts = {}, view = VIEW) {
+  const block = prose(view, slug);
+  if (!block) return '';
+  return section(block.heading, proseHtml(view, slug, mounts), {
+    eyebrow: block.sub || block.eyebrow || ''
   });
 }

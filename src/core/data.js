@@ -11,7 +11,7 @@
 import { slugOf } from './util.js';
 
 const BUNDLES = ['catalogue', 'orchard', 'zones', 'seeds', 'mushrooms',
-  'feed', 'soil', 'climate', 'sources', 'care'];
+  'feed', 'soil', 'climate', 'sources', 'care', 'prose'];
 
 /** Everything from /data, keyed by bundle name. Populated by loadAll(). */
 export const DB = Object.create(null);
@@ -143,3 +143,44 @@ export const SOW_STATUS_LBL = {
   sown: 'Sown', germinating: 'Germinating', growing: 'Growing on',
   hardening: 'Hardening off', planted: 'Planted out', failed: 'Failed'
 };
+
+/* ==========================================================================
+   PROSE
+   ==========================================================================
+   The blocks lifted verbatim out of v9's markup by tools/extract-data.mjs.
+   About 23 KB of the almanac was never a JavaScript literal — it was written
+   straight into the HTML, and the first pass of the v10 rebuild left all of it
+   behind. It is authored repo content, not user input, and the CSP is
+   `script-src 'self'` with no inline script, so rendering it as HTML is safe;
+   it is also the only way to keep the wording provably identical.
+   ========================================================================== */
+
+/** One lifted block, or null. */
+export const prose = (view, slug) =>
+  (DB.prose?.[view] || []).find((b) => b.slug === slug) || null;
+
+/** Every block for a view, in v9's original order. */
+export const proseBlocks = (view) => DB.prose?.[view] || [];
+
+/**
+ * Render a lifted block, splicing rendered data into the mount markers that
+ * held v9's JavaScript-generated content.
+ *
+ * @param {object} mounts  { cherrylist: '<div>…</div>' } keyed by the v9 id
+ *
+ * Uses split/join rather than String.replace: a replacement STRING
+ * re-interprets `$$`, `$&` and `$1`, and the data spliced in here is full of
+ * prices and prose. That is the same trap that silently corrupted the first
+ * baked build.
+ */
+export function proseHtml(view, slug, mounts = {}) {
+  const block = prose(view, slug);
+  if (!block) return '';
+  let html = block.html;
+  for (const [id, markup] of Object.entries(mounts)) {
+    html = html.split(`<!--mount:${id}-->`).join(markup ?? '');
+  }
+  /* Any mount the caller did not fill is dropped rather than left behind. */
+  html = html.replace(/<!--mount:[a-zA-Z0-9_]+-->/g, '');
+  return `<div class="prose">${html}</div>`;
+}

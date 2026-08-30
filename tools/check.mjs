@@ -111,12 +111,129 @@ const srcOnDisk = files.map((f) => relative(ROOT, f).split('\\').join('/'));
 const notListed = srcOnDisk.filter((p) => !listed.includes(p));
 ok('every src/ module is precached', notListed.length === 0, notListed.join(', '));
 
+const load = (p) => import(pathToFileURL(resolve(ROOT, p)).href);
+const json = (p) => JSON.parse(readFileSync(resolve(ROOT, p), 'utf8'));
+
+/* ==========================================================================
+   CONTENT COVERAGE
+   ==========================================================================
+   The assertions that would have caught the v10 rebuild's real failure.
+
+   The first pass extracted 245 KB of data faithfully and then rendered about
+   three quarters of it. Twenty-five blocks — the audited cherry-tomato list,
+   the deficiency guide, the gear checklist, the acclimation ladder — sat in
+   data/*.json reaching no screen at all, while 438 tests passed. Extraction
+   was tested; arrival was not.
+
+   Three checks close that gap:
+     1. every data block is rendered, or is on an explicit superseded list;
+     2. every prose block with content is rendered;
+     3. every block is referenced through the bundle it actually lives in,
+        which is what would have caught OYEAR (the orchard's calendar) being
+        filed under mushrooms and printed as raw JSON.
+   ========================================================================== */
+
+console.log('\nCOVERAGE — is the content actually on a screen?');
+
+/* Superseded, with the reason. Anything not here must be rendered. */
+const SUPERSEDED = {
+  'climate.json:ROOM_BUMP': 'replaced by heat.ZONE_MODEL.indoor, which models the room per season rather than by a flat monthly bump',
+  'feed.json:PHBANDS': 'replaced by engine/feed.js PH_BANDS, which adds the fly-ash band and the lock-out thresholds',
+  'orchard.json:WSEASON': 'replaced by water.SEASONS, which carries the month indices as well as the labels',
+  'care.json:COMFORT': 'folded into every catalogue row as tmin/tmax/hmin/hmax at extraction time',
+  'care.json:COMFORT_X': 'same — the per-species overrides are already applied in catalogue.json'
+};
+
+const srcFiles = files.map((f) => ({ path: relative(ROOT, f).split('\\').join('/'), text: readFileSync(f, 'utf8') }));
+const allSrc = srcFiles.map((f) => f.text).join('\n');
+
+const dataFiles = readdirSync(resolve(ROOT, 'data')).filter((f) => f.endsWith('.json'));
+const orphans = [];
+const misplaced = [];
+let covered = 0;
+
+for (const file of dataFiles) {
+  if (file === 'prose.json') continue;
+  const payload = json(`data/${file}`);
+  for (const key of Object.keys(payload)) {
+    const id = `${file}:${key}`;
+    if (SUPERSEDED[id]) continue;
+
+    /* Match a PROPERTY ACCESS, not a bare word. `const BUNDLES = [...]` in
+       core/data.js is not a reference to sources.json's BUNDLES, and matching
+       bare identifiers hid exactly that for a whole rebuild. */
+    const access = new RegExp('\\.' + key + '\\b');
+    const users = srcFiles.filter((f) => access.test(f.text));
+    if (!users.length) { orphans.push(id); continue; }
+    covered++;
+
+    /* And it must be reached through the bundle it lives in. */
+    const bundle = file.replace('.json', '');
+    const qualified = new RegExp('DB\\.' + bundle + '\\.' + key + '\\b');
+    const wrongBundle = new RegExp('DB\\.(?!' + bundle + '\\b)[a-z]+\\.' + key + '\\b');
+    if (!qualified.test(allSrc) && wrongBundle.test(allSrc)) misplaced.push(id);
+  }
+}
+
+ok(`${covered} data blocks are rendered somewhere`, orphans.length === 0,
+  orphans.length ? 'never rendered: ' + orphans.join(', ') : '');
+ok('every data block is read from the bundle it lives in', misplaced.length === 0,
+  misplaced.join(', '));
+ok(`${Object.keys(SUPERSEDED).length} superseded blocks each carry a stated reason`,
+  Object.values(SUPERSEDED).every((r) => typeof r === 'string' && r.length > 20));
+
+/* ---- prose ----
+   Superseded blocks are v9's own form chrome, which v10 re-implements as real
+   components. Each still needs a stated reason, so "we rebuilt the widget" can
+   never quietly become "we lost the paragraph". */
+const PROSE_SUPERSEDED = {
+  'today/outdoors': 'cross-link cards into the Orchard and Zones screens; v10 has a persistent nav that does this',
+  'catalogue/catalogue': 'the filter bar\'s own labels; v10 renders its own filters from the catalogue, with live counts',
+  'bags/mix-calculator': 'the calculator form controls; v10 rebuilds them and scales amendments to the bag, which v9 did not',
+  'feed/dose-calculator': 'the dose form, plus a rule v10 deliberately supersedes: v9 fed at "about 3% of bag volume" at label concentration, which under-delivers nitrogen while concentrating salt. engine/feed.js doses per 10 L of substrate and dissolves it in a full soak instead — see the PRODUCTS comment there'
+};
+
+const proseDoc = json('data/prose.json');
+const proseOrphans = [];
+let proseCovered = 0;
+let proseEmpty = 0;
+
+for (const [view, blocks] of Object.entries(proseDoc)) {
+  for (const block of blocks) {
+    /* A block whose body is empty was only ever a heading v10 re-authored. */
+    if ((block.chars || 0) < 40) { proseEmpty++; continue; }
+    if (PROSE_SUPERSEDED[`${view}/${block.slug}`]) continue;
+    /* Must appear inside a prose call, not merely somewhere in the source —
+       the slug "catalogue" matches half the codebase as a bare string. */
+    const called = new RegExp("prose(?:Section|Html)?\\([^)]*['\"]" + block.slug + "['\"]");
+    if (called.test(allSrc)) proseCovered++;
+    else proseOrphans.push(`${view}/${block.slug}`);
+  }
+}
+
+ok(`${proseCovered} prose blocks are rendered`, proseOrphans.length === 0,
+  proseOrphans.length ? 'never rendered: ' + proseOrphans.join(', ') : '');
+ok(`${proseEmpty} heading-only blocks correctly need no rendering`, true);
+
+/* Mount markers must be filled by whoever renders the block. */
+const unfilledMounts = [];
+for (const [view, blocks] of Object.entries(proseDoc)) {
+  for (const block of blocks) {
+    if ((block.chars || 0) < 40) continue;
+    if (PROSE_SUPERSEDED[`${view}/${block.slug}`]) continue;
+    for (const m of block.html.matchAll(/<!--mount:([a-zA-Z0-9_]+)-->/g)) {
+      if (!allSrc.includes(m[1])) unfilledMounts.push(`${view}/${block.slug} → ${m[1]}`);
+    }
+  }
+}
+ok('every mount marker in rendered prose is filled with data',
+  unfilledMounts.length === 0, unfilledMounts.join(', '));
+ok(`${Object.keys(PROSE_SUPERSEDED).length} superseded prose blocks each carry a stated reason`,
+  Object.values(PROSE_SUPERSEDED).every((r) => typeof r === 'string' && r.length > 20));
+
 /* ==========================================================================
    BEHAVIOUR
    ========================================================================== */
-
-const load = (p) => import(pathToFileURL(resolve(ROOT, p)).href);
-const json = (p) => JSON.parse(readFileSync(resolve(ROOT, p), 'utf8'));
 
 const solar = await load('src/engine/solar.js');
 const heat = await load('src/engine/heat.js');

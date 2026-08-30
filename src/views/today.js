@@ -9,7 +9,7 @@
 import { esc, mount, on, icon } from '../core/dom.js';
 import { MONFULL, iso, round } from '../core/util.js';
 import * as store from '../core/store.js';
-import { DB } from '../core/data.js';
+import { DB, catalogue, proseHtml, prose } from '../core/data.js';
 import { buildAgenda } from '../engine/agenda.js';
 import { heatBand } from '../engine/heat.js';
 import { chillHours, BALCONY_DEFAULT } from '../engine/solar.js';
@@ -18,6 +18,7 @@ import { toast } from '../ui/toast.js';
 import { go } from '../core/router.js';
 
 const ZONE_ORDER = ['A', 'B', 'C', 'D', 'E', 'indoor'];
+const VIEW = 'today';
 
 export function renderToday() {
   const state = store.get();
@@ -30,6 +31,8 @@ export function renderToday() {
     ${taskList(agenda)}
     ${sunPanel(c)}
     ${quickLog()}
+    ${section('Starter bundles', starterBundles(), {
+      eyebrow: 'Six things that work together, rather than six good ideas' })}
   `);
 }
 
@@ -218,6 +221,18 @@ export function wireToday() {
 
   on('gozone', (nodeEl, e, ds) => go('zones', ds.z));
 
+  on('bundle', (nodeEl, e, ds) => {
+    const keys = String(ds.keys).split(',').filter(Boolean);
+    const picks = store.get().picks;
+    const adding = !keys.every((k) => picks.includes(k));
+    store.transact(() => {
+      for (const k of keys) {
+        if (picks.includes(k) !== adding) store.togglePick(k);
+      }
+    }, 'picks');
+    toast(adding ? `${keys.length} added to the buy list` : 'Removed from the buy list');
+  });
+
   document.addEventListener('submit', (e) => {
     if (e.target.id !== 'readingform') return;
     e.preventDefault();
@@ -228,5 +243,52 @@ export function wireToday() {
     store.addReading({ zone: f.get('zone'), tempC, rh });
     e.target.reset();
     toast('Reading saved');
+  });
+}
+
+/* ==========================================================================
+   STARTER BUNDLES
+   ==========================================================================
+   Six pre-built baskets from data/sources.json. The point of a bundle over a
+   wishlist is that the six plants inside it want the same thing — the dark
+   corner set all tolerate 500 lux, the first order all ship safely in monsoon
+   — so they can share a shelf and a watering can without one of them slowly
+   losing.
+
+   Rows are [name, why, [plant names]].
+   ========================================================================== */
+
+function starterBundles() {
+  const state = store.get();
+  const cat = catalogue(state);
+  const bySlug = new Map(cat.map((p) => [p.name, p]));
+
+  return `<div class="grid g2">${DB.sources.BUNDLES.map(([name, why, plants]) => {
+    const total = plants.reduce((a, n) => a + (bySlug.get(n)?.price || 0), 0);
+    const keys = plants.map((n) => bySlug.get(n)?.key).filter(Boolean);
+    const allPicked = keys.length > 0 && keys.every((k) => state.picks.includes(k));
+    return `<article class="card">
+      <div class="spread" style="align-items:flex-start">
+        <h3>${esc(name)}</h3>
+        <span class="pill">${total ? '₹' + total.toLocaleString('en-IN') : '—'}</span>
+      </div>
+      <p class="subtle" style="margin-top:6px">${esc(why)}</p>
+      <ul style="margin:10px 0 0 16px;font-size:13px;color:var(--ink-2)">
+        ${plants.map((n) => `<li>${esc(n)}</li>`).join('')}
+      </ul>
+      <button class="btn ${allPicked ? '' : 'pri'} sm" style="margin-top:12px"
+              data-act="bundle" data-keys="${esc(keys.join(','))}">
+        ${allPicked ? 'Remove from buy list' : 'Add all to buy list'}
+      </button>
+    </article>`;
+  }).join('')}</div>`;
+}
+
+/** Wrap a lifted v9 block in v10's own section furniture. */
+function proseSection(slug, mounts = {}, view = VIEW) {
+  const block = prose(view, slug);
+  if (!block) return '';
+  return section(block.heading, proseHtml(view, slug, mounts), {
+    eyebrow: block.sub || block.eyebrow || ''
   });
 }
