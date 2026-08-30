@@ -173,8 +173,8 @@ export function wireSettings() {
 
   on('export', async () => {
     const photos = await photoAll().catch(() => ({}));
-    const payload = { app: 'The Angul Almanac', v: SCHEMA_VERSION, exportedAt: new Date().toISOString(), state: store.snapshot(), photos };
-    download(JSON.stringify(payload, null, 1), `angul-almanac-${iso()}.json`, 'application/json');
+    const payload = { app: 'The Anugola Almanac', v: SCHEMA_VERSION, exportedAt: new Date().toISOString(), state: store.snapshot(), photos };
+    download(JSON.stringify(payload, null, 1), `anugola-almanac-${iso()}.json`, 'application/json');
     toast('Backup downloaded. Keep one somewhere that is not this phone.');
   });
 

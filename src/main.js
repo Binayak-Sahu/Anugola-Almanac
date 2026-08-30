@@ -123,7 +123,7 @@ function activate(view, target, { changedView }) {
   v.render(target);
 
   if (changedView) window.scrollTo({ top: 0, behavior: 'instant' });
-  document.title = `${v.label} — The Angul Almanac`;
+  document.title = `${v.label} — The Anugola Almanac`;
   byId('moresheet')?.classList.remove('on');
 }
 
