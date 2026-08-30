@@ -209,16 +209,16 @@ function seedTable() {
         <tbody>${rows.map((s) => {
           const t = thermalFor(s.n);
           return `<tr>
-            <td data-l="Variety"><b>${esc(s.n)}</b>${s.star ? ' ★' : ''}
+            <td data-l="Variety"><b>${esc(s.n)}</b>${s.star ? '<span title="Worth buying first" style="color:var(--warn)"> ★</span>' : ''}
               <div class="row" style="margin-top:4px">
                 ${chip(DB.seeds.SITELBL[s.s] || s.s, { mono: true, title: 'Supplier' })}
                 ${s.skip ? chip('Skip it', { tone: 'no' }) : ''}
               </div>
               <div class="subtle">germ. base ${t.base} °C · ${t.opt[0]}–${t.opt[1]} °C ideal</div></td>
-            <td data-l="Pack">${esc(s.pk || '—')}<div class="subtle">₹${s.p}</div></td>
-            <td data-l="Bag">${esc(s.bag || '—')}</td>
-            <td data-l="To harvest">${esc(s.days || '—')}</td>
-            <td data-l="Window">${esc(s.win || '—')}</td>
+            <td class="tight" data-l="Pack">${esc(s.pk || '—')} · <b>₹${s.p}</b></td>
+            <td class="tight" data-l="Bag">${esc(s.bag || '—')}</td>
+            <td class="tight" data-l="To harvest">${esc(s.days || '—')}</td>
+            <td class="tight" data-l="Window">${esc(s.win || '—')}</td>
             <td data-l="Why">${esc(s.why || '')}</td>
           </tr>`;
         }).join('')}</tbody>
@@ -334,10 +334,10 @@ function cherryList() {
     <tbody>${DB.seeds.CHERRY.map((c) => {
       const m = CHERRY_MARK[c.v] || CHERRY_MARK.m;
       return `<tr>
-        <td data-l="Verdict">${chip(m.label, { tone: m.tone, dot: true })}</td>
+        <td class="tight" data-l="Verdict">${chip(m.label, { tone: m.tone, dot: true })}</td>
         <td data-l="Listing"><b>${esc(c.n)}</b><div class="subtle">${esc(c.s)}</div></td>
         <td data-l="Why">${esc(c.d)}</td>
-        <td data-l="Price" class="num">₹${c.p}</td>
+        <td class="tight num" data-l="Price">₹${c.p}</td>
       </tr>`;
     }).join('')}</tbody>
   </table></div>`;

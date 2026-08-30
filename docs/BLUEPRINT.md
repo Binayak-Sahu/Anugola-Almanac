@@ -1,4 +1,4 @@
-# The Angul Almanac — v10 architecture
+# The Anugola Almanac — v10 architecture
 
 Talcher, Angul district, Odisha. 20.95° N, 85.22° E.
 

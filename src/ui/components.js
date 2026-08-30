@@ -89,18 +89,31 @@ export const stepper = (steps) => `<div class="steps">${steps.map((s, i) => `
  */
 export function yearStrip(values, { labels = MON, colors = null, height = 34 } = {}) {
   const w = 100 / values.length;
+  const barH = height - 4;
+
   const bars = values.map((v, i) => {
-    const h = clamp(v, 0, 1) * (height - 12);
+    const h = clamp(v, 0, 1) * barH;
     const fill = colors ? colors[i] : 'currentColor';
-    return `<rect x="${(i * w + w * 0.15).toFixed(2)}%" y="${(height - 10 - h).toFixed(1)}"
+    return `<rect x="${(i * w + w * 0.15).toFixed(2)}%" y="${(barH - h).toFixed(1)}"
               width="${(w * 0.7).toFixed(2)}%" height="${Math.max(1, h).toFixed(1)}"
-              rx="1.5" fill="${fill}"><title>${labels[i]}</title></rect>`;
+              rx="1.5" fill="${fill}"><title>${esc(labels[i])}</title></rect>`;
   }).join('');
-  const ticks = labels.map((l, i) =>
-    `<text x="${(i * w + w / 2).toFixed(2)}%" y="${height - 1}" font-size="6.5"
-       text-anchor="middle" fill="currentColor" opacity=".55">${l[0]}</text>`).join('');
-  return `<svg class="yearstrip" viewBox="0 0 100 ${height}" preserveAspectRatio="none"
-            style="width:100%;height:${height}px;overflow:visible">${bars}${ticks}</svg>`;
+
+  /* The month letters are HTML, not SVG text.
+     `preserveAspectRatio="none"` is what lets the bars stretch to any width
+     without recomputing them — but it stretches EVERYTHING in the viewBox, and
+     at a typical card width that is about 3.4× horizontally. Rectangles do not
+     care; glyphs do, and the J F M A row came out smeared. Bars stay in the
+     stretched SVG; labels sit in a flex row underneath where they render at
+     their true proportions. */
+  const ticks = labels.map((l) =>
+    `<span>${esc(String(l).slice(0, 1))}</span>`).join('');
+
+  return `<div class="yearstrip">
+    <svg viewBox="0 0 100 ${barH}" preserveAspectRatio="none"
+         style="width:100%;height:${barH}px;display:block" aria-hidden="true">${bars}</svg>
+    <div class="ticks">${ticks}</div>
+  </div>`;
 }
 
 /** Stress colours pulled from the token ramp so they follow the theme. */

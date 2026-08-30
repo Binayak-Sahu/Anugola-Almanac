@@ -173,13 +173,58 @@
   .moreb svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 
   /* Wide tables stack into labelled rows rather than running off-screen. */
+  /* A stacked row is a small card, not a squeezed table row. The seed tables
+     carry six columns; folded into label/value pairs with 3px of padding they
+     read as one grey block. Each row gets its own surface, the first cell
+     becomes the row's heading, and values sit under their labels rather than
+     fighting them for the same line. */
+  table.stack { display: block; }
   table.stack thead { display: none; }
-  table.stack tr { display: block; padding: 10px 0; border-bottom: var(--border-w) solid var(--line-2); }
-  table.stack td { display: flex; justify-content: space-between; gap: 12px; border: 0; padding: 3px 0; }
+  table.stack tbody { display: flex; flex-direction: column; gap: 10px; }
+
+  table.stack tr {
+    display: block;
+    padding: 12px 14px;
+    border: var(--border-w) solid var(--line-2);
+    border-radius: var(--r-s);
+    background: var(--surface);
+  }
+
+  /* Block flow, not grid: a cell may hold several children (a value plus a
+     price, a name plus a star) and grid would drop each onto its own row. */
+  table.stack td {
+    display: block;
+    border: 0;
+    padding: 7px 0;
+    border-top: var(--border-w) solid var(--line-2);
+  }
+  table.stack td:empty { display: none; }
+
   table.stack td::before {
     content: attr(data-l);
-    font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .1em;
-    text-transform: uppercase; color: var(--faint); flex: none;
+    display: block;
+    margin-bottom: 2px;
+    font-family: var(--f-mono);
+    font-size: 9.5px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+  table.stack td:not([data-l])::before { content: none; }
+
+  /* First cell is the row's title: no label, no rule, bigger. */
+  table.stack td:first-child {
+    padding-top: 0;
+    border-top: 0;
+    font-size: 15px;
+  }
+  table.stack td:first-child::before { content: none; }
+
+  /* Short values stay on the label's line — a bag size does not need a
+     paragraph to itself. */
+  table.stack td.tight::before {
+    display: inline;
+    margin-right: 9px;
   }
 }
 

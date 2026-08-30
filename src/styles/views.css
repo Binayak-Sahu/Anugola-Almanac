@@ -27,6 +27,21 @@
 
 /* ------------------------------------------------------------- strips ---- */
 .yearstrip { display: block; }
+.yearstrip .ticks {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  margin-top: 3px;
+}
+.yearstrip .ticks > span {
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  line-height: 1;
+  letter-spacing: .04em;
+  text-align: center;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
 
 /* -------------------------------------------------------------- search --- */
 mark {

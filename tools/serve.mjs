@@ -60,5 +60,5 @@ createServer(async (req, res) => {
     res.writeHead(500).end(String(err));
   }
 }).listen(PORT, () => {
-  console.log(`The Angul Almanac — http://localhost:${PORT}`);
+  console.log(`The Anugola Almanac — http://localhost:${PORT}`);
 });

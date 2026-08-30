@@ -1,5 +1,5 @@
 /* ============================================================================
-   The Angul Almanac — service worker.
+   The Anugola Almanac — service worker.
 
    Three caching strategies, chosen per resource because the right answer
    differs:

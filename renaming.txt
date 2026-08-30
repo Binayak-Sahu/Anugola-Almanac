@@ -1,10 +1,10 @@
 CHANGING THE NAME
 =================
-"The Angul Almanac" is applied. To use a different one, change these
+"The Anugola Almanac" is applied. To use a different one, change these
 four places. Nothing else depends on the name.
 
   1.  index.html — the <title> line
-        <title>The Angul Almanac — Talcher</title>
+        <title>The Anugola Almanac — Talcher</title>
 
   2.  index.html — the heading inside the rail
         <h1>The Angul <em>Almanac</em></h1>
@@ -17,7 +17,7 @@ four places. Nothing else depends on the name.
   4.  index.html — the <meta name="description"> line, for link previews
 
   Optionally: src/main.js sets the browser tab title per screen as
-  `${v.label} — The Angul Almanac`. Change that string too if you want
+  `${v.label} — The Anugola Almanac`. Change that string too if you want
   it to match.
 
 
