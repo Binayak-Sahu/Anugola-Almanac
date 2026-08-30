@@ -1,0 +1,815 @@
+{
+ "today": [
+  {
+   "slug": "your-room-measured-from-the-glass",
+   "heading": "Your room, measured from the glass",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "Light falls off fast indoors, so every zone here is a distance from the window — not a shelf. The arc is where the sun actually sits at noon this month at 20.95°N, computed, not guessed.",
+   "html": "<p class=\"eyebrow\" id=\"todaydate\">—</p>",
+   "mounts": [
+    "todaydate"
+   ],
+   "chars": 1
+  },
+  {
+   "slug": "what-to-do",
+   "heading": "What to do",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:tasks-->",
+   "mounts": [
+    "tasks"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "needs-water",
+   "heading": "Needs water",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:duebox-->",
+   "mounts": [
+    "duebox"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "this-month",
+   "heading": "This month",
+   "sub": "From the year plan",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:thismonth-->",
+   "mounts": [
+    "thismonth"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "outdoors",
+   "heading": "Outdoors",
+   "sub": "The other half of this site",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"grid3\"> <button class=\"card\" data-go=\"orchard\" style=\"text-align:left;cursor:pointer\"> <span class=\"eyebrow\">Container orchard</span> <h4 style=\"font-size:19px;margin:7px 0 5px\">Eight plants in bags</h4> <p style=\"font-size:13px;color:var(--muted);line-height:1.5\">Bag ladders, watering by season, and the one disease that kills each of them.</p></button> <button class=\"card\" data-go=\"zones\" style=\"text-align:left;cursor:pointer\"> <span class=\"eyebrow\">Five microclimates</span> <h4 style=\"font-size:19px;margin:7px 0 5px\">Where each plant lives</h4> <p style=\"font-size:13px;color:var(--muted);line-height:1.5\">Open parking to closed parking, plus the acclimation ladder that keeps new stock alive.</p></button> <button class=\"card\" data-go=\"seeds\" style=\"text-align:left;cursor:pointer\"> <span class=\"eyebrow\">The seed programme</span> <h4 style=\"font-size:19px;margin:7px 0 5px\">Sorted by need</h4> <p style=\"font-size:13px;color:var(--muted);line-height:1.5\">Bag size and crop cycle on every pick, the cherry tomato audit, and where to upgrade.</p></button> </div>",
+   "mounts": [],
+   "chars": 366
+  },
+  {
+   "slug": "starter-bundles",
+   "heading": "Starter bundles",
+   "sub": "One tap loads six plants onto your buy list",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:bundles-->",
+   "mounts": [
+    "bundles"
+   ],
+   "chars": 0
+  }
+ ],
+ "pots": [
+  {
+   "slug": "your-pots",
+   "heading": "Your pots",
+   "sub": "Every pot is its own record",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:potgrid-->",
+   "mounts": [
+    "potgrid"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "watering-last-12-weeks",
+   "heading": "Watering, last 12 weeks",
+   "sub": "Every square is a day you logged a watering",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:waterheat-->",
+   "mounts": [
+    "waterheat"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "the-tall-ones-almost-certainly-ginger-family",
+   "heading": "The tall ones: almost certainly ginger family",
+   "sub": "One test settles it, and it takes two seconds",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <p style=\"font-size:13.5px;color:var(--ink-2);line-height:1.6\">Your close-up photo shows a <b>pseudostem</b> — an upright green \"stem\" made of tightly rolled leaf sheaths wrapping each other — with leaves coming off in two flat ranks and a new leaf emerging rolled into a spear at the top. Aspidistra, aglaonema and dracaena all fail that description. Gingers match it exactly.</p> <div class=\"tip\"><b>The test:</b> tear a piece off the edge of an older leaf, crush it hard between your fingers, and smell. A warm spicy or gingery smell confirms Zingiberaceae. Then push a finger into the soil at the base — a fat horizontal rhizome rather than ordinary roots confirms it twice over.</div> <div class=\"scroll\"><table> <thead><tr><th style=\"width:22%\">If it smells…</th><th style=\"width:34%\">Most likely</th><th>What changes</th></tr></thead> <tbody> <tr><td><b>Gingery, spicy</b></td><td>Turmeric or a wild ginger — very common cheap nursery stock in Odisha</td> <td>Wants far more water and light than your other pots. Feed it in the growing season. It will die back to nothing around December — normal, do not throw the pot away.</td></tr> <tr><td><b>Faintly camphor-like</b></td><td>Shell ginger or greater galangal</td> <td>Evergreen rather than dying back. Gets big, 1.5 m plus, and will outgrow a small pot within a year.</td></tr> <tr><td><b>Nothing at all</b></td><td>Back to the earlier shortlist — most likely a young dracaena or aglaonema</td> <td>Easy, shade-tolerant, no dormancy. The simplest outcome.</td></tr> </tbody> </table></div> <div class=\"warnband\"><b>Either way they are in the wrong place.</b> Nothing on that shortlist is happy on a dim lower shelf. Both are set to the front row at the glass. If it turns out to be a ginger, expect to water it roughly twice as often as anything else you own.</div> <p style=\"font-size:13.5px;color:var(--ink-2)\"><b>The small broad-leaf one</b> shows yellowing tips and brown spotting. In a monsoon month with low light that is most likely tap-water salt build-up plus too little light. Flush the pot through with plenty of water once, move it closer to the window, and stop wetting the leaves.</p> </div>",
+   "mounts": [],
+   "chars": 1685
+  },
+  {
+   "slug": "identify-a-plant",
+   "heading": "Identify a plant",
+   "sub": "Three questions, then a shortlist",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"><!--mount:idwiz--><!--mount:idout--></div>",
+   "mounts": [
+    "idwiz",
+    "idout"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "photographing-for-identification",
+   "heading": "Photographing for identification",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <ul class=\"tick\"> <li><b>The whole plant from the side, at its own height.</b> Not from above — growth habit is half the identification.</li> <li><b>One leaf flat against a plain surface</b>, daylight, thumb beside it for scale.</li> <li><b>The underside of that leaf.</b> Colour, hairs and veins separate species that look identical from above.</li> <li><b>Where the leaf meets the stem or soil.</b> This is the shot that solved your tall ones. Everyone forgets it.</li> <li><b>Any new growth, flower or offset.</b> Often a different colour, and frequently the deciding detail.</li> </ul> <div class=\"warnband\">Shoot by the window with the mesh slid open, never with flash. Flash flattens texture and shifts colour, and both matter.</div> </div>",
+   "mounts": [],
+   "chars": 607
+  }
+ ],
+ "catalogue": [
+  {
+   "slug": "catalogue",
+   "heading": "Catalogue",
+   "sub": "Houseplants, fruit trees, vegetables and seeds in one list",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"filters\"> <div class=\"frow\"> <span class=\"flab\">Find</span> <input id=\"q\" type=\"search\" placeholder=\"Search name, botanical name, or note…\" autocomplete=\"off\"> <select class=\"msel\" id=\"viewsel\"><option value=\"card\">Cards</option><option value=\"table\">Table</option></select> <select class=\"msel\" id=\"sort\"> <option value=\"d\">Sort: default</option><option value=\"fit\">Best fit for this month</option> <option value=\"pa\">Price, low first</option><option value=\"pd\">Price, high first</option> <option value=\"n\">Name A–Z</option><option value=\"e\">Easiest first</option> </select> <!--mount:count--> </div> <div class=\"frow\"> <span class=\"flab\">Zone</span> <button class=\"chip\" data-f=\"place\" data-v=\"sun\"><i class=\"sw\" style=\"background:var(--glass)\"></i>At the glass</button> <button class=\"chip\" data-f=\"place\" data-v=\"bright\"><i class=\"sw\" style=\"background:var(--bright)\"></i>Half metre back</button> <button class=\"chip\" data-f=\"place\" data-v=\"low\"><i class=\"sw\" style=\"background:var(--low)\"></i>Metre back</button> <button class=\"chip\" data-f=\"place\" data-v=\"desk\"><i class=\"sw\" style=\"background:var(--desk)\"></i>Desk</button> </div> <div class=\"frow\"> <span class=\"flab\">Type</span> <button class=\"chip\" data-f=\"cat\" data-v=\"foliage\">Foliage</button> <button class=\"chip\" data-f=\"cat\" data-v=\"succulent\">Succulent</button> <button class=\"chip\" data-f=\"cat\" data-v=\"cactus\">Cactus</button> <button class=\"chip\" data-f=\"cat\" data-v=\"caudex\">Caudex</button> <button class=\"chip\" data-f=\"cat\" data-v=\"carniv\">Carnivorous</button> <button class=\"chip\" data-f=\"cat\" data-v=\"orchid\">Orchid</button> <button class=\"chip\" data-f=\"cat\" data-v=\"bonsai\">Bonsai</button> <button class=\"chip\" data-f=\"cat\" data-v=\"fruit\">Fruit</button> <button class=\"chip\" data-f=\"cat\" data-v=\"herb\">Herb</button> <button class=\"chip\" data-f=\"cat\" data-v=\"veg\">Vegetable</button> <button class=\"chip\" data-f=\"cat\" data-v=\"seed\">Seed</button> </div> <div class=\"frow\"> <span class=\"flab\">Where</span> <button class=\"chip\" data-f=\"site\" data-v=\"indoor\">Indoors</button> <button class=\"chip\" data-f=\"site\" data-v=\"A\">A · Open parking</button> <button class=\"chip\" data-f=\"site\" data-v=\"B\">B · Terrace</button> <button class=\"chip\" data-f=\"site\" data-v=\"C\">C · Balcony</button> <button class=\"chip\" data-f=\"site\" data-v=\"D\">D · Shade</button> </div> <div class=\"frow\"> <span class=\"flab\">Verdict</span> <button class=\"chip\" data-f=\"verdict\" data-v=\"yes\">Works here</button> <button class=\"chip\" data-f=\"verdict\" data-v=\"watch\">Works with a catch</button> <button class=\"chip\" data-f=\"verdict\" data-v=\"no\">Ruled out — and why</button> </div> <div class=\"frow\"> <span class=\"flab\">Filter</span> <button class=\"chip\" data-f=\"when\" data-v=\"now\">Safe to ship now</button> <button class=\"chip\" data-f=\"when\" data-v=\"oct\">Wait for October</button> <button class=\"chip\" data-f=\"diff\" data-v=\"1\">Beginner</button> <button class=\"chip\" data-f=\"diff\" data-v=\"3\">Expert only</button> <button class=\"chip\" data-f=\"safe\" data-v=\"1\">Survives this month</button> <button class=\"chip\" data-f=\"own\" data-v=\"1\">I own it</button> <button class=\"chip\" data-f=\"pick\" data-v=\"1\">On my list</button> <button class=\"chip\" data-f=\"budget\" data-v=\"1\">Under ₹300</button> <button class=\"chip add\" id=\"addown\">+ Add a plant I own</button> <button class=\"chip\" id=\"clearf\" hidden>Clear filters</button> <button class=\"chip\" id=\"editmode\" title=\"Edit photos, prices and sellers\">✎ Edit mode</button> <button class=\"chip add\" id=\"newplant\" hidden>+ New plant</button> </div> </div> <!--mount:grid--> <!--mount:tbl--> <div class=\"empty\" id=\"empty\" hidden><h4>Nothing matches those filters</h4><p>Clear one and try again.</p></div>",
+   "mounts": [
+    "count",
+    "grid",
+    "tbl",
+    "q",
+    "viewsel",
+    "sort",
+    "addown",
+    "clearf",
+    "editmode",
+    "newplant",
+    "empty"
+   ],
+   "chars": 595
+  }
+ ],
+ "climate": [
+  {
+   "slug": "the-year-as-this-room-feels-it",
+   "heading": "The year, as this room feels it",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<p class=\"lede\" style=\"margin-top:8px\">Talcher is inland, so the year is sharper at both ends than the coast. May averages 45.3°C highs with the longest sunshine of the year; January nights average 8.4°C and have touched 4.5°C. August brings around 340 mm of rain. A true south aspect means the sun swings from useless in June, when it passes almost overhead and slightly north of you, to genuinely good in December, when it sits low in the southern sky and shines straight in through the glass.</p>",
+   "mounts": [],
+   "chars": 456
+  },
+  {
+   "slug": "temperature",
+   "heading": "Temperature",
+   "sub": "Angul station normals, plus a model of what a closed glazed room does to them",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"><!--mount:tempchart--> <div class=\"legend\"> <span><i style=\"background:var(--hot)\"></i>Outdoor high</span> <span><i style=\"background:var(--glass)\"></i>Room high, modelled</span> <span><i style=\"background:var(--cold)\"></i>Outdoor low</span> </div> <div class=\"warnband\" style=\"margin-top:14px\"><b>The room line is a model, not a measurement.</b> A glazed room with limited airflow behaves like a greenhouse: roughly +5°C over the outdoor high from March to June, less in monsoon. Buy the ₹250 thermometer and replace this line with the truth.</div> </div>",
+   "mounts": [
+    "tempchart"
+   ],
+   "chars": 286
+  },
+  {
+   "slug": "rain-and-humidity",
+   "heading": "Rain and humidity",
+   "sub": "Why March cracks leaf edges and August rots stems",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"><!--mount:rainchart--> <div class=\"legend\"> <span><i style=\"background:color-mix(in oklab,var(--low) 55%,transparent);height:9px;width:9px;border-radius:2px\"></i>Rainfall, mm</span> <span><i style=\"background:var(--bright)\"></i>Relative humidity, %</span> </div> </div>",
+   "mounts": [
+    "rainchart"
+   ],
+   "chars": 33
+  },
+  {
+   "slug": "sun-on-your-glass",
+   "heading": "Sun on your glass",
+   "sub": "Noon altitude and direct-beam strength on a vertical south window at 20.95°N",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"><!--mount:sunchart--> <div class=\"tip\" style=\"margin-top:14px\"><b>Why June is your worst month and December your best.</b> When the sun climbs past 69° it is north of your zenith, so a south window gets no direct beam at all — only sky light through mesh. In December it sits about 45° up in the south and shines straight in. This is arithmetic, not opinion, and it is the single biggest fact about your room.</div> </div>",
+   "mounts": [
+    "sunchart"
+   ],
+   "chars": 339
+  },
+  {
+   "slug": "what-is-at-risk-month-by-month",
+   "heading": "What is at risk, month by month",
+   "sub": "Your pots against the modelled room",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:riskbox-->",
+   "mounts": [
+    "riskbox"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "the-twelve-months",
+   "heading": "The twelve months",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:cal-->",
+   "mounts": [
+    "cal"
+   ],
+   "chars": 0
+  }
+ ],
+ "shrooms": [
+  {
+   "slug": "fourteen-mushrooms-one-hot-room",
+   "heading": "Fourteen mushrooms, one hot room",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<p class=\"lede\" style=\"margin-top:8px\">Your room is a considerable upgrade on an open balcony for this. A closable space with a tiled floor lets you hold humidity by wetting the tiles, keep Talcher's coal dust out, and control fresh air by cracking a window — three things an open balcony cannot do. What it cannot do is get cold, and that rules out five of the fourteen entirely. Each card says which, and why.</p>",
+   "mounts": [],
+   "chars": 372
+  },
+  {
+   "slug": "right-now",
+   "heading": "Right now",
+   "sub": "Season check, and any bag you have running",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:shroomnow-->",
+   "mounts": [
+    "shroomnow"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "the-species",
+   "heading": "The species",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "</div> <!--mount:shroomgrid-->",
+   "mounts": [
+    "shroomgrid"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "sharing-an-enclosed-room-with-plants",
+   "heading": "Sharing an enclosed room with plants",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"grid2\"> <div class=\"card\"> <ul class=\"tick\"> <li><b>Do all your potting and soil mixing outside this room.</b> Dry cocopeat dust drifting onto fruiting bags is a direct contamination route, and in a closed room it has nowhere to go.</li> <li><b>Never spray neem oil or any fungicide in here.</b> Mushrooms are fungi. Carry the plant out, spray, dry, bring it back.</li> <li>Keep bags <b>off the tiles</b>, on a tray on the lowest shelf. Splash-back from a wet floor carries bacteria onto the substrate.</li> <li>Solid tray on the shelf directly above, so plant drips don't land on them.</li> <li><b>Spores are the real cost of a closed room.</b> Pink and golden oyster and reishi are heavy sporers. Harvest young, wear a mask when handling, air the room hard afterwards. If anyone in the house is asthmatic, grow grey oyster and nothing else.</li> <li>Green powder on a bag is <i>Trichoderma</i>. Bag it, bin it outside, wash your hands. Do not cut it out.</li> <li>Sour or ammonia smell means bacterial contamination. Discard.</li> <li>Yellow sticky traps handle fungus gnats and are safe around both.</li> </ul> </div> <div class=\"card stack\"> <h3 style=\"font-size:19px\">Getting spawn</h3> <ul class=\"tick\"> <li><b>KVK Angul</b> is nearest and normally stocks oyster and paddy straw in season, often with free training days.</li> <li><b>OUAT Bhubaneswar</b> runs the mushroom research programme and sells spawn including milky — 150 km, phone before you drive.</li> <li>Private trainers around Bhubaneswar run three-day courses covering paddy, oyster and milky for around ₹2,000, usually starting a second Saturday.</li> <li><b>DMR Solan</b> ships mother spawn by post for the species nobody stocks locally — wood ear, reishi, golden oyster.</li> <li>Roughly ₹40 a kilo, or ₹40–80 a bottle. Buy fresh, use within 2–3 weeks, keep it cool and out of the sun on the way home.</li> <li>Straw is nearly free around Talcher after harvest. Insist on dry, golden, un-mouldy.</li> </ul> <div class=\"tip\">Start with one grey oyster bag in October, not five. One bag teaches you what full colonisation looks like and what contamination smells like, for the price of one bottle of spawn.</div> </div> </div>",
+   "mounts": [],
+   "chars": 1839
+  }
+ ],
+ "soil": [
+  {
+   "slug": "mix-calculator",
+   "heading": "Mix calculator",
+   "sub": "Every pot you are filling · scales the whole recipe",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"> <div class=\"fld\" style=\"max-width:340px\"><label>Recipe</label><select class=\"inp\" id=\"mixsel\"></select></div> <p class=\"subtle\" id=\"mixfor\" style=\"margin:-6px 0 14px\"></p> <!--mount:mixrows--> <button class=\"mini\" id=\"mixadd\" style=\"margin-top:10px\">+ Another pot size</button> <!--mount:mixout--> </div>",
+   "mounts": [
+    "mixrows",
+    "mixout",
+    "mixsel",
+    "mixfor",
+    "mixadd"
+   ],
+   "chars": 25
+  },
+  {
+   "slug": "the-recipes",
+   "heading": "The recipes",
+   "sub": "Parts by volume, not weight",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:mixcards-->",
+   "mounts": [
+    "mixcards"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "pot-sizes",
+   "heading": "Pot sizes",
+   "sub": "Diameter across the top · volume is soil actually needed",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <div class=\"scroll\"><!--mount:sizetable--></div> <div class=\"tip\"><b>Pot up one size, never two.</b> Under 6 inches go up an inch; above it, go up two. A plant moved into a pot far too large sits in soil its roots can't drain, and rots from the middle out. This is the single most common way beginners kill a healthy plant.</div> <div class=\"warnband\"><b>No gravel or crocks in the bottom.</b> It's the most repeated bit of garden advice and it's wrong — a coarse layer under fine mix <i>raises</i> the waterlogged zone instead of draining it. Fill with mix, straight to the bottom, and make sure there's a hole.</div> <p style=\"font-size:13.5px;color:var(--ink-2)\"><b>Repot when</b> roots come out of the drainage hole, water runs straight through without wetting anything, the pot dries out in a day, or growth has stopped despite good light. <b>Best months for you:</b> October to November, and February to March. Not May — a root-disturbed plant in a 45°C room is a dead plant. Not deep monsoon either, when cut roots rot before they heal.</p> </div>",
+   "mounts": [
+    "sizetable"
+   ],
+   "chars": 861
+  },
+  {
+   "slug": "pot-types",
+   "heading": "Pot types",
+   "sub": "Judged for an enclosed south room in Talcher, not in general",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <div class=\"scroll\"><!--mount:typetable--></div> <div class=\"note\"><b>Your lucky bamboo tin has no drainage hole.</b> Metal and sealed ceramic are fine as an outer sleeve — keep the plant in its plastic pot and lift it out to water. Planted directly, there is nowhere for water to go and the roots sit in it.</div> <div class=\"warnband\"><b>Your spider plant is still in a black poly nursery bag.</b> Those are transport packaging, not pots. They collapse inward, the roots circle, and they hold water against the tiles. Repot it into a 5-inch pot.</div> </div>",
+   "mounts": [
+    "typetable"
+   ],
+   "chars": 438
+  },
+  {
+   "slug": "feeding",
+   "heading": "Feeding",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <div class=\"note\"><b>Read this before buying any fertiliser.</b> In your room light is the limit, not food. A plant in dim light cannot use what you feed it, so the salts stay in the soil and burn the roots — you get brown leaf tips and slower growth, the exact opposite of what you wanted. The grow bar will do more for growth than every bottle on this page combined. Feed after the light, not instead of it.</div> <div class=\"scroll\"><!--mount:feedtable--></div> </div> <div class=\"card stack\" style=\"margin-top:14px\"> <h4 style=\"font-size:17px\">The five rules</h4> <ul class=\"tick\"> <li><b>Water first, feed second.</b> Fertiliser onto dry soil burns roots directly. Wet the pot, wait ten minutes, then feed.</li> <li><b>Nothing for six weeks after potting.</b> Magic Soil already carries about a month of food. Feeding on top of it is how people burn new roots.</li> <li><b>Half what the label says.</b> Indian NPK labels assume open ground in full sun. In a pot indoors, half strength is the ceiling and quarter is often better.</li> <li><b>Never feed a sick plant.</b> Wilting, yellowing, pests, sunburn — fix the cause. Food makes a struggling plant worse, not better.</li> <li><b>Stop in November.</b> Growth stops when nights hit 8–9°C. Anything you add in December just accumulates as salt.</li> </ul> </div> <div class=\"card stack\" style=\"margin-top:14px\"> <h4 style=\"font-size:17px\">Flushing — the bit nobody mentions</h4> <p style=\"font-size:13.5px;color:var(--ink-2)\">Talcher tap water is hard, and in a closed room every drop that evaporates leaves its salts behind. They build up for months, then show as <b>brown crispy leaf tips and a white crust on the soil</b>. Your small broad-leaf plant is showing exactly this.</p> <div class=\"tip\"><b>Every two months:</b> take the pot to the bathroom and run water slowly through it until roughly three times the pot's volume has drained out of the bottom. For a 4-inch pot that's about a litre and a half. Let it drain fully before it goes back on its saucer.</div> <p style=\"font-size:13.5px;color:var(--ink-2)\">Do it the day before you feed, never after. If you ever collect rainwater in the monsoon, that is the best flush there is — and the only water carnivorous plants will tolerate at all.</p> </div>",
+   "mounts": [
+    "feedtable"
+   ],
+   "chars": 1761
+  }
+ ],
+ "buy": [
+  {
+   "slug": "buying",
+   "heading": "Buying",
+   "sub": "Budget, sellers, and the four-month plan",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:budgetbox-->",
+   "mounts": [
+    "budgetbox"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "four-months-at-5-000",
+   "heading": "Four months at ₹5,000",
+   "sub": "Infrastructure first, because nothing should ship before October anyway",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <div class=\"scroll\"><table> <thead><tr><th>Month</th><th>Focus</th><th>What</th><th>Rough</th></tr></thead> <tbody> <tr><td><b>August</b></td><td>The foundation</td><td>Metal rack, 40–60W grow light bar, mechanical timer, small fan, neem oil, perlite, grit, microfibre cloths, trays</td><td class=\"mono\">₹5,000</td></tr> <tr><td><b>September</b></td><td>Prep, one test order</td><td>Shade net, pebble trays, saucers, hygrometer, PP bags, pasteurising drum, thermometer — plus a single ₹400 test order to check a seller's packing</td><td class=\"mono\">₹3,000</td></tr> <tr><td><b>October</b></td><td>The big buy</td><td>Main plant order across two sellers, a Bhubaneswar nursery run for the bulky leafy things, first oyster spawn</td><td class=\"mono\">₹5,000</td></tr> <tr><td><b>November</b></td><td>The interesting ones</td><td>Adenium, a bonsai subject and starter kit, two or three dwarf fruit trees, more oyster spawn, orchid bark</td><td class=\"mono\">₹5,000</td></tr> </tbody> </table></div> <div class=\"tip\">If you only do one thing this month, buy the grow light. In a mesh-and-glass room it is not a supplement — it is your main light source, and it decides whether half this catalogue is available to you at all.</div> </div>",
+   "mounts": [],
+   "chars": 822
+  },
+  {
+   "slug": "gear-checklist",
+   "heading": "Gear checklist",
+   "sub": "Ticks sync across your devices",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"><!--mount:gearlist--> <div class=\"total\"><span>Outstanding</span><span id=\"geartotal\">₹0</span></div></div>",
+   "mounts": [
+    "gearlist",
+    "geartotal"
+   ],
+   "chars": 13
+  },
+  {
+   "slug": "where-to-buy",
+   "heading": "Where to buy",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<p class=\"lede\" style=\"margin-bottom:14px\">Talcher has no large ornamental nursery, so online is your default rather than your fallback. Bare-rooted plants shipped from the north cost a third of a potted local plant, because you supply the pot and the soil — which you already have.</p> <div class=\"card flush scroll\"> <table><thead><tr><th>Source</th><th>Best for</th><th>Shipping</th><th>Watch for</th><th>On list</th></tr></thead> <!--mount:srctable--></table> </div> <div class=\"card stack\" style=\"margin-top:14px\"> <h4 style=\"font-size:17px\">Ordering rules</h4> <ul class=\"tick\"> <li>Check your Talcher pincode at checkout before filling a cart. A few sellers still miss Angul district.</li> <li>Film every unboxing without cutting. All of them require video within 12–24 hours for a claim.</li> <li>Order in blocks that match shipping tiers — 7 or 14 at succulentplant.in, over ₹249 at Nainital Succulents.</li> <li>First order from a new seller: ₹300–400 maximum. You're buying information about their packing.</li> <li>Have your mix made up <i>before</i> the box arrives, and pot everything the same evening.</li> <li>Never order live plants between April and June. Transit to inland Odisha in a 45°C week finishes them.</li> <li>Plan one Bhubaneswar nursery run in October for pothos, snake plant, ferns, peace lily, areca and orchids.</li> </ul> </div>",
+   "mounts": [
+    "srctable"
+   ],
+   "chars": 988
+  }
+ ],
+ "care": [
+  {
+   "slug": "care",
+   "heading": "Care",
+   "sub": "Written for this room, not for gardening in general",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"> <ul class=\"tick\"> <li><b>Slide the mesh open by day.</b> Insect mesh passes roughly 60–70% of light and glass takes another slice, so you're getting about half of what an open window would give. Both panels slide — park them aside during the day, close them at dusk against mosquitoes. Costs nothing, biggest single gain available to you. Also, the protective film is still on your window frames. Peel it off.</li> <li><b>Light falls off fast inside a room.</b> A plant a metre back gets a small fraction of one pressed against the glass. That's why the zones here are measured in distance from the window, not shelf height.</li> <li><b>May will be hotter inside than outside.</b> A glazed room with limited airflow behaves like a greenhouse, and Talcher already reaches 45°C. Sealed on a May afternoon this room could pass 50°C and kill everything in a day. Windows open, fan running, shade net on the <i>outside</i> of the opening.</li> <li><b>Coal dust is a light problem, not a cleaning problem.</b> A grey film builds within days here, and in a room already short of light it's the difference between growing and merely surviving. Wipe broad leaves weekly, rinse the rack monthly. Never leaf-shine sprays — they trap dust worse.</li> </ul> </div>",
+   "mounts": [],
+   "chars": 1149
+  },
+  {
+   "slug": "when-something-looks-wrong",
+   "heading": "When something looks wrong",
+   "sub": "Symptom → most likely cause in your conditions",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card flush scroll\"> <table><thead><tr><th style=\"width:25%\">Symptom</th><th style=\"width:30%\">Most likely here</th><th>What to do</th></tr></thead> <!--mount:symtable--></table> </div>",
+   "mounts": [
+    "symtable"
+   ],
+   "chars": 33
+  },
+  {
+   "slug": "the-habits-that-matter",
+   "heading": "The habits that matter",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"> <ul class=\"tick\"> <li><b>Test before watering.</b> Push a bamboo skewer 3 cm in. Damp and dark means wait.</li> <li><b>Every pot has an open drainage hole.</b> Nursery pots often ship with them half-sealed by the mould.</li> <li><b>Quarantine new arrivals two weeks</b>, in a different room.</li> <li><b>Water at dawn March to June</b>, not evening.</li> <li><b>Rotate pots a quarter turn weekly.</b> Non-negotiable with one-directional light.</li> <li><b>Check the room temperature on a hot afternoon</b> before you trust it.</li> </ul> </div>",
+   "mounts": [],
+   "chars": 417
+  }
+ ],
+ "orchard": [
+  {
+   "slug": "the-container-orchard",
+   "heading": "The container orchard",
+   "sub": "",
+   "eyebrow": "Eight plants, outdoors",
+   "lede": "Everything here lives in a bag on the ground, not in the room. Tap a plant for its bag ladder, its watering by season, the one disease that actually kills it, and the thing about it you would otherwise get wrong.",
+   "html": "",
+   "mounts": [],
+   "chars": 0
+  },
+  {
+   "slug": "a-small-bag-does-not-force-top-growth",
+   "heading": "A small bag does not force top growth",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <p style=\"font-size:13.5px;color:var(--ink-2);line-height:1.6\">Canopy size follows root volume, so restricting the root slows the upper part rather than speeding it. But an oversized bag is worse: unused wet mix goes anaerobic and rots the collar, which in laterite soil under 1400&nbsp;mm of rain is the commonest way these plants die.</p> <div class=\"tip\"><b>The rule:</b> step up. Each new bag roughly 1.5–2× the root ball, or four to six inches more diameter. The exception is the papaya, which is a taproot species that establishes badly after disturbance and so gets exactly one move, straight into its final bag.</div> </div>",
+   "mounts": [],
+   "chars": 523
+  },
+  {
+   "slug": "the-eight",
+   "heading": "The eight",
+   "sub": "Tap to open",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:orchgrid-->",
+   "mounts": [
+    "orchgrid"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "potting-up-the-first-four-weeks",
+   "heading": "Potting up — the first four weeks",
+   "sub": "From the day they arrived to full sun",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:potplan-->",
+   "mounts": [
+    "potplan"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "rules-that-cut-across-all-eight",
+   "heading": "Rules that cut across all eight",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"grid2\"> <div class=\"card\"><span class=\"eyebrow\">Direct sow, never transplant</span> <p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.6\">Radish, okra, bush bean, amaranth, roselle, microgreens. All have taproots that fork or stall if disturbed — they go straight into the final bag.</p></div> <div class=\"card\"><span class=\"eyebrow\">Tray, then transplant</span> <p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.6\">Every tomato, chilli, capsicum, brinjal, marigold. Lettuce either way.</p></div> <div class=\"card\"><span class=\"eyebrow\">One plant per bag</span> <p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.6\">For the fruiting crops only. Two plants in one bag halves the yield of each and roughly doubles the disease risk — they share a water column, so it swings wet-dry faster, and swinging moisture is what splits fruit and causes blossom end rot.</p></div> <div class=\"card\"><span class=\"eyebrow\">Depth versus width</span> <p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.6\">Radish, carrot and jamun need depth and nothing else. Lettuce and amaranth need width and almost no depth. One bag size for everything wastes money in both directions.</p></div> <div class=\"card\"><span class=\"eyebrow\">Bury the tomato stem</span> <p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.6\">Strip the lower leaves and bury two-thirds of the stem. It roots along its whole buried length, giving two to three times the root mass — the highest-return move available in a container. <b>Never do this with the grafted brinjal or chilli:</b> it buries the union and destroys the wilt resistance.</p></div> <div class=\"card\"><span class=\"eyebrow\">Root-prune every second year</span> <p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.6\">Once a woody plant is in its final bag: lift it, shave two inches off the sides of the root ball, refresh the top third of the mix, return it to the same bag. This is what stops a permanent container plant stalling.</p></div> </div>",
+   "mounts": [],
+   "chars": 1272
+  },
+  {
+   "slug": "the-orchard-year",
+   "heading": "The orchard year",
+   "sub": "Red is heat stress · blue is monsoon · green is the window that matters",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"><!--mount:oyear--></div>",
+   "mounts": [
+    "oyear"
+   ],
+   "chars": 0
+  }
+ ],
+ "zones": [
+  {
+   "slug": "put-each-plant-where-it-already-wants-to-be",
+   "heading": "Put each plant where it already wants to be",
+   "sub": "",
+   "eyebrow": "Five microclimates, no air conditioning",
+   "lede": "A gradient of five real microclimates beats one cooled room, and it costs nothing to run. The rule throughout: plants stay put, you do not shuttle them. A shade-grown plant moved into 45 °C sun scalds in two to four hours and the bleached patches never recover.",
+   "html": "",
+   "mounts": [],
+   "chars": 0
+  },
+  {
+   "slug": "the-acclimation-ladder",
+   "heading": "The acclimation ladder",
+   "sub": "Roughly a week at each step. This is why the eight are alive.",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:accladder-->",
+   "mounts": [
+    "accladder"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "shade-requirement-by-plant",
+   "heading": "Shade requirement by plant",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card flush scroll\"> <table><thead><tr><th style=\"width:22%\">Requirement</th><th>Plants</th><th style=\"width:12%\">Zone</th></tr></thead> <tbody> <tr><td><b>Full sun, no cover</b></td><td>Mango, guava, jackfruit, ber, dragon fruit, sapota, jamun, tamarind, banana, papaya, pineapple, brinjal</td><td><span class=\"tag sun\">A B</span></td></tr> <tr><td><b>30–40% shade, Mar–Jun only</b></td><td>Citrus, star fruit, water apple, avocado, chilli, tomato, capsicum</td><td><span class=\"tag bright\">A C</span></td></tr> <tr><td><b>40–50% shade, year-round</b></td><td>Barbados cherry, miracle fruit, finger lime, young jaboticaba, young abiu, coffee, curry leaf</td><td><span class=\"tag low\">D</span></td></tr> <tr><td><b>Rain shelter while fruiting</b></td><td>Fig — splits in direct monsoon rain</td><td><span class=\"tag desk\">C</span></td></tr> <tr><td><b>Never indoors</b></td><td>All of them</td><td>—</td></tr> </tbody></table> </div>",
+   "mounts": [],
+   "chars": 451
+  },
+  {
+   "slug": "why-not-air-conditioning",
+   "heading": "Why not air conditioning",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <p style=\"font-size:13.5px;color:var(--ink-2);line-height:1.6\">Light is the reason. Noon sun here is roughly 80,000–100,000&nbsp;lux; a bright indoor room gives 500–2,000. That is one to two percent. Leaves survive on that, flowers do not — flower initiation and sugar accumulation are the first things a plant drops when light is short.</p> <p style=\"font-size:13.5px;color:var(--ink-2);line-height:1.6\">AC also holds humidity at 40–50% in dead-still air, which is ideal for spider mites, and it erases the seasonal cues plants use. Mango needs a cool dry spell to initiate flowering, custard apple needs to drop its leaves, fig needs a dormancy signal. A constant 24&nbsp;°C means the plant never knows what month it is, and never flowers. This is why indoor citrus in cold countries is famously all leaf.</p> <div class=\"tip\"><b>Build this instead.</b> 50% shade cloth on a frame over Zone A, with a low-pressure fogger line on a timer. A few minutes of misting each hour through the afternoon drops air temperature 5–8&nbsp;°C and lifts humidity to 60–70%, which is what a tropical fruit plant actually wants in May. Put the drip line on the same timer and the May watering problem disappears with it.</div> </div>",
+   "mounts": [],
+   "chars": 1032
+  },
+  {
+   "slug": "the-coal-belt-problem",
+   "heading": "The coal-belt problem",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"> <p style=\"font-size:13.5px;color:var(--ink-2);line-height:1.6\">Fly ash settles on foliage and blocks photosynthesis. Hose the leaves down weekly, early morning so they dry before evening. Ash deposition also pushes soil alkaline — test pH occasionally, and above 7.5 citrus and jaboticaba show iron chlorosis, yellow leaf with green veins. Correct with chelated iron and a little elemental sulphur.</p> </div>",
+   "mounts": [],
+   "chars": 335
+  }
+ ],
+ "seeds": [
+  {
+   "slug": "the-seed-programme",
+   "heading": "The seed programme",
+   "sub": "",
+   "eyebrow": "1,997 seed listings, filtered down",
+   "lede": "Sorted by what you actually need it for, with the minimum bag size and the crop cycle attached to each. Starred entries are the ones worth buying first.",
+   "html": "",
+   "mounts": [],
+   "chars": 0
+  },
+  {
+   "slug": "block-1",
+   "heading": "",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"filters\"> <div class=\"frow\"> <span class=\"flab\">Find</span> <input id=\"seedq\" type=\"search\" placeholder=\"Search crop, supplier, note…\" autocomplete=\"off\"> <!--mount:seedcount--> </div> <div class=\"frow\"><span class=\"flab\">Need</span><!--mount:seedchips--></div> </div> <!--mount:seedgrid-->",
+   "mounts": [
+    "seedcount",
+    "seedchips",
+    "seedgrid",
+    "seedq"
+   ],
+   "chars": 9
+  },
+  {
+   "slug": "the-order-worth-placing",
+   "heading": "The order worth placing",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card flush scroll\"> <table><thead><tr><th style=\"width:22%\">Basket</th><th>Contents</th><th style=\"width:12%\">₹</th></tr></thead> <tbody> <tr><td><b>organicbazar</b></td><td>All twelve untreated open-pollinated crops</td><td class=\"mono\">610</td></tr> <tr><td><b>organicbazar</b></td><td>Jwala chilli, Salad Bowl lettuce, red and green amaranth, bush French bean, early coriander, Italian basil, Krishna tulsi, fenugreek microgreens</td><td class=\"mono\">~360</td></tr> <tr><td><b>nurserylive</b></td><td>Pusa Sawni okra, California Wonder capsicum, Pusa Navrangi marigold, cape gooseberry</td><td class=\"mono\">283</td></tr> <tr><td><b>nativeindian</b></td><td>Kanthari chilli, gongura, red amaranth</td><td class=\"mono\">79</td></tr> <tr><td><b>Around 30 crops</b></td><td>Two gaps remain: Arka Rakshak tomato and Arka Neelachal brinjal, both portal-only. And no dwarf cherry tomato exists in this sheet at all.</td><td class=\"mono\"><b>≈1,330</b></td></tr> </tbody></table> </div>",
+   "mounts": [],
+   "chars": 546
+  },
+  {
+   "slug": "cherry-tomatoes",
+   "heading": "Cherry tomatoes",
+   "sub": "Every listing in the sheet, audited",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <div class=\"warnband\"><b>Not one of them is a dwarf or determinate cherry.</b> Everything genuinely cherry here is indeterminate — exactly the plant type a container programme rules out. That does not mean do not buy. It means buy knowingly and give them a trellis in Zone C.</div> <!--mount:cherrylist--> <div class=\"note\"><b>The one genuinely dwarf tomato in the whole sheet is not a cherry:</b> Desi Tomato Seeds, organicbazar, ₹59 — determinate, non-staking, 50–70&nbsp;cm, 70–80&nbsp;g fruit. A salad tomato, but the only listing that fits a 14-inch bag without a trellis. Worth ₹59 as a control plant.</div> </div>",
+   "mounts": [
+    "cherrylist"
+   ],
+   "chars": 513
+  },
+  {
+   "slug": "sowing-tomatoes",
+   "heading": "Sowing tomatoes",
+   "sub": "One plant per bag, and never sow into the final bag",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:tomsteps--> <div class=\"card stack\" style=\"margin-top:14px\"> <div class=\"tip\"><b>Seed-starting mix is not potting mix.</b> It must be sterile, fine and deliberately low in nutrients — rich mix burns the radicle and invites damping off. <b>No garden soil at all:</b> it carries the Pythium and Rhizoctonia that topple seedlings at the soil line overnight, and there is no cure once it starts.</div> <ul class=\"tick\"> <li><b>Depth 0.5&nbsp;cm</b>, about twice the seed's own width. Deeper and it exhausts itself before reaching light.</li> <li><b>Two to three seeds per cell</b>, thinned to one by snipping, never pulling.</li> <li><b>Bottom-water</b> by standing the tray in a shallow bath for ten minutes. Top-watering with a mug displaces the seed.</li> <li><b>Strongest available light within 24 hours of sprouting</b>, or they stretch leggy and never recover.</li> <li><b>Cross-pollination does not ruin this season's fruit</b> — it affects the seed inside, not the fruit you eat. But it does matter for the open-pollinated packet you are saving from: keep that plant three metres clear, or bag two or three trusses in muslin before they open.</li> </ul> </div>",
+   "mounts": [
+    "tomsteps"
+   ],
+   "chars": 950
+  },
+  {
+   "slug": "where-to-upgrade-next",
+   "heading": "Where to upgrade next",
+   "sub": "Anywhere in India, not just these three suppliers",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"note\" style=\"margin-bottom:14px\"><b>A scale warning first.</b> Commercial F1 packs from Nunhems, Syngenta, Namdhari and Rijk Zwaan are sold in farm units — typically 1,000–3,500 seeds at ₹400–2,500. For a terrace that is the wrong scale by two orders of magnitude. BigHaat and Agriplex sometimes list kitchen-garden sub-packs; otherwise split a pack or accept a five-year supply.</div> <!--mount:upgrades--> <div class=\"tip\">The three upgrades that would actually change results, in order: <b>Radhika or Arka Anamika okra</b> for virus resistance, <b>Tiny Tim</b> for a dwarf cherry that fits the balcony, and <b>Arka Arunima amaranth</b> for bolt resistance. The rest are refinements.</div>",
+   "mounts": [
+    "upgrades"
+   ],
+   "chars": 579
+  },
+  {
+   "slug": "where-to-buy",
+   "heading": "Where to buy",
+   "sub": "Ranked for this site, with the catch on each",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"><!--mount:srclist--></div>",
+   "mounts": [
+    "srclist"
+   ],
+   "chars": 0
+  }
+ ],
+ "bags": [
+  {
+   "slug": "bags-mix",
+   "heading": "Bags & mix",
+   "sub": "",
+   "eyebrow": "Containers, media, amendments",
+   "lede": "The terminology in the market is genuinely confusing — three different things all get called a grow bag, and only one of them is right for a place that hits 45 °C.",
+   "html": "",
+   "mounts": [],
+   "chars": 0
+  },
+  {
+   "slug": "which-bag",
+   "heading": "Which bag",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"><!--mount:bagtypes--></div> <div class=\"card stack\" style=\"margin-top:14px\"> <p style=\"font-size:13.5px;color:var(--ink-2);line-height:1.6\"><b>Practical rule:</b> fabric bags throughout, in a pale colour — dark fabric heats almost as badly as plastic. Fabric dries fast, which is the one real cost, and the answer to that is the drip line planned for Zone A. Until the drip runs, double-pot the small ones and mulch two inches deep.</p> <div class=\"warnband\"><b>A filled 24×24 bag weighs 120–150&nbsp;kg.</b> Fill it in its final position. Never fill and then move.</div> </div>",
+   "mounts": [
+    "bagtypes"
+   ],
+   "chars": 380
+  },
+  {
+   "slug": "mix-calculator",
+   "heading": "Mix calculator",
+   "sub": "Pick a bag and a recipe; quantities scale themselves",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <div class=\"g2\"> <div class=\"fld\"><label>Recipe</label><select class=\"inp\" id=\"omixsel\"></select> <div class=\"hint\" id=\"omixfor\">—</div></div> <div class=\"fld\"><label>Bag size</label><select class=\"inp\" id=\"obagsel\"></select> <div class=\"hint\">Diameter × height in inches. Filled volume <b id=\"omixtot\">—</b>.</div></div> </div> <div><div class=\"oh eyebrow\" style=\"margin-bottom:9px\">By volume</div> <!--mount:omixbars--></div> <div><div class=\"eyebrow\" style=\"margin-bottom:9px\">Then work through</div> <!--mount:omixam--></div> </div>",
+   "mounts": [
+    "omixbars",
+    "omixam",
+    "omixsel",
+    "omixfor",
+    "obagsel",
+    "omixtot"
+   ],
+   "chars": 91
+  },
+  {
+   "slug": "three-things-people-skip",
+   "heading": "Three things people skip",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"grid2\"> <div class=\"card\"><span class=\"eyebrow\">Charging the coco peat</span> <p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.6\">Raw coco carries sodium and locks up calcium. Soak the expanded block, squeeze and rinse twice in fresh water, then soak twelve hours in calcium nitrate at 10&nbsp;g per 5&nbsp;L, rinse once more, drain. Uncharged coco is a common and invisible cause of stunted, yellowing container plants.</p></div> <div class=\"card\"><span class=\"eyebrow\">Curing the mix</span> <p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.6\">Five to seven days, moist, heaped, covered with a sack, in shade — before anything goes in. Trichoderma colonises and the neem cake stops being hot.</p></div> <div class=\"card\"><span class=\"eyebrow\">Drainage at the base</span> <p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.6\">Two inches of broken brick or coarse gravel, and six to eight extra slits cut in the lower third of the bag. In August, drainage kills more container plants in this district than May heat does.</p></div> <div class=\"card\"><span class=\"eyebrow\">pH, because of the ash</span> <p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.6\">Fly ash deposition pushes the mix alkaline. Test it. Above 7.5, work in 50&nbsp;g of elemental sulphur per 100&nbsp;L.</p></div> </div>",
+   "mounts": [],
+   "chars": 814
+  },
+  {
+   "slug": "feeding-the-juvenile-phase",
+   "heading": "Feeding the juvenile phase",
+   "sub": "All six woody plants are non-bearing. Nitrogen-led, little and often.",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card flush scroll\"> <table><thead><tr><th style=\"width:24%\">Input</th><th style=\"width:16%\">Rate</th><th style=\"width:16%\">Frequency</th><th>Window and who</th></tr></thead> <tbody> <tr><td><b>19:19:19 water-soluble</b></td><td class=\"mono\">3–4 g/L, 1–2 L per bag</td><td>Every 12–15 days</td><td>Flush periods, Sep–Nov and Feb–Apr. All eight.</td></tr> <tr><td><b>Vermicompost or rotted FYM</b></td><td class=\"mono\">1–2 kg</td><td>Every 60 days</td><td>Top-dressed and scratched into the top two inches. Year-round.</td></tr> <tr><td><b>Fermented cake liquid</b></td><td class=\"mono\">500 ml per bag</td><td>Fortnightly</td><td>Mustard or groundnut cake 1:10, fermented ten days, diluted 1:10 again. Alternate with the 19:19:19.</td></tr> <tr><td><b>Neem cake</b></td><td class=\"mono\">200 g</td><td>Quarterly</td><td>Worked into the surface. Nematodes and slow nitrogen.</td></tr> <tr><td><b>Micronutrient foliar</b></td><td class=\"mono\">2 g/L</td><td>Monthly</td><td>Chelated Zn, Fe, B, Mn. <b>Non-optional in the coal belt.</b></td></tr> <tr><td><b>Epsom salt</b></td><td class=\"mono\">5 g/L</td><td>Monthly</td><td>Only if leaves go pale between the veins.</td></tr> <tr><td><b>13:0:45 high potassium</b></td><td class=\"mono\">4 g/L</td><td>Every 10 days</td><td>From first flowering. Papaya, brinjal, chilli, then guava.</td></tr> <tr><td><b>0:52:34</b></td><td class=\"mono\">5 g/L</td><td>2 sprays, 2 weeks apart</td><td><b>October, from year 3. Mango only</b> — flower initiation.</td></tr> </tbody></table> </div> <div class=\"card stack\" style=\"margin-top:14px\"> <div class=\"warnband\"><b>Three rules that prevent most fertiliser damage.</b> Never feed a dry bag — water first, feed thirty minutes later. Never feed a plant that is wilting, scorched, or repotted within four weeks. And cut all feeding in <b>May</b>: a plant at 45&nbsp;°C is not growing, and salts concentrate fast in a drying fabric bag.</div> </div>",
+   "mounts": [],
+   "chars": 1111
+  }
+ ],
+ "feed": [
+  {
+   "slug": "feed",
+   "heading": "Feed",
+   "sub": "",
+   "eyebrow": "Fertiliser, start to finish",
+   "lede": "Most feeding mistakes are diagnosis mistakes. Start with the one rule that makes a yellow leaf readable, then the products, then the calendar.",
+   "html": "",
+   "mounts": [],
+   "chars": 0
+  },
+  {
+   "slug": "the-rule-that-solves-most-of-it",
+   "heading": "The rule that solves most of it",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <p style=\"font-size:13.5px;color:var(--ink-2);line-height:1.62\">Some nutrients move around inside a plant and some cannot. When nitrogen, phosphorus, potassium or magnesium run short, the plant <b>strips them out of its oldest leaves</b> to feed new growth — so the damage appears at the bottom. Iron, calcium, zinc, boron and sulphur cannot be moved once placed, so a shortage shows on <b>the newest leaves</b> while the old ones stay perfect.</p> <div class=\"tip\"><b>So look at which leaves are affected before you look at the colour.</b> Yellowing on old leaves and yellowing on new leaves are opposite diagnoses with opposite treatments. Treating one as the other is the single commonest fertiliser error, and it makes things worse rather than doing nothing.</div> </div>",
+   "mounts": [],
+   "chars": 656
+  },
+  {
+   "slug": "read-the-leaf",
+   "heading": "Read the leaf",
+   "sub": "Symptom → nutrient → correction",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:deftable-->",
+   "mounts": [
+    "deftable"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "dose-calculator",
+   "heading": "Dose calculator",
+   "sub": "Pick a product and a bag; it works out the grams",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card stack\"> <div class=\"g2\"> <div class=\"fld\"><label>Product</label><select class=\"inp\" id=\"dosesel\"></select></div> <div class=\"fld\"><label>Bag size</label><select class=\"inp\" id=\"dosebag\"></select> <div class=\"hint\">Feed volume is about 3% of bag volume — enough to wet the root zone without flushing the feed straight out.</div></div> </div> <!--mount:doseout--> <div class=\"note\" id=\"dosewhy\">—</div> </div>",
+   "mounts": [
+    "doseout",
+    "dosesel",
+    "dosebag",
+    "dosewhy"
+   ],
+   "chars": 126
+  },
+  {
+   "slug": "what-the-numbers-mean",
+   "heading": "What the numbers mean",
+   "sub": "N : P : K — nitrogen, phosphorus, potassium",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:npktable--> <div class=\"note\" style=\"margin-top:12px\"><b>Nitrogen builds leaves and stems. Phosphorus builds roots and starts flowers. Potassium fills and sweetens fruit.</b> Almost every disappointing container fruit crop traces to one error: nitrogen carried on into the fruiting phase, which gives a large healthy plant carrying almost nothing.</div>",
+   "mounts": [
+    "npktable"
+   ],
+   "chars": 286
+  },
+  {
+   "slug": "organic-inputs",
+   "heading": "Organic inputs",
+   "sub": "Slower, safer, and they feed the soil rather than the plant",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<!--mount:orgtable--> <div class=\"card stack\" style=\"margin-top:14px\"> <p style=\"font-size:13.5px;color:var(--ink-2);line-height:1.6\"><b>When each wins.</b> Organic inputs release slowly, improve structure, and are almost impossible to overdose — use them as the base of every mix and the routine top-dress. Synthetic solubles act within days and let you target a specific stage — use them for the fruiting switch, for correcting a diagnosed deficiency, and for feeding through a season when the plant is growing faster than compost can release.</p> <div class=\"tip\">There is no purity contest to win here. A vermicompost base with a fortnightly soluble feed during flush and a high-K switch at flowering outperforms either approach alone, and costs less than an all-synthetic regime.</div> </div>",
+   "mounts": [
+    "orgtable"
+   ],
+   "chars": 622
+  },
+  {
+   "slug": "ph-decides-whether-any-of-it-works",
+   "heading": "pH decides whether any of it works",
+   "sub": "Fly-ash deposition here pushes soil alkaline",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"><!--mount:phbands--></div> <div class=\"warnband\" style=\"margin-top:12px\"><b>This is the part people skip and then blame the fertiliser.</b> Above about 7.8 iron, manganese, zinc, boron and phosphorus are chemically locked into forms roots cannot take up. Adding more of them changes nothing. Test the mix with a ₹150 pH meter or a strip kit, and correct with 50 g of elemental sulphur per 100 L before you spend anything on feed.</div>",
+   "mounts": [
+    "phbands"
+   ],
+   "chars": 349
+  },
+  {
+   "slug": "salt-buildup-and-how-to-flush-it",
+   "heading": "Salt buildup, and how to flush it",
+   "sub": "Every fed container accumulates it. Yours already has some.",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"grid2\"> <div class=\"card\"><span class=\"eyebrow\">How you know</span><!--mount:saltsym--></div> <div class=\"card\"><span class=\"eyebrow\">The flush</span><!--mount:saltfix--></div> </div> <div class=\"note\" style=\"margin-top:12px\">Your own log already records this: the small broad-leaf plant with yellowing tips and brown spotting is most likely tap-water salt accumulation plus low light, not a disease.</div>",
+   "mounts": [
+    "saltsym",
+    "saltfix"
+   ],
+   "chars": 197
+  },
+  {
+   "slug": "the-feeding-year",
+   "heading": "The feeding year",
+   "sub": "Green is full rate · blue is potassium only · red is stop entirely",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"><!--mount:feedcal--></div> <!--mount:feedcaldetail-->",
+   "mounts": [
+    "feedcal",
+    "feedcaldetail"
+   ],
+   "chars": 0
+  },
+  {
+   "slug": "six-things-not-to-do",
+   "heading": "Six things not to do",
+   "sub": "",
+   "eyebrow": "",
+   "lede": "",
+   "html": "<div class=\"card\"><!--mount:feeddont--></div>",
+   "mounts": [
+    "feeddont"
+   ],
+   "chars": 0
+  }
+ ]
+}

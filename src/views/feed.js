@@ -13,7 +13,7 @@
 import { esc, mount, on, byId } from '../core/dom.js';
 import { MONFULL, round } from '../core/util.js';
 import * as store from '../core/store.js';
-import { DB } from '../core/data.js';
+import { DB, proseHtml, prose } from '../core/data.js';
 import { dose, doseVerdict, phBand, PH_BANDS, sulphurDose, acidifyWater, ashDrift,
   ironChelate, saltLoad, feedGate, PRODUCTS } from '../engine/feed.js';
 import { zoneMonth, heatIndexC } from '../engine/heat.js';
@@ -23,6 +23,7 @@ import { toast } from '../ui/toast.js';
 let DOSE = { product: 0, bagLitres: 43, strength: 1 };
 let PH = { current: 7.8, target: 6.2, bagLitres: 43, buffering: 'coco', zone: 'A' };
 let MOBILITY = 'all';
+const VIEW = 'feed';
 
 export function renderFeed() {
   const m = new Date().getMonth();
@@ -46,7 +47,13 @@ export function renderFeed() {
     ${section('pH and coal-ash compensation', phPanel(), { eyebrow: 'The local problem' })}
     ${section('Reading a yellow leaf', deficiencyPanel(), { eyebrow: 'Position first, colour second' })}
     ${section('Salt', saltPanel(), { eyebrow: 'Why the leaf margins scorch' })}
+    ${proseSection('the-rule-that-solves-most-of-it')}
+    ${proseSection('what-the-numbers-mean', { npktable: npkTable() })}
+    ${proseSection('organic-inputs', { orgtable: organicTable() })}
+    ${proseSection('ph-decides-whether-any-of-it-works', { phbands: '' })}
+    ${proseSection('salt-buildup-and-how-to-flush-it', { saltsym: '', saltfix: '' })}
     ${section('The feeding year', calendarPanel(), { eyebrow: 'Including the month you feed nothing' })}
+    ${proseSection('six-things-not-to-do', { feeddont: dontList() })}
   `);
 }
 
@@ -247,7 +254,69 @@ function saltPanel() {
       <div class="card flat"><div class="eyebrow">Status</div><div class="num" style="font-size:22px">${esc(s.label)}</div></div>
     </div>
     <p class="subtle" style="margin-top:10px">${esc(s.note)}</p>
+
+    <div class="grid g2" style="margin-top:14px">
+      <div class="card sunk">
+        <div class="eyebrow">How you know</div>
+        <ul style="margin:8px 0 0 16px;font-size:13px">
+          ${(DB.feed.SALT.sym || []).map((x) => `<li>${deent(x)}</li>`).join('')}
+        </ul>
+      </div>
+      <div class="card sunk">
+        <div class="eyebrow">How to flush it</div>
+        <ol style="margin:8px 0 0 16px;font-size:13px">
+          ${(DB.feed.SALT.fix || []).map((x) => `<li>${deent(x)}</li>`).join('')}
+        </ol>
+      </div>
+    </div>
   </div>`;
+}
+
+/* ---------------------------------------------------------- NPK reference -- */
+
+function npkTable() {
+  return `<div class="scrollx"><table class="data stack">
+    <thead><tr><th>Analysis</th><th>Use</th><th>When</th><th>Rate</th><th>Why</th></tr></thead>
+    <tbody>${DB.feed.NPKS.map((n) => `<tr>
+      <td data-l="Analysis"><b class="num">${deent(n.n)}</b></td>
+      <td data-l="Use">${deent(n.use)}</td>
+      <td data-l="When">${deent(n.when)}</td>
+      <td data-l="Rate" class="num">${deent(n.rate)}</td>
+      <td data-l="Why">${deent(n.why)}</td>
+    </tr>`).join('')}</tbody>
+  </table></div>
+  <p class="subtle" style="margin-top:10px">
+    The three numbers are percentages by weight of nitrogen, phosphorus (as P₂O₅) and
+    potassium (as K₂O). They never add to 100 — the rest is carrier and filler.
+  </p>`;
+}
+
+/* -------------------------------------------------------- organic inputs --- */
+
+function organicTable() {
+  return `<div class="grid g2">${DB.feed.ORGIN.map((o) => `
+    <article class="card">
+      <div class="spread">
+        <h3>${deent(o.n)}</h3>
+        ${chip(deent(o.npk), { mono: true, title: 'Approximate analysis' })}
+      </div>
+      <p class="subtle" style="margin-top:6px"><b>Rate:</b> ${deent(o.rate)}</p>
+      <p style="font-size:13.5px;margin-top:8px">${deent(o.d)}</p>
+    </article>`).join('')}</div>`;
+}
+
+/* ------------------------------------------------------------ six do-nots -- */
+
+function dontList() {
+  return DB.feed.FEEDDONT.map(([title, why], i) => `
+    <div class="task" data-pri="hi" style="margin-bottom:8px">
+      <div class="num" style="color:var(--danger);font-weight:700">${i + 1}</div>
+      <div>
+        <div class="tt">${deent(title)}</div>
+        <div class="td">${deent(why)}</div>
+      </div>
+      <div></div>
+    </div>`).join('');
 }
 
 /* ------------------------------------------------------------- calendar --- */
@@ -278,4 +347,13 @@ export function wireFeed() {
     renderFeed();
   });
   on('mob', (el, e, ds) => { MOBILITY = ds.k; renderFeed(); });
+}
+
+/** Wrap a lifted v9 block in v10's own section furniture. */
+function proseSection(slug, mounts = {}, view = VIEW) {
+  const block = prose(view, slug);
+  if (!block) return '';
+  return section(block.heading, proseHtml(view, slug, mounts), {
+    eyebrow: block.sub || block.eyebrow || ''
+  });
 }

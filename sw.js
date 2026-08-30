@@ -63,19 +63,23 @@ const SHELL = [
   './src/views/feed.js',
   './src/views/bags.js',
   './src/views/shrooms.js',
+  './src/views/climate.js',
+  './src/views/care.js',
+  './src/views/buy.js',
   './src/views/settings.js',
   './src/styles/tokens.css',
   './src/styles/base.css',
   './src/styles/layout.css',
   './src/styles/components.css',
-  './src/styles/views.css'
+  './src/styles/views.css',
+  './src/styles/legacy-prose.css'
 ];
 
 const DATA = [
   './data/catalogue.json', './data/orchard.json', './data/zones.json',
   './data/seeds.json', './data/mushrooms.json', './data/feed.json',
   './data/soil.json', './data/climate.json', './data/sources.json',
-  './data/care.json'
+  './data/care.json', './data/prose.json'
 ];
 
 /* -------------------------------------------------------------- install -- */

@@ -163,7 +163,7 @@ const css = cssFiles.map((f) => `/* ===== ${f} ===== */\n${read(f)}`).join('\n')
 
 /* Embed the knowledge base so nothing has to be fetched. */
 const DATA_FILES = ['catalogue', 'orchard', 'zones', 'seeds', 'mushrooms',
-  'feed', 'soil', 'climate', 'sources', 'care'];
+  'feed', 'soil', 'climate', 'sources', 'care', 'prose'];
 const baked = Object.fromEntries(DATA_FILES.map((n) => [n, JSON.parse(read(`data/${n}.json`))]));
 
 /* Optionally bake in a state backup, the way v9's "bake into this file" did. */

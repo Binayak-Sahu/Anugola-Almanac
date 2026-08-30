@@ -92,6 +92,7 @@ concentration falls out at a sane 0.8 g/L and is independent of bag size.
 │   ├── orchard.json            8 trees + the potting-up plan
 │   ├── zones.json  seeds.json  mushrooms.json  feed.json
 │   ├── soil.json   climate.json  sources.json   care.json
+│   └── prose.json              23 KB lifted verbatim from v9's markup
 │
 ├── src/
 │   ├── main.js                 bootstrap, view registry, routing, keyboard
@@ -124,11 +125,13 @@ concentration falls out at a sane 0.8 g/L and is independent of bag size.
 │   └── styles/
 │       ├── tokens.css          the four-mode token matrix
 │       ├── base.css  layout.css  components.css  views.css
+│       └── legacy-prose.css    maps v9's classes onto v10 tokens
 │
 ├── tools/
 │   ├── extract-data.mjs        one-shot lift of every literal out of v9
 │   ├── bake.mjs                single-file build for file:// use
-│   ├── check.mjs               438 assertions, static + behavioural
+│   ├── check.mjs               526 assertions, static + coverage + behavioural
+│   ├── smoke.mjs               drives the real app in a real browser
 │   └── serve.mjs               zero-dependency dev server
 │
 ├── legacy/index-v9.html        the original, preserved verbatim
@@ -418,7 +421,7 @@ done — use a stable id and stay ticked.
 
 ## 6. Testing
 
-`npm run check` — 438 assertions, no dependencies, ~1 second.
+`npm run check` — 526 assertions, no dependencies, ~1 second.
 
 **Static half.** Every relative import in `src/` resolves, and every named
 import corresponds to something that file actually exports. Every module listed
@@ -447,7 +450,32 @@ seeded `bl_v7` ledger migrates on first load; the baked single file runs from
 
 ## 7. What is left
 
-Ordered by value.
+### First, a correction
+
+The first published version of this document said the outstanding work was
+"porting four reference screens". That understated the problem badly.
+
+**25 of 46 extracted data blocks reached no screen at all**, including four of
+the six blocks on the seeds screen — the audited cherry-tomato list (`CHERRY`,
+18 rows), the tomato sowing schedule (`TOMSTEP`), the upgrade paths (`UPG`) and
+the supplier ranking (`SRC2`). And **~23 KB of prose was never extracted**:
+`tools/extract-data.mjs` lifted JavaScript literals, and most of the almanac's
+actual teaching was written directly into v9's HTML.
+
+Four blocks were also filed into the wrong bundle. `OYEAR` is the *orchard*
+calendar; it went into `data/mushrooms.json` and `views/shrooms.js` rendered it
+as "the oyster year" — and because its rows are arrays rather than objects, the
+object-shaped code path fell through to `JSON.stringify` and printed raw JSON
+onto the page. `OG` (the orchard's glyphs) and `ART`/`HABIT_LBL` (the
+catalogue's habit drawings) were misplaced the same way.
+
+The root cause was one thing: **extraction was tested, arrival was not.** 438
+assertions passed while a quarter of the knowledge base was invisible.
+
+All of it is restored, and §6 now describes the coverage tests that make the
+failure impossible to repeat.
+
+### Actually outstanding, ordered by value
 
 1. **Photos in the UI.** `persist.js` has the full IndexedDB layer and the
    downscaler; `sync.js` has the push/pull endpoints. No view calls them yet.
@@ -455,17 +483,13 @@ Ordered by value.
    for a three-year sapota it is the only evidence anything is happening.
 2. **Experiments screen.** The schema, factories and store actions exist
    (`state.experiments`); there is no view.
-3. **Port the last v9 reference screens.** Climate charts, the buying/gear
-   screen, the care guide and the plant-ID wizard. All their data is already
-   extracted (`data/climate.json`, `data/sources.json`, `data/care.json`);
-   `legacy/index-v9.html` is preserved as the reference. Follow `views/bags.js`.
-4. **Replace the vendored function bundle.** `netlify/functions/data.mjs` is a
+3. **Replace the vendored function bundle.** `netlify/functions/data.mjs` is a
    checked-in 32 KB esbuild output with `@netlify/blobs` inlined. Since
    `netlify.toml` sets `node_bundler = "esbuild"`, it should be ~80 lines of
    source with the dependency declared.
-5. **Web Bluetooth / manual sensor import.** The calibration loop currently
+4. **Web Bluetooth / manual sensor import.** The calibration loop currently
    needs typed readings. A cheap BLE hygrometer per zone would close it.
-6. **Notifications.** A 05:30 local notification with the day's list is the
+5. **Notifications.** A 05:30 local notification with the day's list is the
    natural end point of the Action Desk.
 
 ### Known limits, stated plainly
@@ -479,14 +503,31 @@ Ordered by value.
 - Fruiting countdowns are windows, not dates.
 - Sync is last-writer-wins per document.
 
+### Deliberately not carried over
+
+Nine blocks are superseded rather than lost, and each carries a written reason
+in `tools/check.mjs` (`SUPERSEDED` and `PROSE_SUPERSEDED`). Five are data
+folded into a better model — `COMFORT`/`COMFORT_X` are already baked into every
+catalogue row, `ROOM_BUMP` became `heat.ZONE_MODEL.indoor`, `PHBANDS` became
+the richer `feed.PH_BANDS`, `WSEASON` became `water.SEASONS`. Four are v9 form
+chrome that v10 rebuilds as real components.
+
+One of those is a genuine disagreement worth recording: v9 fed at "about 3% of
+bag volume" at label concentration. That under-delivers nitrogen while
+concentrating salt in a small patch of root zone. `engine/feed.js` doses per
+10 L of substrate and dissolves it in a full soak instead, which lands at
+152 ppm N — squarely in the fertigation range — and makes the concentration
+independent of bag size.
+
 ---
 
 ## 8. Running it
 
 ```
 npm start          # http://localhost:5173  — needed; ES modules require http
-npm run check      # 438 assertions
+npm run check      # 526 assertions
 npm run bake       # dist/almanac.html, opens from file:// with no server
+npm run smoke      # drives the real app in a browser (needs npx playwright)
 npm run extract    # re-lift data from legacy/index-v9.html (one-shot, kept for audit)
 ```
 

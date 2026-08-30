@@ -11,7 +11,7 @@ import { iso, humanSpan, relDays, parseISO, daysBetween } from '../core/util.js'
 import * as store from '../core/store.js';
 import { DB } from '../core/data.js';
 import { orchardBoard, treeStatus, parseLitres } from '../engine/orchard.js';
-import { STAGE_LBL } from '../core/data.js';
+import { STAGE_LBL, proseHtml, prose } from '../core/data.js';
 import { section, bagLadderBar, facts, meter, chip, stepper, empty } from '../ui/components.js';
 import { toast, toastUndo } from '../ui/toast.js';
 import { currentRoute } from '../core/router.js';
@@ -49,6 +49,10 @@ export function renderOrchard(target = '') {
       eyebrow: 'Arrival to full sun',
       aside: '<span class="pill">10 steps over 5 weeks</span>'
     })}
+
+    ${proseSection('a-small-bag-does-not-force-top-growth')}
+    ${proseSection('rules-that-cut-across-all-eight')}
+    ${section('The orchard year', orchardYear(), { eyebrow: 'Month by month' })}
   `);
 
   if (target) {
@@ -78,9 +82,12 @@ function treeCard(t, focus) {
            style="margin-bottom:14px">
 
     <div class="spread" style="align-items:flex-start">
-      <div style="min-width:0">
-        <h3>${esc(spec.name)}</h3>
-        <div class="subtle" style="font-style:italic">${esc(spec.lat)}</div>
+      <div class="row" style="flex-wrap:nowrap;gap:12px;min-width:0">
+        ${treeGlyph(spec.g)}
+        <div style="min-width:0">
+          <h3>${esc(spec.name)}</h3>
+          <div class="subtle" style="font-style:italic">${esc(spec.lat)}</div>
+        </div>
       </div>
       <div class="row">
         ${chip(STAGE_LBL[record?.stage] || 'Tracked', { tone: 'mono' })}
@@ -214,8 +221,13 @@ function detail(t, currentRung) {
 function stubCard(t) {
   const { spec } = t;
   return `<article class="card" data-zone="${esc(spec.zone?.[0] || 'A')}">
-    <h3>${esc(spec.name)}</h3>
-    <div class="subtle" style="font-style:italic">${esc(spec.lat)}</div>
+    <div class="row" style="flex-wrap:nowrap;gap:12px">
+      ${treeGlyph(spec.g)}
+      <div style="min-width:0">
+        <h3>${esc(spec.name)}</h3>
+        <div class="subtle" style="font-style:italic">${esc(spec.lat)}</div>
+      </div>
+    </div>
     <div class="row" style="margin:10px 0">
       ${chip(spec.stock, { tone: /graft|layer/i.test(spec.stock) ? 'ok' : 'watch' })}
       ${chip(spec.first, { mono: true })}
@@ -223,6 +235,17 @@ function stubCard(t) {
     </div>
     <button class="btn pri" data-act="track" data-id="${esc(spec.id)}">Track this</button>
   </article>`;
+}
+
+/* ------------------------------------------------------------ tree glyphs -- */
+/* OG is the orchard's drawn shapes, keyed by the `g` field on every tree —
+   palm, tree, round, berry, bush, chilli. Fills come from the theme tokens via
+   the .habit rules, so one drawing works in all four theme combinations. */
+
+function treeGlyph(g) {
+  const shape = DB.orchard.OG?.[g];
+  if (!shape) return '';
+  return `<div style="width:46px;flex:none" aria-hidden="true">${shape}</div>`;
 }
 
 function pottingPlan() {
@@ -290,5 +313,53 @@ export function wireOrchard() {
     store.logOrchardEvent(id, f.get('kind'), text);
     e.target.reset();
     toast('Logged');
+  });
+}
+
+/* ==========================================================================
+   THE ORCHARD YEAR
+   ==========================================================================
+   OYEAR sits beside the mushroom literals in the v9 source, and the first pass
+   of the v10 extraction filed it under mushrooms on that basis. It is not a
+   mushroom calendar — index.html:1675 puts it inside <section id="v-orchard">,
+   and the entries say so: "Root-prune woody pots", "Shade net UP", "Buy
+   grafted now". views/shrooms.js was rendering it as "the oyster year", and
+   because the rows are arrays rather than objects it fell through to
+   JSON.stringify and printed raw JSON on the screen.
+
+   The third field is a season tone: '' ordinary, 'hot' the dry gap, 'wet' the
+   monsoon, 'go' the planting window.
+   ========================================================================== */
+
+const YEAR_TONE = {
+  hot: { token: '--season-dry', label: 'Dry gap' },
+  wet: { token: '--season-monsoon', label: 'Monsoon' },
+  go: { token: '--season-post', label: 'Planting window' },
+  '': { token: '--line-hi', label: '' }
+};
+
+function orchardYear() {
+  const now = new Date().getMonth();
+  return `<div class="grid g3">${DB.orchard.OYEAR.map(([month, what, tone], i) => {
+    const t = YEAR_TONE[tone] || YEAR_TONE[''];
+    return `<div class="card ${i === now ? '' : 'flat'}"
+                 style="border-left:3px solid var(${t.token})">
+      <div class="spread">
+        <span class="eyebrow">${esc(month)}${i === now ? ' · now' : ''}</span>
+        ${t.label ? chip(t.label, { mono: true }) : ''}
+      </div>
+      <p style="font-size:13.5px;margin-top:6px">${esc(what)}</p>
+    </div>`;
+  }).join('')}</div>`;
+}
+
+/** Wrap a lifted v9 block in v10's own section furniture. */
+const VIEW = 'orchard';
+
+function proseSection(slug, mounts = {}, view = VIEW) {
+  const block = prose(view, slug);
+  if (!block) return '';
+  return section(block.heading, proseHtml(view, slug, mounts), {
+    eyebrow: block.sub || block.eyebrow || ''
   });
 }

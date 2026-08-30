@@ -12,9 +12,9 @@
 
 import { esc, mount, on } from '../core/dom.js';
 import { MON, MONFULL } from '../core/util.js';
-import { DB } from '../core/data.js';
+import { DB, proseHtml, prose } from '../core/data.js';
 import { zoneMonth } from '../engine/heat.js';
-import { section, chip, facts, yearStrip, stressColors, empty } from '../ui/components.js';
+import { section, chip, facts, yearStrip, stressColors, stepper, empty } from '../ui/components.js';
 
 let FILTER = 'all';
 let OPEN = '';
@@ -50,7 +50,8 @@ export function renderShrooms() {
       </p>
     </div>
 
-    ${section('Can be spawned this month', spawnNow(month), { eyebrow: MONFULL[month] })}
+    ${proseSection('fourteen-mushrooms-one-hot-room')}
+    ${proseSection('right-now', { shroomnow: spawnNow(month) })}
 
     <div class="sec">
       <div class="row" style="margin-bottom:12px">
@@ -60,7 +61,9 @@ export function renderShrooms() {
       <div class="grid g2">${list.map((sp) => card(sp, month)).join('')}</div>
     </div>
 
-    ${section('The oyster year', oysterYear(), { eyebrow: 'Month by month' })}
+    ${section('The bench year', benchYear(), { eyebrow: 'What can be spawned, month by month' })}
+    ${section('Starting a run', runPlan(), { eyebrow: 'One bag, not five' })}
+    ${proseSection('sharing-an-enclosed-room-with-plants')}
   `);
 }
 
@@ -120,15 +123,93 @@ function card(sp, month) {
   </article>`;
 }
 
-function oysterYear() {
-  const year = DB.mushrooms.OYEAR || [];
-  if (!year.length) return empty('No oyster calendar in the data bundle.');
-  return `<div class="grid g3">${year.map((y, i) => `
-    <div class="card ${i === new Date().getMonth() ? 'hot' : 'flat'}">
-      <div class="spread"><span class="eyebrow">${MON[i]}</span>
-        <span class="chip tone-mono">${benchTemp(i)} °C</span></div>
-      <p style="font-size:13px;margin-top:6px">${esc(typeof y === 'string' ? y : (y.d || y.t || JSON.stringify(y)))}</p>
-    </div>`).join('')}</div>`;
+/* ==========================================================================
+   THE BENCH YEAR
+   ==========================================================================
+   This used to render OYEAR — which is the ORCHARD calendar, mis-filed into
+   data/mushrooms.json by the first extraction pass. Its rows are arrays, so
+   the object-shaped fallback here fell through to JSON.stringify and printed
+   raw JSON on the screen under a heading that was wrong anyway.
+
+   Replaced with a real mushroom calendar built from data the bench already
+   has: Zone E's modelled temperature each month against each species' own
+   spawning window.
+   ========================================================================== */
+
+function benchYear() {
+  const now = new Date().getMonth();
+  const species = DB.mushrooms.SHROOMS.filter((s) => s.verdict !== 'no');
+
+  return `<div class="grid g3">${MON.map((m, i) => {
+    const t = benchTemp(i);
+    const ideal = species.filter((s) => monthFit(s, i) === 2);
+    const workable = species.filter((s) => monthFit(s, i) === 1);
+    return `<div class="card ${i === now ? '' : 'flat'}">
+      <div class="spread">
+        <span class="eyebrow">${m}${i === now ? ' · now' : ''}</span>
+        <span class="chip tone-mono">${t} °C</span>
+      </div>
+      ${ideal.length
+        ? `<div class="row" style="margin-top:8px">${ideal.map((s) =>
+            chip(s.name, { tone: 'ok' })).join('')}</div>`
+        : '<p class="subtle" style="margin-top:8px">Nothing in its ideal band.</p>'}
+      ${workable.length
+        ? `<div class="row" style="margin-top:6px">${workable.map((s) =>
+            chip(s.name, { tone: 'watch' })).join('')}</div>`
+        : ''}
+    </div>`;
+  }).join('')}</div>
+  <p class="subtle" style="margin-top:10px">
+    Green sits inside its spawning band; amber is workable at the edge, with slower
+    colonisation and a better chance of contamination winning the race.
+  </p>`;
+}
+
+/* --------------------------------------------------------------- run plan -- */
+
+/* RUNPLAN is keyed by species, each a list of [dayOffset, stage, what, action].
+   The day offsets are what make it a plan rather than a list: spawn on the 1st
+   and the bag should be solid white by day 16, pinning by 22, cutting by 28. */
+
+let RUNSPECIES = 'oyster';
+
+const RUN_LABEL = {
+  oyster: 'Oyster', pink: 'Pink oyster', milky: 'Milky',
+  paddy: 'Paddy straw', reishi: 'Reishi'
+};
+
+function runPlan() {
+  const plans = DB.mushrooms.RUNPLAN;
+  const keys = Object.keys(plans);
+  if (!keys.length) return empty('No run plan in the data bundle.');
+  const active = plans[RUNSPECIES] ? RUNSPECIES : keys[0];
+  const steps = plans[active];
+
+  return `
+    <div class="row" style="margin-bottom:14px">
+      ${keys.map((k) => `<button class="chip ${k === active ? 'on' : ''}"
+        data-act="runpick" data-k="${esc(k)}">${esc(RUN_LABEL[k] || k)}</button>`).join('')}
+    </div>
+    ${stepper(steps.map(([day, stage, what, action]) => ({
+      title: `Day ${day} — ${stage}`,
+      body: what,
+      why: action || ''
+    })))}
+    <p class="subtle" style="margin-top:10px">
+      Start with one bag in October, not five. One bag teaches you what full colonisation
+      looks like and what contamination smells like, for the price of one bottle of spawn.
+    </p>`;
+}
+
+/** Wrap a lifted v9 block in v10's own section furniture. */
+const VIEW = 'shrooms';
+
+function proseSection(slug, mounts = {}, view = VIEW) {
+  const block = prose(view, slug);
+  if (!block) return '';
+  return section(block.heading, proseHtml(view, slug, mounts), {
+    eyebrow: block.sub || block.eyebrow || ''
+  });
 }
 
 /* ------------------------------------------------------------------ wire -- */
@@ -136,4 +217,5 @@ function oysterYear() {
 export function wireShrooms() {
   on('shfilter', (el, e, ds) => { FILTER = ds.k; renderShrooms(); });
   on('shopen', (el, e, ds) => { OPEN = OPEN === ds.k ? '' : ds.k; renderShrooms(); });
+  on('runpick', (el, e, ds) => { RUNSPECIES = ds.k; renderShrooms(); });
 }

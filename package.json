@@ -3,12 +3,13 @@
   "version": "10.0.0",
   "private": true,
   "type": "module",
-  "description": "A working almanac for one hot site in Talcher, Angul — five zones, a container orchard, an indoor room, a seed programme and a mushroom bench.",
+  "description": "A working almanac for one hot site in Talcher, Angul \u2014 five zones, a container orchard, an indoor room, a seed programme and a mushroom bench.",
   "scripts": {
     "start": "node tools/serve.mjs",
     "extract": "node tools/extract-data.mjs",
     "bake": "node tools/bake.mjs",
-    "check": "node tools/check.mjs"
+    "check": "node tools/check.mjs",
+    "smoke": "node tools/smoke.mjs"
   },
   "engines": {
     "node": ">=18"
